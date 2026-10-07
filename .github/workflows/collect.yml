@@ -1,0 +1,58 @@
+# 云端每小时抓取 —— 你的电脑关机也照跑（GitHub 免费额度内）
+# 需要: Settings → Secrets → Actions 配置 TELEGRAM_BOT_TOKEN / TELEGRAM_CHAT_ID
+#       Settings → Pages → Source: Deploy from a branch → main / docs
+name: hourly-collect
+
+on:
+  schedule:
+    - cron: "17 * * * *"   # 每小时第 17 分钟（错开整点高峰）
+  workflow_dispatch:        # 支持手动触发
+
+permissions:
+  contents: write
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install deps
+        run: pip install -r requirements.txt
+
+      - name: Snapshot state
+        run: |
+          mkdir -p data
+          echo "snapshot: $(test -f data/articles.json && wc -c < data/articles.json || echo 0) bytes"
+
+      - name: Collect (dedupe + notify Telegram)
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          WEBHOOK_TOKEN: ${{ secrets.WEBHOOK_TOKEN }}
+          ENABLE_SCHEDULER: "0"
+        run: python -m app.pipeline --json
+
+      - name: Prepare GitHub Pages dashboard
+        run: |
+          mkdir -p docs
+          cp static/index.html docs/index.html
+          cp data/articles.json docs/articles.json
+
+      - name: Commit results
+        run: |
+          git config user.name "solar-news-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/articles.json docs
+          if git diff --cached --quiet; then
+            echo "no changes"
+          else
+            git commit -m "chore: hourly news snapshot $(date -u +%Y-%m-%dT%H:%MZ)"
+            git push
+          fi

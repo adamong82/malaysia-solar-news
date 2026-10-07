@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>☀️ Malaysia Solar News</title>
+<style>
+  :root{
+    --bg:#0b1220; --panel:#111a2e; --panel2:#16213a; --line:#22304f;
+    --txt:#e7edf7; --muted:#8ea0bf; --accent:#f7b733; --accent2:#35c4a8;
+    --danger:#ff6b6b; --radius:14px;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:linear-gradient(180deg,#0b1220 0%,#0d1526 100%);
+    color:var(--txt);font:15px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"PingFang SC","Microsoft YaHei",sans-serif}
+  a{color:inherit}
+  .wrap{max-width:1080px;margin:0 auto;padding:24px 18px 60px}
+  header{display:flex;flex-wrap:wrap;align-items:center;gap:14px;justify-content:space-between}
+  .brand{display:flex;align-items:center;gap:12px}
+  .logo{width:44px;height:44px;border-radius:12px;display:grid;place-items:center;
+    background:linear-gradient(135deg,#f7b733,#f25c54);font-size:24px;box-shadow:0 6px 18px rgba(247,183,51,.25)}
+  h1{font-size:20px;margin:0}
+  .sub{color:var(--muted);font-size:12.5px}
+  .actions{display:flex;gap:8px;flex-wrap:wrap}
+  button{background:var(--panel2);color:var(--txt);border:1px solid var(--line);
+    padding:8px 14px;border-radius:10px;cursor:pointer;font-size:13.5px;transition:.15s}
+  button:hover{border-color:var(--accent);color:var(--accent)}
+  button.primary{background:linear-gradient(135deg,#f7b733,#ef9f24);color:#1b1405;border:none;font-weight:600}
+  button.primary:hover{filter:brightness(1.08);color:#1b1405}
+  button:disabled{opacity:.5;cursor:wait}
+  .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px;margin:22px 0 6px}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:14px 16px}
+  .card .num{font-size:26px;font-weight:700;letter-spacing:.5px}
+  .card .lbl{color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.7px}
+  .card .hint{color:var(--muted);font-size:12px;margin-top:2px}
+  .num.accent{color:var(--accent)} .num.teal{color:var(--accent2)}
+  .toolbar{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin:20px 0 14px}
+  input[type=search],select{background:var(--panel);border:1px solid var(--line);color:var(--txt);
+    padding:9px 12px;border-radius:10px;font-size:14px;outline:none}
+  input[type=search]{flex:1;min-width:200px}
+  input[type=search]:focus,select:focus{border-color:var(--accent)}
+  .toggle{display:flex;align-items:center;gap:6px;color:var(--muted);font-size:13.5px;cursor:pointer;user-select:none}
+  .list{display:flex;flex-direction:column;gap:10px}
+  .item{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
+    padding:14px 16px;display:flex;gap:12px;transition:.15s}
+  .item:hover{border-color:#31456e;transform:translateY(-1px)}
+  .item.unread{border-left:3px solid var(--accent)}
+  .dot{width:9px;height:9px;border-radius:50%;background:var(--accent);margin-top:7px;flex:none}
+  .item:not(.unread) .dot{background:transparent;border:1px solid var(--line)}
+  .body{flex:1;min-width:0}
+  .title{font-size:15.5px;font-weight:600;text-decoration:none;display:block}
+  .title:hover{color:var(--accent)}
+  .meta{display:flex;gap:8px;flex-wrap:wrap;align-items:center;color:var(--muted);font-size:12.5px;margin-top:5px}
+  .badge{background:var(--panel2);border:1px solid var(--line);border-radius:20px;padding:1px 9px;font-size:11.5px}
+  .badge.score{border-color:#4a3c14;color:var(--accent)}
+  .kw{color:#6f86b3;font-size:12px;margin-top:6px;word-break:break-all}
+  .summary{color:#a9b8d4;font-size:13px;margin-top:6px;
+    display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+  .empty{text-align:center;color:var(--muted);padding:60px 0}
+  .foot{margin-top:34px;color:var(--muted);font-size:12.5px;border-top:1px solid var(--line);padding-top:14px}
+  code{background:var(--panel2);padding:1px 6px;border-radius:6px;font-size:12px}
+  .toast{position:fixed;bottom:24px;right:24px;background:#123524;border:1px solid #1f6b4a;
+    color:#b8f2d8;padding:12px 18px;border-radius:12px;opacity:0;transform:translateY(8px);
+    transition:.25s;pointer-events:none;font-size:14px}
+  .toast.show{opacity:1;transform:translateY(0)}
+  .toast.err{background:#3a1520;border-color:#7a2a3a;color:#ffc9d1}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="brand">
+      <div class="logo">☀️</div>
+      <div>
+        <h1>Malaysia Solar News Collector</h1>
+        <div class="sub" id="subline">马来西亚太阳能产业 · 政策 / 市场 / 项目新闻自动收集</div>
+      </div>
+    </div>
+    <div class="actions">
+      <button id="btnRun" class="primary">▶ 立即抓取</button>
+      <button id="btnReadAll">✓ 全部已读</button>
+    </div>
+  </header>
+
+  <div class="stats">
+    <div class="card"><div class="lbl">Total 总数</div><div class="num" id="sTotal">–</div></div>
+    <div class="card"><div class="lbl">Last 24h 新增</div><div class="num accent" id="sDay">–</div><div class="hint" id="sRun">last run: –</div></div>
+    <div class="card"><div class="lbl">Unread 未读</div><div class="num teal" id="sUnread">–</div><div class="hint" id="sSched">scheduler: –</div></div>
+    <div class="card"><div class="lbl">Sources 来源</div><div class="num" id="sSources">–</div><div class="hint" id="sTelegram">telegram: –</div></div>
+  </div>
+
+  <div class="toolbar">
+    <input type="search" id="q" placeholder="🔍 搜索标题 / 内容 …">
+    <select id="src"><option value="">全部来源</option></select>
+    <label class="toggle"><input type="checkbox" id="unreadOnly"> 只看未读</label>
+  </div>
+
+  <div class="list" id="list"><div class="empty">加载中…</div></div>
+
+  <div class="foot" id="foot">
+    提示：每 <code>COLLECT_INTERVAL_MIN</code> 分钟自动抓取一次 ·
+    推送到 Telegram 需在 <code>.env</code> 配置 <code>TELEGRAM_BOT_TOKEN</code> /
+    <code>TELEGRAM_CHAT_ID</code> · 其他工具可通过 <code>POST /webhook</code> 推送新闻进本系统
+  </div>
+</div>
+<div class="toast" id="toast"></div>
+
+<script>
+const $ = id => document.getElementById(id);
+let STATIC = false;           // true = served from GitHub Pages (no API)
+let articles = [];
+
+function esc(s){const d=document.createElement('div');d.textContent=s??'';return d.innerHTML}
+function ago(iso){
+  if(!iso) return '';
+  const t = new Date(iso), s = (Date.now()-t.getTime())/1000;
+  if(s<60) return '刚刚';
+  if(s<3600) return Math.floor(s/60)+' 分钟前';
+  if(s<86400) return Math.floor(s/3600)+' 小时前';
+  if(s<86400*30) return Math.floor(s/86400)+' 天前';
+  return iso.slice(0,10);
+}
+function toast(msg, err){
+  const el=$('toast'); el.textContent=msg; el.className='toast show'+(err?' err':'');
+  setTimeout(()=>el.className='toast',2600);
+}
+async function j(url, opt){const r=await fetch(url,opt); if(!r.ok) throw new Error(r.status); return r.json()}
+
+function renderStats(st){
+  $('sTotal').textContent = st.total ?? articles.length;
+  $('sUnread').textContent = st.unread ?? articles.filter(a=>!a.read).length;
+  if(st.last_24h!==undefined) $('sDay').textContent = st.last_24h;
+  const srcs = st.sources || [...new Set(articles.map(a=>a.source).filter(Boolean))]
+      .map(s=>({source:s,n:articles.filter(a=>a.source===s).length}));
+  $('sSources').textContent = srcs.length;
+  if(st.last_run) $('sRun').textContent = 'last run: '+ago(st.last_run.finished_at)+' · +'+(st.last_run.new_count??0)+' 新';
+  if(st.scheduler_enabled!==undefined) $('sSched').textContent = 'scheduler: '+(st.scheduler_enabled?'ON · '+st.interval_min+'min':'OFF');
+  if(st.telegram_configured!==undefined) $('sTelegram').textContent = 'telegram: '+(st.telegram_configured?'✅ 已连接':'未配置');
+  const sel=$('src'), cur=sel.value;
+  sel.innerHTML='<option value="">全部来源</option>'+srcs.map(s=>`<option value="${esc(s.source)}">${esc(s.source)} (${s.n})</option>`).join('');
+  sel.value=cur;
+  if(st.last_24h!==undefined) $('sDay').textContent = st.last_24h;
+}
+
+function renderList(){
+  const q=$('q').value.trim().toLowerCase();
+  const src=$('src').value, un=$('unreadOnly').checked;
+  let list = articles.filter(a=>{
+    if(src && a.source!==src) return false;
+    if(un && a.read) return false;
+    if(q && !(a.title+' '+(a.summary||'')).toLowerCase().includes(q)) return false;
+    return true;
+  });
+  const el=$('list');
+  if(!list.length){ el.innerHTML='<div class="empty">没有匹配的新闻 — 抓取运行后会自动出现在这里 ☀️</div>'; return }
+  el.innerHTML = list.map(a=>{
+    const kws=(a.keywords||'').split(',').filter(Boolean).slice(0,8)
+      .map(k=>`<span class="badge">#${esc(k)}</span>`).join(' ');
+    return `<div class="item ${a.read?'':'unread'}" data-id="${a.id}">
+      <div class="dot"></div>
+      <div class="body">
+        <a class="title" href="${esc(a.url||'#')}" target="_blank" rel="noopener">${esc(a.title)}</a>
+        <div class="meta">
+          <span class="badge">${esc(a.source||'unknown')}</span>
+          <span>🕒 ${ago(a.published_at||a.collected_at)}</span>
+          ${a.score?`<span class="badge score">score ${Math.round(a.score)}</span>`:''}
+          ${a.read?'<span class="badge">已读</span>':''}
+        </div>
+        ${a.summary?`<div class="summary">${esc(a.summary)}</div>`:''}
+        <div class="kw">${kws}</div>
+      </div>
+    </div>`;
+  }).join('');
+  el.querySelectorAll('.item').forEach(node=>{
+    node.querySelector('.title').addEventListener('click', ()=>{
+      const id=+node.dataset.id, art=articles.find(x=>x.id===id);
+      if(art && !art.read){ art.read=1; node.classList.remove('unread');
+        if(!STATIC) j('/api/read',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({ids:[id]})}).catch(()=>{});
+        $('sUnread').textContent = articles.filter(a=>!a.read).length;
+      }
+    });
+  });
+}
+
+async function refresh(){
+  try{
+    if(!STATIC){
+      const [a, st] = await Promise.all([j('/api/articles?limit=300'), j('/api/stats')]);
+      articles = a.articles; renderStats(st);
+    }else{
+      const snap = await j('./articles.json');
+      articles = snap.articles || [];
+      articles.forEach(a=>a.read=a.read?1:0);
+      renderStats({});
+      $('sDay').textContent = articles.filter(a=>new Date(a.published_at||a.collected_at) > Date.now()-864e5).length;
+    }
+    renderList();
+  }catch(e){
+    if(!STATIC){ STATIC=true; $('btnRun').style.display='none';
+      $('subline').textContent='静态模式（GitHub Pages）· 数据快照更新于 '+(new Date()).toLocaleString();
+      return refresh(); }
+    $('list').innerHTML='<div class="empty">无法加载数据：'+esc(e.message)+'</div>';
+  }
+}
+
+$('q').addEventListener('input', renderList);
+$('src').addEventListener('change', renderList);
+$('unreadOnly').addEventListener('change', renderList);
+
+$('btnRun').addEventListener('click', async ()=>{
+  const b=$('btnRun'); b.disabled=true; b.textContent='⏳ 抓取中…';
+  try{ await j('/api/refresh',{method:'POST'}); toast('已触发抓取，约 30 秒后刷新结果');
+    setTimeout(refresh, 6000); setTimeout(refresh, 15000);
+  }catch(e){ toast('触发失败: '+e.message, true) }
+  setTimeout(()=>{b.disabled=false;b.textContent='▶ 立即抓取'}, 3000);
+});
+$('btnReadAll').addEventListener('click', async ()=>{
+  articles.forEach(a=>a.read=1); renderList(); renderStats({total:articles.length,unread:0});
+  try{ await j('/api/read',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({all:true})}) }catch(e){}
+  toast('已全部标记为已读');
+});
+
+refresh();
+setInterval(refresh, 60000);
+</script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+services:
+  solar-news:
+    build: .
+    container_name: malaysia-solar-news
+    restart: unless-stopped
+    env_file: .env
+    environment:
+      DATA_DIR: /srv/data
+      ENABLE_SCHEDULER: "1"
+      COLLECT_INTERVAL_MIN: "60"
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./data:/srv/data
