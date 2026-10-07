@@ -40,6 +40,11 @@
   input[type=search]{flex:1;min-width:200px}
   input[type=search]:focus,select:focus{border-color:var(--accent)}
   .toggle{display:flex;align-items:center;gap:6px;color:var(--muted);font-size:13.5px;cursor:pointer;user-select:none}
+  .seg{display:inline-flex;border:1px solid var(--line);border-radius:10px;overflow:hidden;background:var(--panel)}
+  .seg button{border:none;border-radius:0;background:transparent;padding:8px 12px;color:var(--muted);font-size:13px;white-space:nowrap}
+  .seg button + button{border-left:1px solid var(--line)}
+  .seg button:hover{color:var(--txt);background:var(--panel2)}
+  .seg button.active{background:linear-gradient(135deg,#f7b733,#ef9f24);color:#1b1405;font-weight:600}
   .list{display:flex;flex-direction:column;gap:10px}
   .item{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
     padding:14px 16px;display:flex;gap:12px;transition:.15s}
@@ -95,6 +100,13 @@
     <input type="search" id="q" placeholder="🔍 搜索标题 / 内容 …">
     <select id="src"><option value="">全部来源</option></select>
     <label class="toggle"><input type="checkbox" id="unreadOnly"> 只看未读</label>
+    <div class="seg" id="segTime">
+      <button data-time="all" class="active">全部</button>
+      <button data-time="today">今天</button>
+      <button data-time="yesterday">昨天</button>
+      <button data-time="week">本週</button>
+      <button data-time="month">本月</button>
+    </div>
   </div>
 
   <div class="list" id="list"><div class="empty">加载中…</div></div>
@@ -152,27 +164,66 @@ function renderStats(st){
   if(st.last_24h!==undefined) $('sDay').textContent = st.last_24h;
 }
 
+function bucketOf(iso){
+  if(!iso) return [];
+  const d = new Date(iso);
+  if(Number.isNaN(d.getTime())) return [];
+  // 當下 UTC 今天的 00:00 與 24:00
+  const now = new Date();
+  const nowY = now.getUTCFullYear(), nowM = now.getUTCMonth(), nowD = now.getUTCDate(), nowDow = now.getUTCDay();
+  const todayStart = Date.UTC(nowY, nowM, nowD, 0, 0, 0, 0);
+  const todayEnd = todayStart + 86400000;
+  const startOfDay = Date.UTC(d.getUTCFullYear(), d.getUTCMonth(), d.getUTCDate(), 0, 0, 0, 0);
+  const out = [];
+  // 今天：今天 00:00 UTC ~ 明天 00:00 UTC
+  if(startOfDay >= todayStart && startOfDay < todayEnd) out.push('today');
+  // 昨天：昨天 00:00 UTC ~ 今天 00:00 UTC
+  const yesterdayStart = todayStart - 86400000;
+  if(startOfDay >= yesterdayStart && startOfDay < todayStart) out.push('yesterday');
+  // 本週：以週日為一週起點 — 這週週日 00:00 UTC ~ 下週週日 00:00 UTC
+  const weekStart = Date.UTC(nowY, nowM, nowD - nowDow, 0, 0, 0, 0);
+  const weekEnd = weekStart + 7 * 86400000;
+  if(startOfDay >= weekStart && startOfDay < weekEnd) out.push('week');
+  // 本月：本月第一天 00:00 UTC ~ 下個月第一天 00:00 UTC
+  const monthStart = Date.UTC(nowY, nowM, 1, 0, 0, 0, 0);
+  const monthEnd = monthStart + (new Date(nowY, nowM + 1, 1, 0, 0, 0, 0).getTime() - monthStart);
+  if(startOfDay >= monthStart && startOfDay < monthEnd) out.push('month');
+  return out;
+}
+
+function hasBucket(iso, tb){
+  return bucketOf(iso).includes(tb);
+}
+
+let timeBucket = 'all';
+
 function renderList(){
   const q=$('q').value.trim().toLowerCase();
-  const src=$('src').value, un=$('unreadOnly').checked;
+  const src=$('src').value, un=$('unreadOnly').checked, tb=timeBucket;
   let list = articles.filter(a=>{
     if(src && a.source!==src) return false;
     if(un && a.read) return false;
     if(q && !(a.title+' '+(a.summary||'')).toLowerCase().includes(q)) return false;
+    if(tb!=='all'){
+      if(!hasBucket(a.published_at||a.collected_at, tb)) return false;
+    }
     return true;
   });
   const el=$('list');
   if(!list.length){ el.innerHTML='<div class="empty">没有匹配的新闻 — 抓取运行后会自动出现在这里 ☀️</div>'; return }
+  const noTime = list.length && list.every(a => !bucketOf(a.published_at||a.collected_at).length);
   el.innerHTML = list.map(a=>{
     const kws=(a.keywords||'').split(',').filter(Boolean).slice(0,8)
       .map(k=>`<span class="badge">#${esc(k)}</span>`).join(' ');
+    const bts = bucketOf(a.published_at||a.collected_at);
+    const btLabel = bts.length ? ' · '+bts.join(' · ') : '';
     return `<div class="item ${a.read?'':'unread'}" data-id="${a.id}">
       <div class="dot"></div>
       <div class="body">
         <a class="title" href="${esc(a.url||'#')}" target="_blank" rel="noopener">${esc(a.title)}</a>
         <div class="meta">
           <span class="badge">${esc(a.source||'unknown')}</span>
-          <span>🕒 ${ago(a.published_at||a.collected_at)}</span>
+          <span>🕒 ${ago(a.published_at||a.collected_at)}${btLabel}</span>
           ${starHtml(a.score)}
           ${a.read?'<span class="badge">已读</span>':''}
         </div>
@@ -181,6 +232,11 @@ function renderList(){
       </div>
     </div>`;
   }).join('');
+  if(!list.length && tb!=='all'){
+    el.innerHTML = `<div class="empty">這個時間段<strong>沒有新聞</strong> — 再等等抓取會自動進來 ☀️</div>`;
+  } else if(!list.length){
+    el.innerHTML = '<div class="empty">沒有匹配的新闻 — 抓取运行后会自动出现在这里 ☀️</div>';
+  }
   el.querySelectorAll('.item').forEach(node=>{
     node.querySelector('.title').addEventListener('click', ()=>{
       const id=+node.dataset.id, art=articles.find(x=>x.id===id);
@@ -208,14 +264,24 @@ async function refresh(){
   }catch(e){
     if(!STATIC){ STATIC=true; $('btnRun').style.display='none';
       $('subline').textContent='静态模式（GitHub Pages）· 数据快照更新于 '+(new Date()).toLocaleString();
-      return refresh(); }
-    $('list').innerHTML='<div class="empty">无法加载数据：'+esc(e.message)+'</div>';
+      try{ const snap = await j('./articles.json');
+        articles = snap.articles || []; articles.forEach(a=>a.read=a.read?1:0);
+        renderStats({}); $('sDay').textContent = articles.filter(a=>new Date(a.published_at||a.collected_at) > Date.now()-864e5).length;
+        renderList(); }
+      catch(e2){ $('list').innerHTML='<div class="empty">无法加载数据：'+esc(e.message)+'</div>' }
+    } else { $('list').innerHTML='<div class="empty">无法加载数据：'+esc(e.message)+'</div>'; }
   }
 }
 
 $('q').addEventListener('input', renderList);
 $('src').addEventListener('change', renderList);
 $('unreadOnly').addEventListener('change', renderList);
+$('segTime').addEventListener('click', e=>{
+  const b=e.target.closest('button[data-time]'); if(!b) return;
+  timeBucket=b.dataset.time;
+  $('segTime').querySelectorAll('button').forEach(x=>x.classList.toggle('active', x===b));
+  renderList();
+});
 
 $('btnRun').addEventListener('click', async ()=>{
   const b=$('btnRun'); b.disabled=true; b.textContent='⏳ 抓取中…';
