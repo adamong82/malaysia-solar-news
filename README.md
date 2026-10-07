@@ -47,7 +47,8 @@ cp .env.example .env          # 填入 Telegram token（可先留空）
 2. 给你的新 bot 随便发一条消息
 3. 浏览器打开 `https://api.telegram.org/bot<TOKEN>/getUpdates`，抄下 `chat.id` → `TELEGRAM_CHAT_ID`
 4. 写进 `.env`，重启服务。新新闻会以卡片形式（标题/来源/时间/链接/#标签）推送给你，
-   score ≥ 8 的政策类重磅新闻用 🚨 标记。
+   每篇文章按权重分换算成 **★～★★★★★ 五级星级**（5分=★，6-7=★★，8-9=★★★，10-11=★★★★，≥12=★★★★★），
+   **★★★ 以上（score ≥ 8）的政策类重磅新闻用 🚨 标记**，卡片显示 ★ 星级。
 
 验证：`.venv/bin/python -m app.pipeline`（配置正确即会推送）。
 
@@ -148,7 +149,10 @@ curl -X POST http://localhost:8000/webhook \
 - `GOOGLE_NEWS_QUERIES` — 9 组 Google News 搜索式（支持 `OR`、引号短语）
 - `RSS_FEEDS` — 直连 RSS 源，随便加
 - `GEO_TERMS` / `TOPIC_TERMS` — **必须同时命中 ≥1 个地理词 + ≥1 个主题词** 才会收录
-- `BONUS_TERMS` — 加分词（quota、tariff、policy…），影响 score 排序与 🚨 标记
+- `BONUS_TERMS` — 加分词（quota、tariff、policy…），影响星级与 🚨 标记
+
+> **五星级换算**：星级 = `clamp(四舍五入((score-3)/2), 1, 5)`，权重算法不变，仅展示层换算；
+> 鼠标悬停看板上的 ★ 徽章可看到原始 score。
 - `IGNORE_TERMS` — 一票否决（solar eclipse 等噪音）
 - `COLLECT_INTERVAL_MIN` — 抓取频率（默认 60 分钟）
 

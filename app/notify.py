@@ -52,13 +52,24 @@ def send_telegram(text: str, retries: int = 2) -> bool:
     return False
 
 
+def _stars(score: float) -> str:
+    """Weighted score → 1..5 stars. 5→★, 6-7→★★, 8-9→★★★,
+    10-11→★★★★, >=12→★★★★★ (weights unchanged, display only)."""
+    if not score:
+        return ""
+    n = min(5, max(1, int((score - 3) / 2 + 0.5)))  # half-up rounding
+    return "★" * n + "☆" * (5 - n)
+
+
 def _card(a: dict[str, Any]) -> str:
     title = html.escape(a.get("title", ""))
     link = a.get("url", "")
     source = html.escape(a.get("source", "") or "unknown")
     pub = (a.get("published_at") or a.get("collected_at") or "")[:16].replace("T", " ")
     head = f'🚨 <b>{title}</b>' if a.get("score", 0) >= 8 else f'☀️ <b>{title}</b>'
-    line = f"{head}\n<i>{source} · {pub}</i>"
+    stars = _stars(a.get("score", 0))
+    meta = " · ".join(x for x in (source, pub, stars) if x)
+    line = f"{head}\n<i>{meta}</i>"
     if link:
         line += f'\n<a href="{html.escape(link, quote=True)}">Read more →</a>'
     kws = a.get("keywords", "")
