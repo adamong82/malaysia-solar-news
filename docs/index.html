@@ -86,7 +86,7 @@
 <div class="wrap">
   <header class="hero">
     <div class="kicker" id="kicker">☀️ MALAYSIA SOLAR AND AI NEWS</div>
-    <h1 id="mast">Eternalgy's News Collector</h1>
+    <h1 id="mast">Eternalgy News Collector</h1>
     <div class="hero-rule"></div>
     <div class="sub" id="subline">Malaysia solar industry · auto-collected policy / market / project news</div>
     <div class="actions">
@@ -142,7 +142,7 @@ let articles = [];
 const TOPICS = {
   solar: {name:'MALAYSIA SOLAR AND AI NEWS', icon:'☀️', sub:'Malaysia solar industry · auto-collected policy / market / project news',
     geo:['malaysia','malaysian','johor','sarawak','sabah','putrajaya','kuala lumpur','peninsular malaysia','cyberjaya','tnb','tenaga','seda','mydigital','petra','马来西亚','大马','柔佛','雪兰莪','槟城','檳城','砂拉越','沙拉越','沙巴','吉隆坡','布城','赛城','新山','古晋','我国','马国']},
-  ai:    {name:'Malaysia AI News',    icon:'🤖', sub:'Malaysia AI industry · auto-collected policy / investment / technology news',
+  ai:    {name:'Eternalgy News Collector',    icon:'🤖', sub:'Malaysia AI & energy infrastructure · auto-collected policy / investment / technology news',
     geo:['malaysia','malaysian','johor','sarawak','sabah','putrajaya','kuala lumpur','peninsular malaysia','cyberjaya','tnb','tenaga','mcmc','mydigital','petra','马来西亚','大马','柔佛','雪兰莪','槟城','檳城','砂拉越','沙拉越','沙巴','吉隆坡','布城','赛城','新山','古晋','我国','马国']}
 };
 let topic = 'solar';
@@ -154,7 +154,7 @@ function applyTopicUI(){
   const c = TOPICS[topic];
   $('kicker').textContent = c.icon + ' ' + c.name;
   $('subline').textContent = c.sub + (STATIC ? ' · Static mode' : '');
-  document.title = c.icon + " Eternalgy's News Collector — " + c.name;
+  document.title = c.icon + " Eternalgy News Collector — " + c.name;
   $('segTopic').querySelectorAll('button').forEach(b=>
     b.classList.toggle('active', b.dataset.topic===topic));
   $('segLang').querySelectorAll('button').forEach(b=>

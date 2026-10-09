@@ -1,6 +1,11 @@
 # ☀️ MALAYSIA SOLAR AND AI NEWS COLLECTOR
 
 马来西亚太阳能产业**政策 / 市场 / 项目新闻自动收集器**：
+
+> 看板主标题固定为 `Eternalgy News Collector`（两版主题共用）。
+> 板块小标题：
+> - ☀️ Solar：`Malaysia solar industry · auto-collected policy / market / project news`
+> - 🤖 AI：`Malaysia AI & energy infrastructure · auto-collected policy / investment / technology news`
 每小时抓取 → 相关性过滤去重 → Dashboard 展示 → Telegram 推送，形成闭环。
 
 ```
@@ -38,6 +43,9 @@ cp .env.example .env          # 填入 Telegram token（可先留空）
 .venv/bin/uvicorn app.web:app --port 8000
 # 打开 http://127.0.0.1:8000
 ```
+
+标题按你的选择固定为 **Eternalgy News Collector**（两版主题共用）
+——先到 [static/index.html](static/index.html) 看瀑布样板效果。
 
 页面上的 **▶ 立即抓取** 按钮可随时手动触发一轮。
 
