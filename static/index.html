@@ -28,12 +28,13 @@
   .hero-rule{width:76px;height:3px;border-radius:3px;margin:18px 0 14px;
     background:linear-gradient(90deg,var(--accent),rgba(247,183,51,0))}
   .sub{color:#aab9d6;font-size:15px}
-  .actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:22px}
+  .actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:22px;align-items:center}
+  #btnRun{margin-left:auto}
   button{background:var(--panel2);color:var(--txt);border:1px solid var(--line);
     padding:8px 14px;border-radius:10px;cursor:pointer;font-size:13.5px;transition:.15s}
   button:hover{border-color:var(--accent);color:var(--accent)}
-  button.primary{background:linear-gradient(135deg,#f7b733,#ef9f24);color:#1b1405;border:none;font-weight:600}
-  button.primary:hover{filter:brightness(1.08);color:#1b1405}
+  button.primary{background:linear-gradient(135deg,#2fd06e,#17a555);color:#05260f;border:none;font-weight:600}
+  button.primary:hover{filter:brightness(1.08);color:#05260f}
   button:disabled{opacity:.5;cursor:wait}
   .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px;margin:22px 0 6px}
   .card{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:14px 16px}
@@ -97,7 +98,6 @@
         <button data-lang="zh">Chinese News</button>
       </div>
       <button id="btnRun" class="primary">▶ Collect now</button>
-      <button id="btnReadAll">✓ Mark all read</button>
     </div>
   </header>
 
@@ -347,11 +347,6 @@ $('btnRun').addEventListener('click', async ()=>{
     setTimeout(refresh, 6000); setTimeout(refresh, 15000);
   }catch(e){ toast('Failed to trigger: '+e.message, true) }
   setTimeout(()=>{b.disabled=false;b.textContent='▶ Collect now'}, 3000);
-});
-$('btnReadAll').addEventListener('click', async ()=>{
-  articles.forEach(a=>a.read=1); renderList(); renderStats({total:articles.length,unread:0});
-  try{ await j('/api/read',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({all:true, topic, lang})}) }catch(e){}
-  toast('All articles marked as read in this view');
 });
 
 applyTopicUI();
