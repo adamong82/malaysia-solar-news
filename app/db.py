@@ -28,7 +28,8 @@ CREATE TABLE IF NOT EXISTS articles (
     score        REAL DEFAULT 0,
     read         INTEGER DEFAULT 0,
     notified     INTEGER DEFAULT 0,
-    topic        TEXT NOT NULL DEFAULT 'solar'
+    topic        TEXT NOT NULL DEFAULT 'solar',
+    language     TEXT NOT NULL DEFAULT 'en'
 );
 CREATE INDEX IF NOT EXISTS idx_articles_published
     ON articles (COALESCE(published_at, collected_at) DESC);
@@ -40,21 +41,24 @@ CREATE TABLE IF NOT EXISTS runs (
     new_count    INTEGER DEFAULT 0,
     notified     INTEGER DEFAULT 0,
     error        TEXT,
-    topic        TEXT NOT NULL DEFAULT 'solar'
+    topic        TEXT NOT NULL DEFAULT 'solar',
+    language     TEXT NOT NULL DEFAULT 'en'
 );
 """
 
 
 def _migrate(conn: sqlite3.Connection) -> None:
-    """Old databases were created before multi-topic support — add the
-    topic column where missing (existing rows default to 'solar')."""
+    """Old databases predate multi-topic / multi-language support — add
+    the columns where missing (existing rows default to solar/en)."""
+    defaults = {"topic": config.DEFAULT_TOPIC, "language": config.DEFAULT_LANGUAGE}
     for table in ("articles", "runs"):
         cols = {r[1] for r in conn.execute(f"PRAGMA table_info({table})")}
-        if "topic" not in cols:
-            conn.execute(
-                f"ALTER TABLE {table} ADD COLUMN topic TEXT"
-                f" NOT NULL DEFAULT '{config.DEFAULT_TOPIC}'"
-            )
+        for col, default in defaults.items():
+            if col not in cols:
+                conn.execute(
+                    f"ALTER TABLE {table} ADD COLUMN {col} TEXT"
+                    f" NOT NULL DEFAULT '{default}'"
+                )
 
 
 def now_iso() -> str:
@@ -89,16 +93,21 @@ def url_hash(url: str, title: str = "", source: str = "") -> str:
 
 
 def insert_article(conn: sqlite3.Connection, art: dict[str, Any],
-                   topic: str = "") -> bool:
-    """Insert one article of one topic; returns True if it is new. Dedupes
-    on URL hash and on exact (title, source) so the same story surfaced by
-    several Google News queries is only stored once (dedupe is global:
-    a URL belongs to whichever topic found it first)."""
+                   topic: str = "", language: str = "") -> bool:
+    """Insert one article of one topic/language; returns True if it is new.
+    Dedupes on URL hash and on exact (title, source) so the same story
+    surfaced by several Google News queries is only stored once (dedupe is
+    global: a URL belongs to whichever channel found it first)."""
     if not topic:
         topic = art.get("topic", "")
     if topic not in config.TOPICS:
         topic = config.DEFAULT_TOPIC
+    if not language:
+        language = art.get("language", "")
+    if language not in config.LANGUAGES:
+        language = config.DEFAULT_LANGUAGE
     art["topic"] = topic
+    art["language"] = language
     h = url_hash(art.get("url", ""), art.get("title", ""), art.get("source", ""))
     exists = conn.execute(
         "SELECT 1 FROM articles WHERE url_hash = ? "
@@ -110,8 +119,8 @@ def insert_article(conn: sqlite3.Connection, art: dict[str, Any],
         return False
     conn.execute(
         "INSERT INTO articles (url_hash, title, url, source, published_at,"
-        " collected_at, summary, keywords, score, read, notified, topic)"
-        " VALUES (?,?,?,?,?,?,?,?,?,0,0,?)",
+        " collected_at, summary, keywords, score, read, notified, topic, language)"
+        " VALUES (?,?,?,?,?,?,?,?,?,0,0,?,?)",
         (
             h,
             art.get("title", "").strip(),
@@ -123,6 +132,7 @@ def insert_article(conn: sqlite3.Connection, art: dict[str, Any],
             art.get("keywords", ""),
             float(art.get("score", 0)),
             topic,
+            language,
         ),
     )
     return True
@@ -136,7 +146,7 @@ def export_snapshot(path: Optional[Path] = None) -> Path:
     conn = get_conn()
     rows = conn.execute(
         "SELECT title, url, source, published_at, collected_at, summary,"
-        " keywords, score, read, notified, topic FROM articles"
+        " keywords, score, read, notified, topic, language FROM articles"
         " ORDER BY COALESCE(published_at, collected_at) DESC"
     ).fetchall()
     payload = {"generated_at": now_iso(), "articles": [dict(r) for r in rows]}
@@ -170,6 +180,7 @@ def list_articles(
     source: str = "",
     unread_only: bool = False,
     topic: str = "",
+    language: str = "",
     limit: int = 200,
     offset: int = 0,
 ) -> list[dict[str, Any]]:
@@ -178,6 +189,9 @@ def list_articles(
     if topic:
         where.append("topic = ?")
         params.append(topic)
+    if language:
+        where.append("language = ?")
+        params.append(language)
     if search:
         where.append("(lower(title) LIKE ? OR lower(summary) LIKE ?)")
         like = f"%{search.lower()}%"
@@ -198,16 +212,20 @@ def list_articles(
     return [dict(r) for r in conn.execute(sql, params).fetchall()]
 
 
-def mark_read(ids: Optional[list[int]] = None, topic: str = "") -> int:
+def mark_read(ids: Optional[list[int]] = None, topic: str = "",
+              language: str = "") -> int:
     conn = get_conn()
     if ids is None:
+        where, params = ["read = 0"], []
         if topic:
-            cur = conn.execute(
-                "UPDATE articles SET read = 1 WHERE read = 0 AND topic = ?",
-                (topic,),
-            )
-        else:
-            cur = conn.execute("UPDATE articles SET read = 1 WHERE read = 0")
+            where.append("topic = ?")
+            params.append(topic)
+        if language:
+            where.append("language = ?")
+            params.append(language)
+        cur = conn.execute(
+            f"UPDATE articles SET read = 1 WHERE {' AND '.join(where)}", params
+        )
     else:
         if not ids:
             return 0
@@ -217,37 +235,44 @@ def mark_read(ids: Optional[list[int]] = None, topic: str = "") -> int:
     return cur.rowcount
 
 
-def stats(topic: str = "") -> dict[str, Any]:
-    """Dashboard stats; topic='' means all topics combined."""
+def stats(topic: str = "", language: str = "") -> dict[str, Any]:
+    """Dashboard stats; topic='' or language='' means that filter is off."""
     conn = get_conn()
     day_ago = (datetime.now(timezone.utc) - timedelta(hours=24)).isoformat(timespec="seconds")
-    tw = " WHERE topic = ?" if topic else ""
-    tp = (topic,) if topic else ()
+    conds, params = [], []
+    if topic:
+        conds.append("topic = ?")
+        params.append(topic)
+    if language:
+        conds.append("language = ?")
+        params.append(language)
+    tw = (" WHERE " + " AND ".join(conds)) if conds else ""
+    tp = tuple(params)
     one = lambda sql, p=(): conn.execute(sql, p).fetchone()[0]  # noqa: E731
+    src_where = " WHERE source != ''" + (" AND " + " AND ".join(conds) if conds else "")
     sources = [
         dict(r)
         for r in conn.execute(
-            "SELECT source, COUNT(*) AS n FROM articles"
-            " WHERE source != ''" + (" AND topic = ?" if topic else "")
+            "SELECT source, COUNT(*) AS n FROM articles" + src_where
             + " GROUP BY source ORDER BY n DESC LIMIT 20",
             tp,
         ).fetchall()
     ]
-    run_where = " WHERE topic = ?" if topic else ""
     last_run = conn.execute(
-        f"SELECT * FROM runs{run_where} ORDER BY id DESC LIMIT 1", tp
+        f"SELECT * FROM runs{tw} ORDER BY id DESC LIMIT 1", tp
     ).fetchone()
     return {
         "total": one(f"SELECT COUNT(*) FROM articles{tw}", tp),
-        "unread": one(f"SELECT COUNT(*) FROM articles{tw}" + (" AND read = 0" if topic else " WHERE read = 0"), tp),
+        "unread": one(f"SELECT COUNT(*) FROM articles{tw}" + (" AND read = 0" if conds else " WHERE read = 0"), tp),
         "last_24h": one(
-            f"SELECT COUNT(*) FROM articles{tw}" + (" AND" if topic else " WHERE")
+            f"SELECT COUNT(*) FROM articles{tw}" + (" AND" if conds else " WHERE")
             + " COALESCE(published_at, collected_at) >= ?",
             tp + (day_ago,),
         ),
         "sources": sources,
         "last_run": dict(last_run) if last_run else None,
         "topic": topic,
+        "language": language,
         "scheduler_enabled": config.ENABLE_SCHEDULER,
         "interval_min": config.COLLECT_INTERVAL_MIN,
         "telegram_configured": bool(config.TELEGRAM_BOT_TOKEN and config.TELEGRAM_CHAT_ID),
@@ -255,12 +280,12 @@ def stats(topic: str = "") -> dict[str, Any]:
 
 
 def record_run(started_at: str, seen: int, new_count: int, notified: int,
-               error: str = "", topic: str = "") -> None:
+               error: str = "", topic: str = "", language: str = "") -> None:
     conn = get_conn()
     conn.execute(
-        "INSERT INTO runs (started_at, finished_at, seen, new_count, notified, error, topic)"
-        " VALUES (?,?,?,?,?,?,?)",
+        "INSERT INTO runs (started_at, finished_at, seen, new_count, notified, error, topic, language)"
+        " VALUES (?,?,?,?,?,?,?,?)",
         (started_at, now_iso(), seen, new_count, notified, error,
-         topic or config.DEFAULT_TOPIC),
+         topic or config.DEFAULT_TOPIC, language or config.DEFAULT_LANGUAGE),
     )
     conn.commit()

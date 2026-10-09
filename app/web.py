@@ -71,8 +71,8 @@ async def access_guard(request: Request, call_next):
         if given != config.WEB_ACCESS_TOKEN:
             if "text/html" in request.headers.get("accept", ""):
                 return HTMLResponse(
-                    "<meta charset='utf-8'><h1>401 · 需要访问密钥</h1>"
-                    "<p>请访问 <code>/?key=你的 WEB_ACCESS_TOKEN</code></p>",
+                    "<meta charset='utf-8'><h1>401 · Access key required</h1>"
+                    "<p>Visit <code>/?key=YOUR_WEB_ACCESS_TOKEN</code> to unlock this dashboard.</p>",
                     status_code=401,
                 )
             return JSONResponse({"detail": "unauthorized"}, status_code=401)
@@ -122,6 +122,7 @@ async def api_articles(
     source: str = "",
     unread: bool = False,
     topic: str = "",
+    lang: str = "",
     limit: int = 200,
     offset: int = 0,
 ):
@@ -129,14 +130,18 @@ async def api_articles(
         "articles": db.list_articles(
             search=search, source=source, unread_only=unread,
             topic=topic if topic in config.TOPICS else "",
+            language=lang if lang in config.LANGUAGES else "",
             limit=min(limit, 500), offset=max(offset, 0),
         )
     }
 
 
 @app.get("/api/stats")
-async def api_stats(topic: str = ""):
-    return db.stats(topic=topic if topic in config.TOPICS else "")
+async def api_stats(topic: str = "", lang: str = ""):
+    return db.stats(
+        topic=topic if topic in config.TOPICS else "",
+        language=lang if lang in config.LANGUAGES else "",
+    )
 
 
 @app.post("/api/read")
@@ -145,8 +150,11 @@ async def api_read(request: Request):
     topic = str(body.get("topic") or "")
     if topic not in config.TOPICS:
         topic = ""
+    lang = str(body.get("lang") or "")
+    if lang not in config.LANGUAGES:
+        lang = ""
     if body.get("all"):
-        n = db.mark_read(None, topic=topic)
+        n = db.mark_read(None, topic=topic, language=lang)
     else:
         n = db.mark_read([int(i) for i in body.get("ids", [])])
     return {"marked": n}
@@ -155,7 +163,7 @@ async def api_read(request: Request):
 @app.post("/api/refresh")
 async def api_refresh(request: Request):
     """Manual 'collect now' — runs in the background and returns at once.
-    Body may carry {"topic": "ai"} to collect only that topic."""
+    Body may carry {"topic": "ai", "lang": "zh"} to collect only that slice."""
     try:
         body = await request.json()
     except json.JSONDecodeError:
@@ -163,15 +171,18 @@ async def api_refresh(request: Request):
     topic = str(body.get("topic") or "")
     if topic not in config.TOPICS:
         topic = ""
+    lang = str(body.get("lang") or "")
+    if lang not in config.LANGUAGES:
+        lang = ""
 
     def _run():
         try:
-            run_once(topic=topic)
+            run_once(topic=topic, language=lang)
         except Exception as exc:
             log.error("manual refresh failed: %s", exc)
 
     threading.Thread(target=_run, name="manual-refresh", daemon=True).start()
-    return {"started": True, "topic": topic or "all"}
+    return {"started": True, "topic": topic or "all", "lang": lang or "all"}
 
 
 # ------------------------------------------------------------------ webhook

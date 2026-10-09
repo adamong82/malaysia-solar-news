@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -80,7 +80,7 @@
       <div class="logo" id="logo">☀️</div>
       <div>
         <h1 id="mast">Malaysia Solar News Collector</h1>
-        <div class="sub" id="subline">马来西亚太阳能产业 · 政策 / 市场 / 项目新闻自动收集</div>
+        <div class="sub" id="subline">Malaysia solar industry · auto-collected policy / market / project news</div>
       </div>
     </div>
     <div class="actions">
@@ -88,38 +88,42 @@
         <button data-topic="solar" class="active">☀️ Solar</button>
         <button data-topic="ai">🤖 AI</button>
       </div>
-      <button id="btnRun" class="primary">▶ 立即抓取</button>
-      <button id="btnReadAll">✓ 全部已读</button>
+      <div class="seg" id="segLang">
+        <button data-lang="en" class="active">EN</button>
+        <button data-lang="zh" title="Chinese news">ZH</button>
+      </div>
+      <button id="btnRun" class="primary">▶ Collect now</button>
+      <button id="btnReadAll">✓ Mark all read</button>
     </div>
   </header>
 
   <div class="stats">
-    <div class="card"><div class="lbl">Total 总数</div><div class="num" id="sTotal">–</div></div>
-    <div class="card"><div class="lbl">Last 24h 新增</div><div class="num accent" id="sDay">–</div><div class="hint" id="sRun">last run: –</div></div>
-    <div class="card"><div class="lbl">Unread 未读</div><div class="num teal" id="sUnread">–</div><div class="hint" id="sSched">scheduler: –</div></div>
-    <div class="card"><div class="lbl">Sources 来源</div><div class="num" id="sSources">–</div><div class="hint" id="sTelegram">telegram: –</div></div>
+    <div class="card"><div class="lbl">Total</div><div class="num" id="sTotal">–</div></div>
+    <div class="card"><div class="lbl">Last 24h</div><div class="num accent" id="sDay">–</div><div class="hint" id="sRun">last run: –</div></div>
+    <div class="card"><div class="lbl">Unread</div><div class="num teal" id="sUnread">–</div><div class="hint" id="sSched">scheduler: –</div></div>
+    <div class="card"><div class="lbl">Sources</div><div class="num" id="sSources">–</div><div class="hint" id="sTelegram">telegram: –</div></div>
   </div>
 
   <div class="toolbar">
-    <input type="search" id="q" placeholder="🔍 搜索标题 / 内容 …">
-    <select id="src"><option value="">全部来源</option></select>
-    <label class="toggle"><input type="checkbox" id="unreadOnly"> 只看未读</label>
+    <input type="search" id="q" placeholder="🔍 Search title / content …">
+    <select id="src"><option value="">All sources</option></select>
+    <label class="toggle"><input type="checkbox" id="unreadOnly"> Unread only</label>
     <div class="seg" id="segTime">
-      <button data-time="all" class="active">全部</button>
-      <button data-time="today">今天</button>
-      <button data-time="yesterday">昨天</button>
-      <button data-time="week">本週</button>
-      <button data-time="month">本月</button>
+      <button data-time="all" class="active">All</button>
+      <button data-time="today">Today</button>
+      <button data-time="yesterday">Yesterday</button>
+      <button data-time="week">This week</button>
+      <button data-time="month">This month</button>
     </div>
   </div>
 
-  <div class="list" id="list"><div class="empty">加载中…</div></div>
+  <div class="list" id="list"><div class="empty">Loading…</div></div>
 
   <div class="foot" id="foot">
-    提示：每 <code>COLLECT_INTERVAL_MIN</code> 分钟自动抓取一次 ·
-    推送到 Telegram 需在 <code>.env</code> 配置 <code>TELEGRAM_BOT_TOKEN</code> /
-    <code>TELEGRAM_CHAT_ID</code> · 其他工具可通过 <code>POST /webhook</code> 推送新闻进本系统
-    <br>专题模式目前是单主题（Solar）。若要再加一个主题（例如 AI），需要新增一组收集器配置与一份独立文章数据，并让前端在它们之间切换；界面与展示逻辑不需要重写。
+    Auto-collects every <code>COLLECT_INTERVAL_MIN</code> minutes ·
+    Telegram push needs <code>TELEGRAM_BOT_TOKEN</code> / <code>TELEGRAM_CHAT_ID</code> in <code>.env</code> ·
+    Other tools can push news via <code>POST /webhook</code><br>
+    Switch boards with ☀️ Solar / 🤖 AI, and use EN / ZH to browse Chinese coverage of the same board.
   </div>
 </div>
 <div class="toast" id="toast"></div>
@@ -129,26 +133,30 @@ const $ = id => document.getElementById(id);
 let STATIC = false;           // true = served from GitHub Pages (no API)
 let articles = [];
 
-// 主题配置（与后端 app/config.py 的 TOPICS 对应）
+// Board metadata (mirrors app/config.py TOPICS); UI copy stays English.
 const TOPICS = {
-  solar: {name:'Malaysia Solar News', icon:'☀️', sub:'马来西亚太阳能产业 · 政策 / 市场 / 项目新闻自动收集'},
-  ai:    {name:'Malaysia AI News',    icon:'🤖', sub:'马来西亚 AI 产业 · 政策 / 投资 / 技术新闻自动收集'}
+  solar: {name:'Malaysia Solar News', icon:'☀️', sub:'Malaysia solar industry · auto-collected policy / market / project news'},
+  ai:    {name:'Malaysia AI News',    icon:'🤖', sub:'Malaysia AI industry · auto-collected policy / investment / technology news'}
 };
 let topic = 'solar';
+let lang = 'en';
 try{ const t = localStorage.getItem('topic'); if(t && TOPICS[t]) topic = t; }catch(e){}
+try{ const l = localStorage.getItem('lang'); if(l==='en'||l==='zh') lang = l; }catch(e){}
 
 function applyTopicUI(){
   const c = TOPICS[topic];
   $('mast').textContent = c.name + ' Collector';
   $('logo').textContent = c.icon;
-  $('subline').textContent = c.sub + (STATIC ? ' · 静态模式' : '');
+  $('subline').textContent = c.sub + (STATIC ? ' · Static mode' : '');
   document.title = c.icon + ' ' + c.name;
   $('segTopic').querySelectorAll('button').forEach(b=>
     b.classList.toggle('active', b.dataset.topic===topic));
+  $('segLang').querySelectorAll('button').forEach(b=>
+    b.classList.toggle('active', b.dataset.lang===lang));
 }
 
 function esc(s){const d=document.createElement('div');d.textContent=s??'';return d.innerHTML}
-// score（权重总分）→ 1~5 星：5→★, 6-7→★★, 8-9→★★★, 10-11→★★★★, ≥12→★★★★★
+// score (weighted sum) → 1~5 stars: 5→★, 6-7→★★, 8-9→★★★, 10-11→★★★★, ≥12→★★★★★
 function starHtml(score){
   if(!score) return '';
   const n = Math.min(5, Math.max(1, Math.round((score - 3) / 2)));
@@ -159,10 +167,10 @@ function starHtml(score){
 function ago(iso){
   if(!iso) return '';
   const t = new Date(iso), s = (Date.now()-t.getTime())/1000;
-  if(s<60) return '刚刚';
-  if(s<3600) return Math.floor(s/60)+' 分钟前';
-  if(s<86400) return Math.floor(s/3600)+' 小时前';
-  if(s<86400*30) return Math.floor(s/86400)+' 天前';
+  if(s<60) return 'just now';
+  if(s<3600) return Math.floor(s/60)+' min ago';
+  if(s<86400) return Math.floor(s/3600)+' h ago';
+  if(s<86400*30) return Math.floor(s/86400)+' d ago';
   return iso.slice(0,10);
 }
 function toast(msg, err){
@@ -178,11 +186,11 @@ function renderStats(st){
   const srcs = st.sources || [...new Set(articles.map(a=>a.source).filter(Boolean))]
       .map(s=>({source:s,n:articles.filter(a=>a.source===s).length}));
   $('sSources').textContent = srcs.length;
-  if(st.last_run) $('sRun').textContent = 'last run: '+ago(st.last_run.finished_at)+' · +'+(st.last_run.new_count??0)+' 新';
+  if(st.last_run) $('sRun').textContent = 'last run: '+ago(st.last_run.finished_at)+' · +'+(st.last_run.new_count??0)+' new';
   if(st.scheduler_enabled!==undefined) $('sSched').textContent = 'scheduler: '+(st.scheduler_enabled?'ON · '+st.interval_min+'min':'OFF');
-  if(st.telegram_configured!==undefined) $('sTelegram').textContent = 'telegram: '+(st.telegram_configured?'✅ 已连接':'未配置');
+  if(st.telegram_configured!==undefined) $('sTelegram').textContent = 'telegram: '+(st.telegram_configured?'connected':'not configured');
   const sel=$('src'), cur=sel.value;
-  sel.innerHTML='<option value="">全部来源</option>'+srcs.map(s=>`<option value="${esc(s.source)}">${esc(s.source)} (${s.n})</option>`).join('');
+  sel.innerHTML='<option value="">All sources</option>'+srcs.map(s=>`<option value="${esc(s.source)}">${esc(s.source)} (${s.n})</option>`).join('');
   sel.value=cur;
   if(st.last_24h!==undefined) $('sDay').textContent = st.last_24h;
 }
@@ -191,23 +199,20 @@ function bucketOf(iso){
   if(!iso) return [];
   const d = new Date(iso);
   if(Number.isNaN(d.getTime())) return [];
-  // 當下 UTC 今天的 00:00 與 24:00
+  // Today runs 00:00 → 24:00 UTC
   const now = new Date();
   const nowY = now.getUTCFullYear(), nowM = now.getUTCMonth(), nowD = now.getUTCDate(), nowDow = now.getUTCDay();
   const todayStart = Date.UTC(nowY, nowM, nowD, 0, 0, 0, 0);
   const todayEnd = todayStart + 86400000;
   const startOfDay = Date.UTC(d.getUTCFullYear(), d.getUTCMonth(), d.getUTCDate(), 0, 0, 0, 0);
   const out = [];
-  // 今天：今天 00:00 UTC ~ 明天 00:00 UTC
   if(startOfDay >= todayStart && startOfDay < todayEnd) out.push('today');
-  // 昨天：昨天 00:00 UTC ~ 今天 00:00 UTC
   const yesterdayStart = todayStart - 86400000;
   if(startOfDay >= yesterdayStart && startOfDay < todayStart) out.push('yesterday');
-  // 本週：以週日為一週起點 — 這週週日 00:00 UTC ~ 下週週日 00:00 UTC
+  // Week starts on Sunday, 00:00 UTC
   const weekStart = Date.UTC(nowY, nowM, nowD - nowDow, 0, 0, 0, 0);
   const weekEnd = weekStart + 7 * 86400000;
   if(startOfDay >= weekStart && startOfDay < weekEnd) out.push('week');
-  // 本月：本月第一天 00:00 UTC ~ 下個月第一天 00:00 UTC
   const monthStart = Date.UTC(nowY, nowM, 1, 0, 0, 0, 0);
   const monthEnd = monthStart + (new Date(nowY, nowM + 1, 1, 0, 0, 0, 0).getTime() - monthStart);
   if(startOfDay >= monthStart && startOfDay < monthEnd) out.push('month');
@@ -234,8 +239,7 @@ function renderList(){
   });
   const el=$('list');
   const ICO = TOPICS[topic].icon;
-  if(!list.length){ el.innerHTML=`<div class="empty">没有匹配的新闻 — 抓取运行后会自动出现在这里 ${ICO}</div>`; return }
-  const noTime = list.length && list.every(a => !bucketOf(a.published_at||a.collected_at).length);
+  if(!list.length){ el.innerHTML=`<div class="empty">No matching news — new articles will appear here after the next run ${ICO}</div>`; return }
   el.innerHTML = list.map(a=>{
     const kws=(a.keywords||'').split(',').filter(Boolean).slice(0,8)
       .map(k=>`<span class="badge">#${esc(k)}</span>`).join(' ');
@@ -249,7 +253,7 @@ function renderList(){
           <span class="badge">${esc(a.source||'unknown')}</span>
           <span>🕒 ${ago(a.published_at||a.collected_at)}${btLabel}</span>
           ${starHtml(a.score)}
-          ${a.read?'<span class="badge">已读</span>':''}
+          ${a.read?'<span class="badge">Read</span>':''}
         </div>
         ${a.summary?`<div class="summary">${esc(a.summary)}</div>`:''}
         <div class="kw">${kws}</div>
@@ -257,9 +261,9 @@ function renderList(){
     </div>`;
   }).join('');
   if(!list.length && tb!=='all'){
-    el.innerHTML = `<div class="empty">這個時間段<strong>沒有新聞</strong> — 再等等抓取會自動進來 ${ICO}</div>`;
+    el.innerHTML = `<div class="empty">No news in <b>this time range</b> — new articles will appear here soon ${ICO}</div>`;
   } else if(!list.length){
-    el.innerHTML = `<div class="empty">沒有匹配的新闻 — 抓取运行后会自动出现在这里 ${ICO}</div>`;
+    el.innerHTML = `<div class="empty">No matching news — new articles will appear here after the next run ${ICO}</div>`;
   }
   el.querySelectorAll('.item').forEach(node=>{
     node.querySelector('.title').addEventListener('click', ()=>{
@@ -272,33 +276,37 @@ function renderList(){
   });
 }
 
+function loadStatic(){
+  return j('./articles.json').then(snap=>{
+    articles = (snap.articles || []).filter(a=>(a.topic||'solar')===topic && (a.language||'en')===lang);
+    articles.forEach(a=>a.read=a.read?1:0);
+    renderStats({});
+    $('sDay').textContent = articles.filter(a=>new Date(a.published_at||a.collected_at) > Date.now()-864e5).length;
+    renderList();
+  });
+}
+
 async function refresh(){
+  const qs = 'topic='+encodeURIComponent(topic)+'&lang='+encodeURIComponent(lang);
   try{
     if(!STATIC){
       const [a, st] = await Promise.all([
-        j('/api/articles?topic='+encodeURIComponent(topic)+'&limit=300'),
-        j('/api/stats?topic='+encodeURIComponent(topic))
+        j('/api/articles?'+qs+'&limit=300'),
+        j('/api/stats?'+qs)
       ]);
       articles = a.articles; renderStats(st);
     }else{
-      const snap = await j('./articles.json');
-      articles = (snap.articles || []).filter(a=>(a.topic||'solar')===topic);
-      articles.forEach(a=>a.read=a.read?1:0);
-      renderStats({});
-      $('sDay').textContent = articles.filter(a=>new Date(a.published_at||a.collected_at) > Date.now()-864e5).length;
+      await loadStatic();
+      return;
     }
     renderList();
   }catch(e){
     if(!STATIC){ STATIC=true; $('btnRun').style.display='none';
       applyTopicUI();
-      $('subline').textContent = TOPICS[topic].sub + ' · 静态模式（GitHub Pages）· 数据快照更新于 '+(new Date()).toLocaleString();
-      try{ const snap = await j('./articles.json');
-        articles = (snap.articles || []).filter(a=>(a.topic||'solar')===topic);
-        articles.forEach(a=>a.read=a.read?1:0);
-        renderStats({}); $('sDay').textContent = articles.filter(a=>new Date(a.published_at||a.collected_at) > Date.now()-864e5).length;
-        renderList(); }
-      catch(e2){ $('list').innerHTML='<div class="empty">无法加载数据：'+esc(e.message)+'</div>' }
-    } else { $('list').innerHTML='<div class="empty">无法加载数据：'+esc(e.message)+'</div>'; }
+      $('subline').textContent = TOPICS[topic].sub + ' · Static mode (GitHub Pages) · snapshot updated at '+(new Date()).toLocaleString();
+      try{ await loadStatic(); }
+      catch(e2){ $('list').innerHTML='<div class="empty">Failed to load data: '+esc(e.message)+'</div>' }
+    } else { $('list').innerHTML='<div class="empty">Failed to load data: '+esc(e.message)+'</div>'; }
   }
 }
 
@@ -314,6 +322,15 @@ $('segTopic').addEventListener('click', e=>{
   applyTopicUI();
   refresh();
 });
+$('segLang').addEventListener('click', e=>{
+  const b=e.target.closest('button[data-lang]'); if(!b) return;
+  const l=b.dataset.lang; if(l===lang) return;
+  lang=l;
+  try{ localStorage.setItem('lang', lang) }catch(e){}
+  $('q').value=''; $('src').value=''; $('unreadOnly').checked=false;
+  applyTopicUI();
+  refresh();
+});
 $('segTime').addEventListener('click', e=>{
   const b=e.target.closest('button[data-time]'); if(!b) return;
   timeBucket=b.dataset.time;
@@ -322,16 +339,16 @@ $('segTime').addEventListener('click', e=>{
 });
 
 $('btnRun').addEventListener('click', async ()=>{
-  const b=$('btnRun'); b.disabled=true; b.textContent='⏳ 抓取中…';
-  try{ await j('/api/refresh',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({topic})}); toast('已触发抓取，约 30 秒后刷新结果');
+  const b=$('btnRun'); b.disabled=true; b.textContent='⏳ Collecting…';
+  try{ await j('/api/refresh',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({topic, lang})}); toast('Collection triggered — results refresh within ~30s');
     setTimeout(refresh, 6000); setTimeout(refresh, 15000);
-  }catch(e){ toast('触发失败: '+e.message, true) }
-  setTimeout(()=>{b.disabled=false;b.textContent='▶ 立即抓取'}, 3000);
+  }catch(e){ toast('Failed to trigger: '+e.message, true) }
+  setTimeout(()=>{b.disabled=false;b.textContent='▶ Collect now'}, 3000);
 });
 $('btnReadAll').addEventListener('click', async ()=>{
   articles.forEach(a=>a.read=1); renderList(); renderStats({total:articles.length,unread:0});
-  try{ await j('/api/read',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({all:true, topic})}) }catch(e){}
-  toast('已将 '+TOPICS[topic].name+' 全部标记为已读');
+  try{ await j('/api/read',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({all:true, topic, lang})}) }catch(e){}
+  toast('All articles marked as read in this view');
 });
 
 applyTopicUI();

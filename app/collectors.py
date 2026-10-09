@@ -1,5 +1,7 @@
 """Collectors: Google News RSS search + direct RSS feeds, with relevance
-scoring (>=1 GEO term AND >=1 TOPIC term, whole-word, case-insensitive)."""
+scoring (>=1 GEO term AND >=1 TOPIC term for en; topic term only for zh).
+Matching is case-insensitive; ASCII terms are whole-word based, CJK terms
+are matched as substrings (中文没有词边界)."""
 from __future__ import annotations
 
 import calendar
@@ -7,6 +9,7 @@ import html
 import logging
 import re
 from datetime import datetime, timezone
+from functools import lru_cache
 from typing import Any, Optional
 from urllib.parse import quote
 from urllib.parse import urlparse
@@ -81,11 +84,13 @@ def _fetch(url: str) -> Optional[bytes]:
         return None
 
 
-def collect_google_news(query: str) -> list[dict[str, Any]]:
-    url = (
-        "https://news.google.com/rss/search?q=" + quote(query)
-        + "&hl=en-MY&gl=MY&ceid=MY:en"
-    )
+def collect_google_news(query: str, language: str = "en") -> list[dict[str, Any]]:
+    if language == "zh":
+        # 中文必须用 zh-CN/Hans 参数 —— zh-MY 会退化成英文源（已验证）。
+        locale = "hl=zh-CN&gl=CN&ceid=CN:zh-Hans"
+    else:
+        locale = "hl=en-MY&gl=MY&ceid=MY:en"
+    url = "https://news.google.com/rss/search?q=" + quote(query) + "&" + locale
     body = _fetch(url)
     if not body:
         return []
@@ -104,41 +109,64 @@ def collect_rss(feed_url: str, default_source: str) -> list[dict[str, Any]]:
 
 # ---------------------------------------------------------------- scoring
 def _find_terms(text: str, terms: list[str]) -> list[str]:
-    return [t for t in terms if re.search(r"(?<![\w])" + re.escape(t) + r"(?![\w])", text)]
+    return [t for t in terms if _term_re(t).search(text)]
 
 
-def score_article(art: dict[str, Any], topic_cfg: dict[str, Any]) -> Optional[dict[str, Any]]:
+_CJK_RE = re.compile(r"[\u3400-\u4dbf\u4e00-\u9fff\uf900-\ufaff]")
+
+
+@lru_cache(maxsize=None)
+def _term_re(term: str) -> "re.Pattern[str]":
+    r"""Term matcher: ASCII terms keep whole-word boundaries (but only
+    against ASCII alphanumerics, so 马来西亚AI still matches 'ai');
+    CJK terms are matched as plain substrings because 中文没有词边界 ——
+    a (?<!\w) lookbehind would never match next to another Chinese char."""
+    if _CJK_RE.search(term):
+        return re.compile(re.escape(term))
+    return re.compile(r"(?<![A-Za-z0-9_])" + re.escape(term) + r"(?![A-Za-z0-9_])")
+
+
+def score_article(art: dict[str, Any], lang_cfg: dict[str, Any]) -> Optional[dict[str, Any]]:
     """Return article with score/keywords attached, or None if irrelevant.
-    Term lists come from the topic config (see config.TOPICS)."""
+    Term lists come from the language layer of the topic config."""
     text = f"{art.get('title','')} {art.get('summary','')}".lower()
-    if any(re.search(r"(?<![\w])" + re.escape(t) + r"(?![\w])", text) for t in topic_cfg["ignore_terms"]):
+    if any(_term_re(t).search(text) for t in lang_cfg["ignore_terms"]):
         return None
-    geo = _find_terms(text, topic_cfg["geo_terms"])
-    top = _find_terms(text, topic_cfg["topic_terms"])
-    if not top or (topic_cfg.get("require_geo", True) and not geo):
+    geo = _find_terms(text, lang_cfg["geo_terms"])
+    top = _find_terms(text, lang_cfg["topic_terms"])
+    if not top or (lang_cfg.get("require_geo", True) and not geo):
         return None
-    bonus = _find_terms(text, topic_cfg["bonus_terms"])
+    bonus = _find_terms(text, lang_cfg["bonus_terms"])
     score = 3 * len(geo) + 2 * len(top) + len(bonus)
     art["score"] = score
     art["keywords"] = ",".join(dict.fromkeys(geo + top + bonus))
     return art
 
 
-def collect_all(topic: str) -> tuple[list[dict[str, Any]], int]:
-    """Run every configured source of one topic.
+_CJK_TITLE_RE = re.compile(r"[\u3400-\u4dbf\u4e00-\u9fff\uf900-\ufaff]")
+
+
+def collect_all(topic: str, language: str = "en") -> tuple[list[dict[str, Any]], int]:
+    """Run every configured source of one topic in one language.
     Returns (relevant articles, total seen)."""
-    cfg = config.TOPICS[topic]
+    cfg = config.TOPICS[topic][language]
     seen: list[dict[str, Any]] = []
     for q in cfg["queries"]:
-        items = collect_google_news(q)
-        log.info("[%s] google news %-45s -> %d", topic, q, len(items))
+        items = collect_google_news(q, language)
+        log.info("[%s/%s] google news %-45s -> %d", topic, language, q, len(items))
         seen.extend(items)
     for feed_url, name in cfg["rss"]:
         items = collect_rss(feed_url, name)
-        log.info("[%s] rss %-40s -> %d", topic, name, len(items))
+        log.info("[%s/%s] rss %-40s -> %d", topic, language, name, len(items))
         seen.extend(items)
 
+    if language == "zh":
+        # 中文模式只保留标题真正是中文的条目（Google News 偶尔会混入英文源）
+        seen = [x for x in seen if _CJK_TITLE_RE.search(x.get("title", ""))]
+
     relevant = [a for a in (score_article(dict(x), cfg) for x in seen) if a]
+    for a in relevant:
+        a["language"] = language
     # in-run dedupe by exact title (same story via several queries)
     uniq: dict[str, dict[str, Any]] = {}
     for a in relevant:
