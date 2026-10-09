@@ -140,8 +140,10 @@ let articles = [];
 
 // Board metadata (mirrors app/config.py TOPICS); UI copy stays English.
 const TOPICS = {
-  solar: {name:'MALAYSIA SOLAR AND AI NEWS', icon:'☀️', sub:'Malaysia solar industry · auto-collected policy / market / project news'},
-  ai:    {name:'Malaysia AI News',    icon:'🤖', sub:'Malaysia AI industry · auto-collected policy / investment / technology news'}
+  solar: {name:'MALAYSIA SOLAR AND AI NEWS', icon:'☀️', sub:'Malaysia solar industry · auto-collected policy / market / project news',
+    geo:['malaysia','malaysian','johor','sarawak','sabah','putrajaya','kuala lumpur','peninsular malaysia','cyberjaya','tnb','tenaga','seda','mydigital','petra','马来西亚','大马','柔佛','雪兰莪','槟城','檳城','砂拉越','沙拉越','沙巴','吉隆坡','布城','赛城','新山','古晋','我国','马国']},
+  ai:    {name:'Malaysia AI News',    icon:'🤖', sub:'Malaysia AI industry · auto-collected policy / investment / technology news',
+    geo:['malaysia','malaysian','johor','sarawak','sabah','putrajaya','kuala lumpur','peninsular malaysia','cyberjaya','tnb','tenaga','mcmc','mydigital','petra','马来西亚','大马','柔佛','雪兰莪','槟城','檳城','砂拉越','沙拉越','沙巴','吉隆坡','布城','赛城','新山','古晋','我国','马国']}
 };
 let topic = 'solar';
 let lang = 'en';
@@ -240,6 +242,14 @@ function renderList(){
       if(!hasBucket(a.published_at||a.collected_at, tb)) return false;
     }
     return true;
+  });
+  // 大马优先：命中马来西亚地理词的文章排前面，组内按发布时间倒序
+  const geoHints = TOPICS[topic].geo || [];
+  const isGeo = a => geoHints.some(g => (a.keywords||'').toLowerCase().includes(g));
+  list.sort((a,b)=>{
+    const d = (isGeo(b)?1:0) - (isGeo(a)?1:0);
+    if(d) return d;
+    return new Date(b.published_at||b.collected_at||0) - new Date(a.published_at||a.collected_at||0);
   });
   const el=$('list');
   const ICO = TOPICS[topic].icon;
