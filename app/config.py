@@ -53,7 +53,7 @@ LANGUAGE_LABELS = {"en": "EN", "zh": "中文"}
 TOPICS: dict[str, dict] = {
     "solar": {
         # ---- 展示信息（看板 / Telegram 推送用，界面文案保持英文）
-        "name": "Malaysia Solar News",
+        "name": "MALAYSIA SOLAR AND AI NEWS",
         "label": "Solar",
         "icon": "☀️",
         "sub": "Malaysia solar industry · auto-collected policy / market / project news",

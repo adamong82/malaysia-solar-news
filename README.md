@@ -1,4 +1,4 @@
-# ☀️ Malaysia Solar News Collector
+# ☀️ MALAYSIA SOLAR AND AI NEWS COLLECTOR
 
 马来西亚太阳能产业**政策 / 市场 / 项目新闻自动收集器**：
 每小时抓取 → 相关性过滤去重 → Dashboard 展示 → Telegram 推送，形成闭环。
