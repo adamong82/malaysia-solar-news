@@ -30,6 +30,7 @@
   .sub{color:#aab9d6;font-size:15px}
   .actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:22px;align-items:center}
   #btnRun{margin-left:auto}
+  #segLang{margin-left:auto}
   button{background:var(--panel2);color:var(--txt);border:1px solid var(--line);
     padding:8px 14px;border-radius:10px;cursor:pointer;font-size:13.5px;transition:.15s}
   button:hover{border-color:var(--accent);color:var(--accent)}
@@ -97,7 +98,7 @@
         <button data-lang="en" class="active">English News</button>
         <button data-lang="zh">Chinese News</button>
       </div>
-      <button id="btnRun" class="primary">▶ Collect now</button>
+      <button id="btnRun" class="primary">▶ Scan for more</button>
     </div>
   </header>
 
@@ -342,11 +343,11 @@ $('segTime').addEventListener('click', e=>{
 });
 
 $('btnRun').addEventListener('click', async ()=>{
-  const b=$('btnRun'); b.disabled=true; b.textContent='⏳ Collecting…';
+  const b=$('btnRun'); b.disabled=true; b.textContent='⏳ Scanning…';
   try{ await j('/api/refresh',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({topic, lang})}); toast('Collection triggered — results refresh within ~30s');
     setTimeout(refresh, 6000); setTimeout(refresh, 15000);
   }catch(e){ toast('Failed to trigger: '+e.message, true) }
-  setTimeout(()=>{b.disabled=false;b.textContent='▶ Collect now'}, 3000);
+  setTimeout(()=>{b.disabled=false;b.textContent='▶ Scan for more'}, 3000);
 });
 
 applyTopicUI();
