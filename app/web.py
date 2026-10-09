@@ -44,7 +44,7 @@ async def lifespan(app: FastAPI):
     yield
 
 
-app = FastAPI(title="Malaysia Solar News Collector", lifespan=lifespan)
+app = FastAPI(title="Malaysia News Collector (Solar + AI)", lifespan=lifespan)
 
 # ------------------------------------------------------------------ security
 # 1) WEB_ACCESS_TOKEN —— 保护看板和 API（设置后必须带密钥才能访问）
@@ -121,43 +121,57 @@ async def api_articles(
     search: str = "",
     source: str = "",
     unread: bool = False,
+    topic: str = "",
     limit: int = 200,
     offset: int = 0,
 ):
     return {
         "articles": db.list_articles(
             search=search, source=source, unread_only=unread,
+            topic=topic if topic in config.TOPICS else "",
             limit=min(limit, 500), offset=max(offset, 0),
         )
     }
 
 
 @app.get("/api/stats")
-async def api_stats():
-    return db.stats()
+async def api_stats(topic: str = ""):
+    return db.stats(topic=topic if topic in config.TOPICS else "")
 
 
 @app.post("/api/read")
 async def api_read(request: Request):
     body = await request.json()
+    topic = str(body.get("topic") or "")
+    if topic not in config.TOPICS:
+        topic = ""
     if body.get("all"):
-        n = db.mark_read(None)
+        n = db.mark_read(None, topic=topic)
     else:
         n = db.mark_read([int(i) for i in body.get("ids", [])])
     return {"marked": n}
 
 
 @app.post("/api/refresh")
-async def api_refresh():
-    """Manual 'collect now' — runs in the background and returns at once."""
+async def api_refresh(request: Request):
+    """Manual 'collect now' — runs in the background and returns at once.
+    Body may carry {"topic": "ai"} to collect only that topic."""
+    try:
+        body = await request.json()
+    except json.JSONDecodeError:
+        body = {}
+    topic = str(body.get("topic") or "")
+    if topic not in config.TOPICS:
+        topic = ""
+
     def _run():
         try:
-            run_once()
+            run_once(topic=topic)
         except Exception as exc:
             log.error("manual refresh failed: %s", exc)
 
     threading.Thread(target=_run, name="manual-refresh", daemon=True).start()
-    return {"started": True}
+    return {"started": True, "topic": topic or "all"}
 
 
 # ------------------------------------------------------------------ webhook
@@ -172,6 +186,9 @@ def _normalize(item: dict[str, Any]) -> Optional[dict[str, Any]]:
         "summary": (item.get("summary") or item.get("content") or item.get("text") or "")[:500],
         "published_at": item.get("published_at") or item.get("time"),
         "collected_at": db.now_iso(),
+        # 可选：外部工具推入时指定主题（solar/ai），不传则归默认主题；
+        # 未知值由 db.insert_article 统一白名单校验。
+        "topic": str(item.get("topic") or "").strip(),
     }
 
 
@@ -204,6 +221,12 @@ async def webhook(request: Request):
         else:
             skipped += 1
     conn.commit()
-    notified = notify_new(created) if created else 0
+    notified = 0
+    if created:
+        by_topic: dict[str, list[dict[str, Any]]] = {}
+        for a in created:
+            by_topic.setdefault(a.get("topic") or config.DEFAULT_TOPIC, []).append(a)
+        for tp, items in by_topic.items():
+            notified += notify_new(items, topic=tp)
     db.export_snapshot()
     return {"created": len(created), "skipped": skipped, "notified": notified}

@@ -61,12 +61,12 @@ def _stars(score: float) -> str:
     return "★" * n + "☆" * (5 - n)
 
 
-def _card(a: dict[str, Any]) -> str:
+def _card(a: dict[str, Any], icon: str = "☀️") -> str:
     title = html.escape(a.get("title", ""))
     link = a.get("url", "")
     source = html.escape(a.get("source", "") or "unknown")
     pub = (a.get("published_at") or a.get("collected_at") or "")[:16].replace("T", " ")
-    head = f'🚨 <b>{title}</b>' if a.get("score", 0) >= 8 else f'☀️ <b>{title}</b>'
+    head = f'🚨 <b>{title}</b>' if a.get("score", 0) >= 8 else f'{icon} <b>{title}</b>'
     stars = _stars(a.get("score", 0))
     meta = " · ".join(x for x in (source, pub, stars) if x)
     line = f"{head}\n<i>{meta}</i>"
@@ -78,20 +78,23 @@ def _card(a: dict[str, Any]) -> str:
     return line
 
 
-def notify_new(articles: list[dict[str, Any]]) -> int:
+def notify_new(articles: list[dict[str, Any]], topic: str = "") -> int:
     """Push new articles to Telegram, batched into as few messages as
-    possible. Returns number of articles included in a sent message."""
+    possible. Returns number of articles included in a sent message.
+    The message header/card emoji follow the topic display info."""
     if not articles:
         return 0
     if not (config.TELEGRAM_BOT_TOKEN and config.TELEGRAM_CHAT_ID):
         log.info("%d new articles, telegram not configured — not pushing", len(articles))
         return 0
 
+    cfg = config.TOPICS.get(topic or config.DEFAULT_TOPIC,
+                            config.TOPICS[config.DEFAULT_TOPIC])
     batches: list[str] = []
-    header = f"☀️ <b>Malaysia Solar News · {len(articles)} new</b>\n"
+    header = f"{cfg['icon']} <b>{cfg['name']} · {len(articles)} new</b>\n"
     current = header
     for a in articles:
-        card = _card(a) + "\n\n"
+        card = _card(a, cfg["icon"]) + "\n\n"
         if len(current) + len(card) > MAX_MSG:
             batches.append(current)
             current = card

@@ -139,22 +139,28 @@ curl -X POST http://localhost:8000/webhook \
 
 - 设置了 `WEBHOOK_TOKEN` 后必须带同名 header，否则 401
 - 字段兼容 `name/link/content` 别名（changedetection.io 等工具的格式）
+- 可选字段 `topic`（`solar` / `ai`）指定文章归属主题，不传默认归 `solar`
 - 入库即自动去重 + 推送 Telegram + 更新 Dashboard
 - 典型用法：用 changedetection.io 监控 SEDA/TNB 官网页面变动 → 它的 webhook 打到这里
 
 ## 调优抓取内容
 
-一切规则在 [app/config.py](app/config.py)：
+一切规则在 [app/config.py](app/config.py) 的 `TOPICS` 字典里，**每个主题各自一份**：
 
-- `GOOGLE_NEWS_QUERIES` — 9 组 Google News 搜索式（支持 `OR`、引号短语）
-- `RSS_FEEDS` — 直连 RSS 源，随便加
-- `GEO_TERMS` / `TOPIC_TERMS` — **必须同时命中 ≥1 个地理词 + ≥1 个主题词** 才会收录
-- `BONUS_TERMS` — 加分词（quota、tariff、policy…），影响星级与 🚨 标记
+- `queries` — Google News 搜索式（支持 `OR`、引号短语）
+- `rss` — 直连 RSS 源，随便加
+- `geo_terms` / `topic_terms` — **必须同时命中 ≥1 个地理词 + ≥1 个主题词** 才会收录
+  （主题级 `require_geo: false` 可改为只看主题词）
+- `bonus_terms` — 加分词（quota、tariff、policy…），影响星级与 🚨 标记
 
 > **五星级换算**：星级 = `clamp(四舍五入((score-3)/2), 1, 5)`，权重算法不变，仅展示层换算；
 > 鼠标悬停看板上的 ★ 徽章可看到原始 score。
-- `IGNORE_TERMS` — 一票否决（solar eclipse 等噪音）
+- `ignore_terms` — 一票否决（solar eclipse 等噪音）
 - `COLLECT_INTERVAL_MIN` — 抓取频率（默认 60 分钟）
+
+现有两个主题：`solar`（马来西亚太阳能 ☀️）与 `ai`（马来西亚 AI 🤖），看板顶部按钮切换。
+新增主题只需在 `TOPICS` 加一段配置 + 前端 `TOPICS` 加同名条目，无需改逻辑。
+抓取：`python -m app.pipeline`（全部主题）或 `python -m app.pipeline --topic ai`（单主题）。
 
 ---
 

@@ -77,13 +77,17 @@
 <div class="wrap">
   <header>
     <div class="brand">
-      <div class="logo">☀️</div>
+      <div class="logo" id="logo">☀️</div>
       <div>
-        <h1>Malaysia Solar News Collector</h1>
+        <h1 id="mast">Malaysia Solar News Collector</h1>
         <div class="sub" id="subline">马来西亚太阳能产业 · 政策 / 市场 / 项目新闻自动收集</div>
       </div>
     </div>
     <div class="actions">
+      <div class="seg" id="segTopic">
+        <button data-topic="solar" class="active">☀️ Solar</button>
+        <button data-topic="ai">🤖 AI</button>
+      </div>
       <button id="btnRun" class="primary">▶ 立即抓取</button>
       <button id="btnReadAll">✓ 全部已读</button>
     </div>
@@ -115,6 +119,7 @@
     提示：每 <code>COLLECT_INTERVAL_MIN</code> 分钟自动抓取一次 ·
     推送到 Telegram 需在 <code>.env</code> 配置 <code>TELEGRAM_BOT_TOKEN</code> /
     <code>TELEGRAM_CHAT_ID</code> · 其他工具可通过 <code>POST /webhook</code> 推送新闻进本系统
+    <br>专题模式目前是单主题（Solar）。若要再加一个主题（例如 AI），需要新增一组收集器配置与一份独立文章数据，并让前端在它们之间切换；界面与展示逻辑不需要重写。
   </div>
 </div>
 <div class="toast" id="toast"></div>
@@ -123,6 +128,24 @@
 const $ = id => document.getElementById(id);
 let STATIC = false;           // true = served from GitHub Pages (no API)
 let articles = [];
+
+// 主题配置（与后端 app/config.py 的 TOPICS 对应）
+const TOPICS = {
+  solar: {name:'Malaysia Solar News', icon:'☀️', sub:'马来西亚太阳能产业 · 政策 / 市场 / 项目新闻自动收集'},
+  ai:    {name:'Malaysia AI News',    icon:'🤖', sub:'马来西亚 AI 产业 · 政策 / 投资 / 技术新闻自动收集'}
+};
+let topic = 'solar';
+try{ const t = localStorage.getItem('topic'); if(t && TOPICS[t]) topic = t; }catch(e){}
+
+function applyTopicUI(){
+  const c = TOPICS[topic];
+  $('mast').textContent = c.name + ' Collector';
+  $('logo').textContent = c.icon;
+  $('subline').textContent = c.sub + (STATIC ? ' · 静态模式' : '');
+  document.title = c.icon + ' ' + c.name;
+  $('segTopic').querySelectorAll('button').forEach(b=>
+    b.classList.toggle('active', b.dataset.topic===topic));
+}
 
 function esc(s){const d=document.createElement('div');d.textContent=s??'';return d.innerHTML}
 // score（权重总分）→ 1~5 星：5→★, 6-7→★★, 8-9→★★★, 10-11→★★★★, ≥12→★★★★★
@@ -210,7 +233,8 @@ function renderList(){
     return true;
   });
   const el=$('list');
-  if(!list.length){ el.innerHTML='<div class="empty">没有匹配的新闻 — 抓取运行后会自动出现在这里 ☀️</div>'; return }
+  const ICO = TOPICS[topic].icon;
+  if(!list.length){ el.innerHTML=`<div class="empty">没有匹配的新闻 — 抓取运行后会自动出现在这里 ${ICO}</div>`; return }
   const noTime = list.length && list.every(a => !bucketOf(a.published_at||a.collected_at).length);
   el.innerHTML = list.map(a=>{
     const kws=(a.keywords||'').split(',').filter(Boolean).slice(0,8)
@@ -233,9 +257,9 @@ function renderList(){
     </div>`;
   }).join('');
   if(!list.length && tb!=='all'){
-    el.innerHTML = `<div class="empty">這個時間段<strong>沒有新聞</strong> — 再等等抓取會自動進來 ☀️</div>`;
+    el.innerHTML = `<div class="empty">這個時間段<strong>沒有新聞</strong> — 再等等抓取會自動進來 ${ICO}</div>`;
   } else if(!list.length){
-    el.innerHTML = '<div class="empty">沒有匹配的新闻 — 抓取运行后会自动出现在这里 ☀️</div>';
+    el.innerHTML = `<div class="empty">沒有匹配的新闻 — 抓取运行后会自动出现在这里 ${ICO}</div>`;
   }
   el.querySelectorAll('.item').forEach(node=>{
     node.querySelector('.title').addEventListener('click', ()=>{
@@ -251,11 +275,14 @@ function renderList(){
 async function refresh(){
   try{
     if(!STATIC){
-      const [a, st] = await Promise.all([j('/api/articles?limit=300'), j('/api/stats')]);
+      const [a, st] = await Promise.all([
+        j('/api/articles?topic='+encodeURIComponent(topic)+'&limit=300'),
+        j('/api/stats?topic='+encodeURIComponent(topic))
+      ]);
       articles = a.articles; renderStats(st);
     }else{
       const snap = await j('./articles.json');
-      articles = snap.articles || [];
+      articles = (snap.articles || []).filter(a=>(a.topic||'solar')===topic);
       articles.forEach(a=>a.read=a.read?1:0);
       renderStats({});
       $('sDay').textContent = articles.filter(a=>new Date(a.published_at||a.collected_at) > Date.now()-864e5).length;
@@ -263,9 +290,11 @@ async function refresh(){
     renderList();
   }catch(e){
     if(!STATIC){ STATIC=true; $('btnRun').style.display='none';
-      $('subline').textContent='静态模式（GitHub Pages）· 数据快照更新于 '+(new Date()).toLocaleString();
+      applyTopicUI();
+      $('subline').textContent = TOPICS[topic].sub + ' · 静态模式（GitHub Pages）· 数据快照更新于 '+(new Date()).toLocaleString();
       try{ const snap = await j('./articles.json');
-        articles = snap.articles || []; articles.forEach(a=>a.read=a.read?1:0);
+        articles = (snap.articles || []).filter(a=>(a.topic||'solar')===topic);
+        articles.forEach(a=>a.read=a.read?1:0);
         renderStats({}); $('sDay').textContent = articles.filter(a=>new Date(a.published_at||a.collected_at) > Date.now()-864e5).length;
         renderList(); }
       catch(e2){ $('list').innerHTML='<div class="empty">无法加载数据：'+esc(e.message)+'</div>' }
@@ -276,6 +305,15 @@ async function refresh(){
 $('q').addEventListener('input', renderList);
 $('src').addEventListener('change', renderList);
 $('unreadOnly').addEventListener('change', renderList);
+$('segTopic').addEventListener('click', e=>{
+  const b=e.target.closest('button[data-topic]'); if(!b) return;
+  const t=b.dataset.topic; if(t===topic) return;
+  topic=t;
+  try{ localStorage.setItem('topic', topic) }catch(e){}
+  $('q').value=''; $('src').value=''; $('unreadOnly').checked=false;
+  applyTopicUI();
+  refresh();
+});
 $('segTime').addEventListener('click', e=>{
   const b=e.target.closest('button[data-time]'); if(!b) return;
   timeBucket=b.dataset.time;
@@ -285,17 +323,18 @@ $('segTime').addEventListener('click', e=>{
 
 $('btnRun').addEventListener('click', async ()=>{
   const b=$('btnRun'); b.disabled=true; b.textContent='⏳ 抓取中…';
-  try{ await j('/api/refresh',{method:'POST'}); toast('已触发抓取，约 30 秒后刷新结果');
+  try{ await j('/api/refresh',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({topic})}); toast('已触发抓取，约 30 秒后刷新结果');
     setTimeout(refresh, 6000); setTimeout(refresh, 15000);
   }catch(e){ toast('触发失败: '+e.message, true) }
   setTimeout(()=>{b.disabled=false;b.textContent='▶ 立即抓取'}, 3000);
 });
 $('btnReadAll').addEventListener('click', async ()=>{
   articles.forEach(a=>a.read=1); renderList(); renderStats({total:articles.length,unread:0});
-  try{ await j('/api/read',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({all:true})}) }catch(e){}
-  toast('已全部标记为已读');
+  try{ await j('/api/read',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({all:true, topic})}) }catch(e){}
+  toast('已将 '+TOPICS[topic].name+' 全部标记为已读');
 });
 
+applyTopicUI();
 refresh();
 setInterval(refresh, 60000);
 </script>

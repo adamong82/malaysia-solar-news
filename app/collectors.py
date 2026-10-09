@@ -107,35 +107,38 @@ def _find_terms(text: str, terms: list[str]) -> list[str]:
     return [t for t in terms if re.search(r"(?<![\w])" + re.escape(t) + r"(?![\w])", text)]
 
 
-def score_article(art: dict[str, Any]) -> Optional[dict[str, Any]]:
-    """Return article with score/keywords attached, or None if irrelevant."""
+def score_article(art: dict[str, Any], topic_cfg: dict[str, Any]) -> Optional[dict[str, Any]]:
+    """Return article with score/keywords attached, or None if irrelevant.
+    Term lists come from the topic config (see config.TOPICS)."""
     text = f"{art.get('title','')} {art.get('summary','')}".lower()
-    if any(re.search(r"(?<![\w])" + re.escape(t) + r"(?![\w])", text) for t in config.IGNORE_TERMS):
+    if any(re.search(r"(?<![\w])" + re.escape(t) + r"(?![\w])", text) for t in topic_cfg["ignore_terms"]):
         return None
-    geo = _find_terms(text, config.GEO_TERMS)
-    topic = _find_terms(text, config.TOPIC_TERMS)
-    if not geo or not topic:
+    geo = _find_terms(text, topic_cfg["geo_terms"])
+    top = _find_terms(text, topic_cfg["topic_terms"])
+    if not top or (topic_cfg.get("require_geo", True) and not geo):
         return None
-    bonus = _find_terms(text, config.BONUS_TERMS)
-    score = 3 * len(geo) + 2 * len(topic) + len(bonus)
+    bonus = _find_terms(text, topic_cfg["bonus_terms"])
+    score = 3 * len(geo) + 2 * len(top) + len(bonus)
     art["score"] = score
-    art["keywords"] = ",".join(dict.fromkeys(geo + topic + bonus))
+    art["keywords"] = ",".join(dict.fromkeys(geo + top + bonus))
     return art
 
 
-def collect_all() -> tuple[list[dict[str, Any]], int]:
-    """Run every configured source. Returns (relevant articles, total seen)."""
+def collect_all(topic: str) -> tuple[list[dict[str, Any]], int]:
+    """Run every configured source of one topic.
+    Returns (relevant articles, total seen)."""
+    cfg = config.TOPICS[topic]
     seen: list[dict[str, Any]] = []
-    for q in config.GOOGLE_NEWS_QUERIES:
+    for q in cfg["queries"]:
         items = collect_google_news(q)
-        log.info("google news %-45s -> %d", q, len(items))
+        log.info("[%s] google news %-45s -> %d", topic, q, len(items))
         seen.extend(items)
-    for feed_url, name in config.RSS_FEEDS:
+    for feed_url, name in cfg["rss"]:
         items = collect_rss(feed_url, name)
-        log.info("rss %-40s -> %d", name, len(items))
+        log.info("[%s] rss %-40s -> %d", topic, name, len(items))
         seen.extend(items)
 
-    relevant = [a for a in (score_article(dict(x)) for x in seen) if a]
+    relevant = [a for a in (score_article(dict(x), cfg) for x in seen) if a]
     # in-run dedupe by exact title (same story via several queries)
     uniq: dict[str, dict[str, Any]] = {}
     for a in relevant:
