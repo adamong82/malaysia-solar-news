@@ -15,13 +15,20 @@
     color:var(--txt);font:15px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"PingFang SC","Microsoft YaHei",sans-serif}
   a{color:inherit}
   .wrap{max-width:1080px;margin:0 auto;padding:24px 18px 60px}
-  header{display:flex;flex-wrap:wrap;align-items:center;gap:14px;justify-content:space-between}
-  .brand{display:flex;align-items:center;gap:12px}
-  .logo{width:44px;height:44px;border-radius:12px;display:grid;place-items:center;
-    background:linear-gradient(135deg,#f7b733,#f25c54);font-size:24px;box-shadow:0 6px 18px rgba(247,183,51,.25)}
-  h1{font-size:20px;margin:0}
-  .sub{color:var(--muted);font-size:12.5px}
-  .actions{display:flex;gap:8px;flex-wrap:wrap}
+  .hero{position:relative;overflow:hidden;border:1px solid var(--line);border-radius:20px;
+    padding:38px 40px 30px;margin-bottom:6px;
+    background:
+      radial-gradient(900px 260px at 8% -40%, rgba(247,183,51,.16), transparent 70%),
+      radial-gradient(700px 240px at 95% 140%, rgba(53,196,168,.10), transparent 70%),
+      linear-gradient(135deg,#101a30 0%,#0e1728 55%,#131f39 100%)}
+  .kicker{font-size:12.5px;font-weight:700;letter-spacing:.24em;text-transform:uppercase;
+    color:var(--accent);margin-bottom:16px}
+  .hero h1{margin:0;font-weight:800;letter-spacing:-.02em;line-height:1.06;
+    font-size:clamp(40px,6.5vw,68px)}
+  .hero-rule{width:76px;height:3px;border-radius:3px;margin:18px 0 14px;
+    background:linear-gradient(90deg,var(--accent),rgba(247,183,51,0))}
+  .sub{color:#aab9d6;font-size:15px}
+  .actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:22px}
   button{background:var(--panel2);color:var(--txt);border:1px solid var(--line);
     padding:8px 14px;border-radius:10px;cursor:pointer;font-size:13.5px;transition:.15s}
   button:hover{border-color:var(--accent);color:var(--accent)}
@@ -75,14 +82,11 @@
 </head>
 <body>
 <div class="wrap">
-  <header>
-    <div class="brand">
-      <div class="logo" id="logo">☀️</div>
-      <div>
-        <h1 id="mast">Malaysia Solar News Collector</h1>
-        <div class="sub" id="subline">Malaysia solar industry · auto-collected policy / market / project news</div>
-      </div>
-    </div>
+  <header class="hero">
+    <div class="kicker" id="kicker">☀️ Malaysia Solar News</div>
+    <h1 id="mast">Eternalgy's News Collector</h1>
+    <div class="hero-rule"></div>
+    <div class="sub" id="subline">Malaysia solar industry · auto-collected policy / market / project news</div>
     <div class="actions">
       <div class="seg" id="segTopic">
         <button data-topic="solar" class="active">☀️ Solar</button>
@@ -145,10 +149,9 @@ try{ const l = localStorage.getItem('lang'); if(l==='en'||l==='zh') lang = l; }c
 
 function applyTopicUI(){
   const c = TOPICS[topic];
-  $('mast').textContent = c.name + ' Collector';
-  $('logo').textContent = c.icon;
+  $('kicker').textContent = c.icon + ' ' + c.name;
   $('subline').textContent = c.sub + (STATIC ? ' · Static mode' : '');
-  document.title = c.icon + ' ' + c.name;
+  document.title = c.icon + " Eternalgy's News Collector — " + c.name;
   $('segTopic').querySelectorAll('button').forEach(b=>
     b.classList.toggle('active', b.dataset.topic===topic));
   $('segLang').querySelectorAll('button').forEach(b=>
