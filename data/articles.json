@@ -1,12 +1,50 @@
 {
+<<<<<<< HEAD
  "generated_at": "2026-10-09T07:25:32+00:00",
  "articles": [
   {
+=======
+ "generated_at": "2026-10-09T08:00:51+00:00",
+ "articles": [
+  {
+   "title": "Peninsular Malaysia power use seen up 4.9% in 2027 on data centre growth - Reuters",
+   "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQSXduQVNWUzUzdzhycjUxMHhYR0ZLLVFXQ0NaR1pQdENZREUwaFlhY045Z2pianNsSXJmRGlkMGRQZzNBOVNMbm1nQVZNWl9QV2txdjJsZHVIenEzaGF3eHE3QWdzVUJaOGlJVFFsNTdHUFh4UGkzVjVhaGNuWl9IVGJ2eHZoZ1o4UURmUi1PaGRuVTFMUzVKS1JsdVV4WkpVN29BSG5Ha2l5MDhIX3N0Y1VURUQ2azQ?oc=5",
+   "source": "Reuters",
+   "published_at": "2026-10-09T07:39:43+00:00",
+   "collected_at": "2026-10-09T08:00:47+00:00",
+   "summary": "Peninsular Malaysia power use seen up 4.9% in 2027 on data centre growth Reuters",
+   "keywords": "malaysia,peninsular malaysia,data centre,power",
+   "score": 10.0,
+   "read": 0,
+   "notified": 0,
+   "topic": "ai",
+   "language": "en"
+  },
+  {
+   "title": "Peninsular Malaysia power use seen up 4.9% in 2027 on data centre growth - TradingView",
+   "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNUElqU29rYzJpZUFsdF9nYVFHc09SNXZzVzdYOWhvN2h5WWRrc0t2SUlQUEhPYWtDSEhsYW5lZndfRUNkdFBMNGstVVZsU1dubUhjdXF5T2VLRGt0dl82Y2duSFk3U0xTOGNpWnpKQ3NSWFJfOE01VGJpN19YU3B1R21FUXZCZDVKZHBOUUlnWFVjeW5YcWQ2Z3NjV3ZGS1BzRkJScHFUbTF2dVJNcDFlNHJ3OGQyTGxfRzZHVDljMXhpN0I3bjRuWkV4NGJDQnVSOHVFRXA5UmM?oc=5",
+   "source": "TradingView",
+   "published_at": "2026-10-09T07:30:00+00:00",
+   "collected_at": "2026-10-09T08:00:47+00:00",
+   "summary": "Peninsular Malaysia power use seen up 4.9% in 2027 on data centre growth TradingView",
+   "keywords": "malaysia,peninsular malaysia,data centre,power",
+   "score": 10.0,
+   "read": 0,
+   "notified": 0,
+   "topic": "ai",
+   "language": "en"
+  },
+  {
+>>>>>>> 2f37bc6 (chore: refresh FDE-scoped AI news snapshot (data/articles.json))
    "title": "Nuclear Power Deal Might Change The Case For Investing In Google (GOOGL) - Simply Wall Street",
    "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPVE5RaDJ6eUpYM1BmSmYteDkyVVFmVEcyMUU0N2EzdndwVWthTDlpUFdZeG02Q3YwdXdsaU1QQTNzaHczVjVhRDE2RUlOeEhnQW5CakloNnBGZzBSYWlLTTZweWE1UkhJU0JoWjRoWWlsZGZ1b1YwRkFZUm04TURwekxMRFJIaXdNWDV4VThaZVp6U2oxVWJ3Tkhpc2h3dVNmRUl5WmUwWVpjTVZ6NnV2aW52WjdkOElpUXFEQVBIR0dFcEHSAcgBQVVfeXFMTlBYWFA0UHBNLXExcXhJVU5HUHhPRFluQVFWOTNyM1dDVDc2WVBvank1eWd2VkYzalltU0NIS0d5WGd5NkVtelNKTTF0X2V4NE5LUnJ1ZVoyeFRsaXdzQUp6Y0lhVnJyYTlzQzJxQnhob3V2TmRlZXZBazNwWW92cW5CVkFadEltd2N1SDZjcnhmUkplclBTNTRwQWs2c203cHZ5MTJJQ0d5TEwtMHF1TTFpYzZJRzZQaFVyN1ZJSVNVUjZLeHJmdC0?oc=5",
    "source": "Simply Wall Street",
    "published_at": "2026-10-09T07:06:45+00:00",
+<<<<<<< HEAD
    "collected_at": "2026-10-09T07:25:28+00:00",
+=======
+   "collected_at": "2026-10-09T08:00:47+00:00",
+>>>>>>> 2f37bc6 (chore: refresh FDE-scoped AI news snapshot (data/articles.json))
    "summary": "Nuclear Power Deal Might Change The Case For Investing In Google (GOOGL) Simply Wall Street",
    "keywords": "power,nuclear,deal",
    "score": 5.0,
@@ -20,7 +58,11 @@
    "url": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxNanF2UHYwbHkwdDRodzE1VFd0dTcwaWVtVkM0WUQ4cTFsLVkzbWpaMEp4eS1iRXc4X2l1S0haa0FvanRabndmVXJMdU1VSW1GSDJFSS1TeFBEaS1SbTJpdkpaejIwalFRbUdycFFoU2JLNjNsNGJwNHFMVkxVaGF6V2M5bDRGNFNRMjRvMmtrLWs4SHhFZmZzSzlhczRaY2Y3RDk3aUx5NjdiWXA1NFVEZ2w5MGVnZ1B4bk1Kdk9FbDBWUUZwSDE4UEl0VThYcWlETXNIdDBvRFk1ckl1WWNYZVJMRXJObnRZVDB1UXpOd2NmakhUMDM1bDJqTmlxbGFKVFBZQ3NDaDg?oc=5",
    "source": "Stocktwits",
    "published_at": "2026-10-09T06:59:44+00:00",
+<<<<<<< HEAD
    "collected_at": "2026-10-09T07:25:28+00:00",
+=======
+   "collected_at": "2026-10-09T08:00:47+00:00",
+>>>>>>> 2f37bc6 (chore: refresh FDE-scoped AI news snapshot (data/articles.json))
    "summary": "BTDR Stock Rises Overnight: Bitdeer Secures Malaysia Data Center Agreement As AI Infrastructure Pipeline Tops $10B Stocktwits",
    "keywords": "malaysia,data center,ai infrastructure,pipeline",
    "score": 8.0,
@@ -30,12 +72,21 @@
    "language": "en"
   },
   {
+<<<<<<< HEAD
    "title": "BTDR Stock Rises Overnight: Bitdeer Secures Malaysia Data Center Agreement As AI Infrastructure Pipeline Tops $10B - Yahoo Finance",
    "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPSVYyenpaNmg1VjhXb2NOQlBqRFU3aVkxTGxrRXRVRWNYME5HWXExdjkzejl4eTNxamtPS0VYMGUxUG1YZlpkWlpZeXIwb01YVTNBUU1aYkNSb1pmb1ZGNVNiVno5WEFIR2c0UG1Rc0s3TmQwZ2dvdk1YOWtuMjVvMlUzajRmQVJ2WVRpTzNRSHlGQXdnMXlTSkVuOVpsZ1E?oc=5",
    "source": "Yahoo Finance",
    "published_at": "2026-10-09T06:55:29+00:00",
    "collected_at": "2026-10-09T07:25:28+00:00",
    "summary": "BTDR Stock Rises Overnight: Bitdeer Secures Malaysia Data Center Agreement As AI Infrastructure Pipeline Tops $10B Yahoo Finance",
+=======
+   "title": "BTDR Stock Rises Overnight: Bitdeer Secures Malaysia Data Center Agreement As AI Infrastructure Pipeline Tops $10B - TradingView",
+   "url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxOOTdfdTNvNy1VZkpyaURyREFhUFVQVExtREdLd09LNkFmbjJKSU44NWhmYlgxQ2FrQzg0Mk9rWXhfem8ySjc4QnJvYW02VzVUdmF5Snh6dE9VZE1fZ0phNEkzR1FKcXhJRnV0eElRLXVrSkllb3BuNjZ3b1hFdlRPd0FKZlgyTkxieGNUS1pCdjNJNVppTFlRYS1OQzNZMVVHYnRjUFo4YXU4cFlqZi1EdnNpV2otOEVxMm42eTVWRjJJN2ZlNFJQdjRWZFM1UlZPM1hDUkNrOV9nNFVRZnRZVlhCdEVTbHVEbG5Gd1k3aHdqWHcxNFo0LWFLb0MyZDhlMmZn?oc=5",
+   "source": "TradingView",
+   "published_at": "2026-10-09T06:55:00+00:00",
+   "collected_at": "2026-10-09T08:00:47+00:00",
+   "summary": "BTDR Stock Rises Overnight: Bitdeer Secures Malaysia Data Center Agreement As AI Infrastructure Pipeline Tops $10B TradingView",
+>>>>>>> 2f37bc6 (chore: refresh FDE-scoped AI news snapshot (data/articles.json))
    "keywords": "malaysia,data center,ai infrastructure,pipeline",
    "score": 8.0,
    "read": 0,
@@ -268,6 +319,20 @@
    "language": "en"
   },
   {
+   "title": "马来西亚数据中心告别粗放扩张时代 - 见道网",
+   "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9JQ3Q2YzRoOS1HbGdFUVBibkdYMFdZN1hTdUxZRVprQ2FRaXhYWjhxV3pDaE10QUkxYU9SbnVLLUNCcFJ3UzdCTEVvVjRIUUR2eGNndw?oc=5",
+   "source": "见道网",
+   "published_at": "2026-10-09T03:31:00+00:00",
+   "collected_at": "2026-10-09T08:00:51+00:00",
+   "summary": "马来西亚数据中心告别粗放扩张时代 见道网",
+   "keywords": "马来西亚,数据中心",
+   "score": 5.0,
+   "read": 0,
+   "notified": 0,
+   "topic": "ai",
+   "language": "zh"
+  },
+  {
    "title": "伟禄科技股份早盘涨近5% 拟于马来西亚柔佛建AI数据中心 - 搜狐网",
    "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNb3F6RU4ySllKbGZnV18tTWdIdzNjbnU0RXFYdzh0QXFBV3UybUhPdG8yb1VyMGlOS1RaaUNIOWx3UEVtZG9jZ2kycWNsYXB0ZjdhMlRaSTlEWGNyVEpXcmVKLTBnbVJwc3RERjlWQjVsRE41al9vYm1VRUF1MUR3aThMc3ZZNzJh?oc=5",
    "source": "搜狐网",
@@ -398,7 +463,11 @@
    "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQVTRwYjIyODJ0N3BEdUl1NkloN2dVVV9zZnpoS3UyaWxZRTRYSmIyYnpBemxWdzViMkM0UnQ2QURqenFvTURhM3BVMkcyQi1CY011QTZabWJJdVdLSjlfdk13MkwxS213Si1qSXdBcFRMRTNaNFEyNzJzQzF1a082TThSZ0lod2VPRjZfSkp2RExfUU5BQ0lMcjZyWnFpUXhZOVpnQ1RvRnZhNWVzNzdEall0ZDk0OGVhY1c0T2VxNUExVXfSAcgBQVVfeXFMT3J6UjU2SzVHQndYeWVNVUhua2s3ekJWQjV3U3doWXdHVndFcXhHZEZxOXVuQWJIREh0X195VUdzalhGWVgxVXYtOW51RTFMZzZmamI0RmdIc1BnT3ZFcXJXQTB1ckZmMlZIWHRVRzEzLVlER09GOGxJVHBGV1NuX09nUFdFYVNxd0hwS3A4dHhiV2R5VUdaWElZUnA4UUNNX291aHo0T1E2bktqS0xPLS1SejdYRzJfY1Uyc0dpcHVNNGJlOXdUbG4?oc=5",
    "source": "Simply Wall Street",
    "published_at": "2026-10-09T01:33:58+00:00",
+<<<<<<< HEAD
    "collected_at": "2026-10-09T07:25:28+00:00",
+=======
+   "collected_at": "2026-10-09T08:00:47+00:00",
+>>>>>>> 2f37bc6 (chore: refresh FDE-scoped AI news snapshot (data/articles.json))
    "summary": "3 Data Center REIT Stocks for AI Infrastructure Growth Simply Wall Street",
    "keywords": "data center,ai infrastructure",
    "score": 4.0,
@@ -650,7 +719,11 @@
    "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQeldVWXo5ZzVjMGZWcVJIT3k3YmZ2UC1tRm5WTkJPeWlhWGRPWVhreC1GZmUweWhLbGcyX0dDd2tkenZXYW5sWXpya2NzTEVmdV9vTVcta3N4Sl9RLWVNcS15N1BmTHM0OFN4MkdmUkNMZERMWjEtMU5BeXNoUTVrVmx4dDUwLXJmZXQxZnpDMG0wckt1d0s4UERNTWwwX2prOFZXNFQxdHc0ZmxpR3dudTlUOG0?oc=5",
    "source": "Investing.com India",
    "published_at": "2026-10-08T20:40:02+00:00",
+<<<<<<< HEAD
    "collected_at": "2026-10-09T07:25:28+00:00",
+=======
+   "collected_at": "2026-10-09T08:00:47+00:00",
+>>>>>>> 2f37bc6 (chore: refresh FDE-scoped AI news snapshot (data/articles.json))
    "summary": "Bitdeer AI secures 60MW Malaysia data center facility By Investing.com Investing.com India",
    "keywords": "malaysia,data center",
    "score": 5.0,
@@ -2372,7 +2445,11 @@
    "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1FZU9EYUxheTJ1X3F3ck42LTJGcFZmSGNEMkdhYnZnUEM2VDRkWTZKblVfajhscGRmSDlKSHdhSC13LU4wekF0RVFVYkQtb3RfOU5CZndlc1BkaEJvdktyY0F3TlBKTTIx?oc=5",
    "source": "아시아경제",
    "published_at": "2026-10-07T05:11:20+00:00",
+<<<<<<< HEAD
    "collected_at": "2026-10-09T07:25:28+00:00",
+=======
+   "collected_at": "2026-10-09T08:00:47+00:00",
+>>>>>>> 2f37bc6 (chore: refresh FDE-scoped AI news snapshot (data/articles.json))
    "summary": "HD Construction Equipment Wins KRW 390 Billion Order to Supply Power Generation Engines to U.S. Data Centers 아시아경제",
    "keywords": "power,construction",
    "score": 3.0,
@@ -3814,7 +3891,11 @@
    "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNRVFJUEZQa1Z1cElTbDdhbmpnbkdxaWl5dVRkRVBaamVjOWtpS1lpU0p3X2l4V0pORFJJaTNZVllfRTVBU0NrSTBRby1ybVJXek5tcjNQNGZoNXZSWVhvUTZrLWtOd3JVQURpYmFSYnM4eUdMd2dOUjR4TTIyek41dA?oc=5",
    "source": "trendingtopics.eu",
    "published_at": "2026-09-28T07:24:32+00:00",
+<<<<<<< HEAD
    "collected_at": "2026-10-09T07:25:28+00:00",
+=======
+   "collected_at": "2026-10-09T08:00:47+00:00",
+>>>>>>> 2f37bc6 (chore: refresh FDE-scoped AI news snapshot (data/articles.json))
    "summary": "TU Wien: A.I. Data Centers Must Adapt to the Power Grid trendingtopics.eu",
    "keywords": "power,grid",
    "score": 4.0,
@@ -4298,6 +4379,20 @@
    "notified": 0,
    "topic": "ai",
    "language": "en"
+  },
+  {
+   "title": "顿汉布什荣获马来西亚暖通空调与制冷行业卓越领袖奖 - 财富号",
+   "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBJcTVNZk5DSUxIUkVmWjBFY1VFc1NKcGt3VWFHUTNjUEptcWxYVXNra1N3cGFpc1laMDY3Uy0xelF5ek5WbUNoRU1oYzFQYkhqaXA4aGpQQjhEaDM5NGtSWWxMVWpxeXZmS09N?oc=5",
+   "source": "财富号",
+   "published_at": "2026-09-24T07:00:00+00:00",
+   "collected_at": "2026-10-09T08:00:51+00:00",
+   "summary": "顿汉布什荣获马来西亚暖通空调与制冷行业卓越领袖奖 财富号",
+   "keywords": "马来西亚,制冷",
+   "score": 5.0,
+   "read": 0,
+   "notified": 0,
+   "topic": "ai",
+   "language": "zh"
   },
   {
    "title": "HE Group secures RM124mil subcontract for Johor data centre - KLSE Screener",
@@ -6790,6 +6885,20 @@
    "notified": 0,
    "topic": "ai",
    "language": "zh"
+  },
+  {
+   "title": "More than 4,000 workers expected during construction of Google data centre - The Sun Malaysia",
+   "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPbmpEZ3FDQVpYazJFbWZaQnZwZl9mVE9sYWJfMFBhb0NyZk0xcGFXR3V0YlR3RDFMMlpFWGh1SUEtT3pNZkZ1QkRDMktuYU1vWVVOanA1ZDB3aFpxLVRGZzAwZkw3eFA2eVN4dnF1dm9LS19yQ1REUV9BNWJ2RWQzMTVod1VJbkl6WGR0amc2djlXX2lmR1hfTTJhcXNoR01pZDZnUUVMZnRJZE00QmlHYw?oc=5",
+   "source": "The Sun Malaysia",
+   "published_at": "2026-08-22T07:00:00+00:00",
+   "collected_at": "2026-10-09T08:00:47+00:00",
+   "summary": "More than 4,000 workers expected during construction of Google data centre The Sun Malaysia",
+   "keywords": "malaysia,data centre,construction",
+   "score": 6.0,
+   "read": 0,
+   "notified": 0,
+   "topic": "ai",
+   "language": "en"
   },
   {
    "title": "Malaysia Revises NEM 3.0 Rules For Residential And Government Solar Installations - SolarQuarter",
@@ -9382,6 +9491,20 @@
    "language": "en"
   },
   {
+   "title": "AirTrunk gets US$2.3 bil green loan for Malaysia data centre - The Edge Malaysia",
+   "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1kcVpsUE1PcHZoOUpaLWl6MzdHOUdQVFRaUklIU25LRXJWZXJVTmtxbmJXRnFSTkxzN1kwd3Rja05SWENHN1FZTS1FdG04THZE?oc=5",
+   "source": "The Edge Malaysia",
+   "published_at": "2026-07-29T07:00:00+00:00",
+   "collected_at": "2026-10-09T08:00:47+00:00",
+   "summary": "AirTrunk gets US$2.3 bil green loan for Malaysia data centre The Edge Malaysia",
+   "keywords": "malaysia,data centre",
+   "score": 5.0,
+   "read": 0,
+   "notified": 0,
+   "topic": "ai",
+   "language": "en"
+  },
+  {
    "title": "Malaysia launches tender for 2.5GW of solar PV with co-located battery storage - Energy-Storage.News",
    "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPSlFlRUFoVWo5cXh5VFdSNkhGMkZsTmFXel85SUVlOEtOTlBHUzlSakNRNWlFc3Y5RmpJNDNCSGFHWTZZcDFVTGRqVDBWTU9wdjR6czI2MXhfUGNXWmd2bTFuYlJjbVp5U1NTNHc2RERvMF85N2FDRXl0aDhwNUppcGRjb3JuWGhmQ0NNSnVJNm5tZTF3cFpfLV9rT3I5NUo1MEg1cnhqRmhtMkxjNWJCTQ?oc=5",
    "source": "Energy-Storage.News",
@@ -11878,7 +12001,11 @@
    "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5ZQWo3WUtRUXRMdDNKQVJnYjQwdXNJWUR1bG56Z0hfcXpVaXQtYWxHWU1EUzA5X0xOZ3lOWTM5TjN3LXBpR2NTQWtEWFR3ZnMtaURzcHdOS2p5cGFZamtXMA?oc=5",
    "source": "SLB",
    "published_at": "2026-07-01T07:00:00+00:00",
+<<<<<<< HEAD
    "collected_at": "2026-10-09T07:25:28+00:00",
+=======
+   "collected_at": "2026-10-09T08:00:47+00:00",
+>>>>>>> 2f37bc6 (chore: refresh FDE-scoped AI news snapshot (data/articles.json))
    "summary": "Data Center Solutions SLB",
    "keywords": "data center",
    "score": 2.0,
@@ -12880,6 +13007,20 @@
    "notified": 0,
    "topic": "ai",
    "language": "zh"
+  },
+  {
+   "title": "MRCB ventures into digital infrastructure with RM2.1bil data centre in Bukit Jalil - The Star",
+   "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQNlZzdlA1djV1MlE4amlwSkwtR1o5RlhmMjQwRVpVdXFaRUhYVjVjTEp5cjY2c0xGSkpweHdUT1RnU2dDRmNjalVybFlTNGxkR2ZCWE81bF9SRHJqcWhDOWVQT0RuZ1RGNm9ucHhkUDJUVlBDR1E5YmJuSk1iaEktNy1nLWt3NjBfMzZOSEZrWW9GMlFBeXJLRlQ0MlhBMmNja2UyYkhuc1Vua0ZQanNsZHZGQU9pekNTdzdpVDJrdHZ1VlZrbUxKZzVrVE5CazZwbmNvMjZqR1FrZw?oc=5",
+   "source": "The Star",
+   "published_at": "2026-06-16T07:00:00+00:00",
+   "collected_at": "2026-10-09T08:00:47+00:00",
+   "summary": "MRCB ventures into digital infrastructure with RM2.1bil data centre in Bukit Jalil The Star",
+   "keywords": "data centre",
+   "score": 2.0,
+   "read": 0,
+   "notified": 0,
+   "topic": "ai",
+   "language": "en"
   },
   {
    "title": "Expert calls for tougher political resolve in Malaysia’s energy transition - The Malaysian Reserve",
@@ -21146,7 +21287,11 @@
    "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPYlJtc2gyTEdKN05ySF95dXJRX0k3T1hMQVI2STVvWGM5a2VOelFnemZfN2dveGlDM3RfQ0F5NUN5RmkxZjc3aTVnWW5XOElRNWxucTNvTFctU2RuTzE4bHdfanFsQW5UM3JvSlFKWVJCMktKQWVCWWdOQkJfN3QteDZaRkJUb1VyaGxWNzFR?oc=5",
    "source": "The Star",
    "published_at": "2024-12-14T08:00:00+00:00",
+<<<<<<< HEAD
    "collected_at": "2026-10-09T07:25:28+00:00",
+=======
+   "collected_at": "2026-10-09T08:00:47+00:00",
+>>>>>>> 2f37bc6 (chore: refresh FDE-scoped AI news snapshot (data/articles.json))
    "summary": "Sarawak’s edgy data centre play The Star",
    "keywords": "sarawak,data centre",
    "score": 5.0,
