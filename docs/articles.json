@@ -1,6 +1,132 @@
 {
- "generated_at": "2026-10-11T08:56:18+00:00",
+ "generated_at": "2026-10-11T15:44:33+00:00",
  "articles": [
+  {
+   "title": "Google faces backlash against India data center - Tech Xplore",
+   "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBrQkg1UEx4emY5c1dRMTBDLWx4ME95RC1wdVcxVTU1cGdJc0EtdGlmY1JlYldGT25VUTVtOTQzMG9aT01LTEtLQmRnODJtSzJCWk9BRW9TSEx6ODlzWFZWaW9KTW1Id1gwaVhqbHJOODdaTG9TbzRTWQ?oc=5",
+   "source": "Tech Xplore",
+   "published_at": "2026-10-11T15:29:03+00:00",
+   "collected_at": "2026-10-11T15:44:29+00:00",
+   "summary": "Google faces backlash against India data center Tech Xplore",
+   "keywords": "data center",
+   "score": 2.0,
+   "read": 0,
+   "notified": 0,
+   "topic": "ai",
+   "language": "en"
+  },
+  {
+   "title": "The Attractive Economics Behind Anthropic Data Center Sprint - The Information",
+   "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxORFVGNUhWOWkwOWdjbkwycUxUUFQ4NU5tSTBVU2Y2ZW9tYnFzWkJ5b1U1cmpnSDhSdDlYUHBNZlZmMHNCeS1aZzNBZkYzUXJyeHB0TmFXeUt0X0E5dnNmUl8wZjZzdG5hMjdYM0VkZ016OUNrMUxzTjc5T1VuRDYxUUUxWkN1V0d0eDNmcGdfUDcySE45ZDRnR1k3bzduTHM3cEVKUWJFcERzdXRmLWI3ejhvbEVWNVow?oc=5",
+   "source": "The Information",
+   "published_at": "2026-10-11T15:01:00+00:00",
+   "collected_at": "2026-10-11T15:44:29+00:00",
+   "summary": "The Attractive Economics Behind Anthropic Data Center Sprint The Information",
+   "keywords": "data center",
+   "score": 2.0,
+   "read": 0,
+   "notified": 0,
+   "topic": "ai",
+   "language": "en"
+  },
+  {
+   "title": "The Hidden Cost of AI 2026: Data Centers, Water Consumption and Energy Security: Expert View by Spherical Insights - Spherical Insights",
+   "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPZVpPTVRNQVc0bEZGSlRKMnZTWGNlZ0VTWk9IaWlkd1dmR2RiTThOVzNhN2ZibGlvM3JmRUluYnJUdldvVFFTeTI1b3JLbmZOeUtlcFlGQ2wyd21hSGk3UXd6U2FucHg2TkJzX2FyUGZvX3FNV1lNc3lVaS0tSWFaekR6Tks4RS1mR1EtbmFBSFVlMWRBV25YUk5qSGxQTnh0NXBTaWhoRGphRFo1clM3SW5MMXc1Q1Vn?oc=5",
+   "source": "Spherical Insights",
+   "published_at": "2026-10-11T14:46:51+00:00",
+   "collected_at": "2026-10-11T15:44:29+00:00",
+   "summary": "The Hidden Cost of AI 2026: Data Centers, Water Consumption and Energy Security: Expert View by Spherical Insights Spherical Insights",
+   "keywords": "energy",
+   "score": 2.0,
+   "read": 0,
+   "notified": 0,
+   "topic": "ai",
+   "language": "en"
+  },
+  {
+   "title": "Powering the AI Decade 2026 | Data Centers & Energy Policy Forum | Tysons, VA | Free - DC Military",
+   "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQbEZndkNBVVdHT0xzc2dlRFUwYXJzS2toV0lqN1dhcTdRaURQVF95YW1IckxOV0hrTzhnZFo1UHdwOWg1bHF4WHJObmpTYkxjQmtwSFphRkJUVURhd0hqbUcwYk8ySl82ZnNTdWdoMEthODJ2YWxhRG9VYjBiVWt0SVhXdUxPMU9ETkhUUUlkeENJUnh3T2Q0a2V1M3pZV3UtWU1HZERZaU5LWkVMelIzNEd4OF96YWw4TWxkRzlpSlZEbnpQbGtLenUwcXloV3FIYTROanVpT1dPTGpYVVBhMUdKSQ?oc=5",
+   "source": "DC Military",
+   "published_at": "2026-10-11T13:24:30+00:00",
+   "collected_at": "2026-10-11T15:44:30+00:00",
+   "summary": "Powering the AI Decade 2026 | Data Centers & Energy Policy Forum | Tysons, VA | Free DC Military",
+   "keywords": "energy,policy",
+   "score": 3.0,
+   "read": 0,
+   "notified": 0,
+   "topic": "ai",
+   "language": "en"
+  },
+  {
+   "title": "How much energy does AI use, and why does it need so many data centers? - Dallas News",
+   "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQcEljOFJKYWdYV2RjUGswNXN2bFFISFo5SjRiNS1ldWM3T1J6aW5nZTBUTWhkTFp1OFVPenFEZUFmX1BBTDhRNFFRMG9zSnVCSUVhNmdCT1JuN2FuQWxiQmlRU3ktWWpIbGFpeG1EamVEZVloVERJSU9oWWFJQXdOQ2czOEw0TVl4MU4tamlSNHBzYzFLMUdNYUNKSTNHZ3Zm?oc=5",
+   "source": "Dallas News",
+   "published_at": "2026-10-11T11:18:55+00:00",
+   "collected_at": "2026-10-11T15:44:29+00:00",
+   "summary": "How much energy does AI use, and why does it need so many data centers? Dallas News",
+   "keywords": "energy",
+   "score": 2.0,
+   "read": 0,
+   "notified": 0,
+   "topic": "ai",
+   "language": "en"
+  },
+  {
+   "title": "Hyperscale Data plans Patriot BTC subsidiary for Bitcoin mining business",
+   "url": "https://www.datacenterdynamics.com/en/news/hyperscale-data-plans-patriot-btc-subsidiary-for-bitcoin-mining-business/",
+   "source": "DataCenterDynamics",
+   "published_at": "2026-10-11T11:00:49+00:00",
+   "collected_at": "2026-10-11T15:44:30+00:00",
+   "summary": "Will transfer Montana data center to new company",
+   "keywords": "data center,hyperscale",
+   "score": 4.0,
+   "read": 0,
+   "notified": 0,
+   "topic": "ai",
+   "language": "en"
+  },
+  {
+   "title": "Learning to use local AI is exciting, overwhelming, and frustrating",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1008484/learning-local-ai-hermes-qwen-model-mac-studio-testing-diary-progress",
+   "source": "The Verge AI",
+   "published_at": "2026-10-11T11:00:00+00:00",
+   "collected_at": "2026-10-11T15:44:30+00:00",
+   "summary": "I'm embarking on a journey I've so far been hesitant to go on: actually using AI on the regular. Giving my most personal data to cloud services has been a major hold up for me, but it's increasingly possible to run powerful models locally to see what they're capable of. Is this tech so useful […]",
+   "keywords": "cloud",
+   "score": 2.0,
+   "read": 0,
+   "notified": 0,
+   "topic": "ai",
+   "language": "en"
+  },
+  {
+   "title": "‘Never seen anything quite like it’: How rural Pennsylvania’s $165 million data center fight became representative of the bipartisan battle against AI - Fortune",
+   "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOU1dvYTJrb2FXR3RpQjhDSXVBTmlOczVyNVRwaUhrMWt1a29HUTRmcGNXYWpPNVVGSk01ajlmQ1A3U3dERzJZc3ktYWh3SWpGak95N2hja2d1b09faXM0SWV4cTV3RHNSeHNSLUw3Vms1YmxZSjU2Sm1kNFNXbk5wNDkxb3AyX3NsV2ZybThNdmxlQy1tbDUwREtWcXpJeHhUWHNPWDhMTmx6ekxpV2xqUG1uRU8xT1BNVkh0Y1RUa08?oc=5",
+   "source": "Fortune",
+   "published_at": "2026-10-11T09:30:00+00:00",
+   "collected_at": "2026-10-11T15:44:29+00:00",
+   "summary": "‘Never seen anything quite like it’: How rural Pennsylvania’s $165 million data center fight became representative of the bipartisan battle against AI Fortune",
+   "keywords": "data center",
+   "score": 2.0,
+   "read": 0,
+   "notified": 0,
+   "topic": "ai",
+   "language": "en"
+  },
+  {
+   "title": "Trane Technologies AI Data Center Cooling: $550 Target - https://tech-insider.org/",
+   "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1zWUVoUVhXWkpxMnB0UVNScGlpMC1seTR2OWtreFZDSHFCQ2ZJZmVHU1JRRm1EX0xlUldxZzhnQmZoYTRZbnFLNVpjbW0yeGEzcV94TXdyQ0twSEZhZnR0NzJfNzdSd2NsbDhIZGRyY3dvMGFzNU81dTVHOWg?oc=5",
+   "source": "https://tech-insider.org/",
+   "published_at": "2026-10-11T08:07:52+00:00",
+   "collected_at": "2026-10-11T15:44:30+00:00",
+   "summary": "Trane Technologies AI Data Center Cooling: $550 Target https://tech-insider.org/",
+   "keywords": "data center,cooling",
+   "score": 4.0,
+   "read": 0,
+   "notified": 0,
+   "topic": "ai",
+   "language": "en"
+  },
   {
    "title": "AI Data Center Cooling Might Change The Case For Investing In Trane Technologies (TT) - Simply Wall Street",
    "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOTzg2aHkyNE90UWNfN3dieTJ0WGJmWHdWVDcxT05GZzI4QzkzUDBQWFJuRENHaFZjcFoyWWNvRjYzMVFaMm1yM2FYSlFZajR4dXBQcnhERDZSaE1YOHpCRkpzbjhKZVpHRW9TRDJZZmVyeW92OWFpQjJFdXZPeUl1Nkg0N0VJMVdkRlhfZUROVHVWbzJhZVRDTm93SDhRZ3ZnM21CN2pDd0lRVjVqdkJfaElsd3FXME8xd0xteEpWMWRMV0h6V3R1ajFXNlVsV1VacmFJUNIB2gFBVV95cUxNSUo2TFhqOXpHdGtjdGZHRnNfVkZXQTZneWRKRW9IamxKNm9PRHUzTjlNeXAyNFVOakFIbE9FVEJGLXotRmtzZlJvb3o3bzZhWmROX3NzQ2stLTBmajR4OGJ0SEtpdWc3Rm1DOENETGNyakQ5aFMtV0hzcXRBcF9aNG95UEt4YzRwcUtVbTZCQ3VFRjR2OFV6R3B6bzhQRmlrTEM3RUJENmVtd0M3cHNpVnY4dmx1NkRDMXA3YUlEdGpGcnI0TThkRFAxUUhXRy1jdU9pR3JpcmR1UQ?oc=5",
@@ -1164,6 +1290,20 @@
    "language": "en"
   },
   {
+   "title": "Nvidia's AI power problem is turning into its biggest edge - Yahoo Finance Singapore",
+   "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQaWRHbEdRWjlDNEx3ekhkSDNXTEo2UVMwSzl2NkREU0d4NmhNY3UtLWNvdVhwanktM01scWJOZUU1bVFoOE1SaWtYcldCVmNTcUMyRFlST0RtWUVjcTFPNUZCRXdHbzNwcUdhMHZrQ0w4a2c2Z2xNNV9mN3RVQzE1THBwZVkxXzl6?oc=5",
+   "source": "Yahoo Finance Singapore",
+   "published_at": "2026-10-09T11:03:00+00:00",
+   "collected_at": "2026-10-11T15:44:29+00:00",
+   "summary": "Nvidia's AI power problem is turning into its biggest edge Yahoo Finance Singapore",
+   "keywords": "power",
+   "score": 2.0,
+   "read": 0,
+   "notified": 0,
+   "topic": "ai",
+   "language": "en"
+  },
+  {
    "title": "柔佛电力供应受限 越南泰国吸引数据中心投资 - 亚洲电视新闻",
    "url": "https://news.google.com/rss/articles/CBMivgJBVV95cUxQcnhXbmExUWZGZU9CT1NucGQ1bFV1ZkxaRmFLbHpKVmVTWkdLZllDc2pxMWFvTXYzY05scVNNbjR1UGxUVnJFaUVBMHpPTmFMcy13UVBZd3FIN0FWYXVwQkNQMUJBbVkwcDlTb05VdmdJbFJvUHllWkh5M0x1Qm13VldRMHFOTzlWNDF5RUprZ3k1cTBfWWx1RkJuazdvblQwY1d0dUZKSmg4VTZNMTUzX1p1cDV0QnN5VlZzdlFzRm5QLXNJU0lrU0ZkTXI0RmRlbWp2ZmlJaDZLMDhiUGhOakZmRFp2WndxMTJJYW5KMnZRUE1XMnJPYzBXQnRBeWpDNV9xckpWSmdvaWFNUkh0al9QWnJCLUhEV2I1b2FDdnJ2VGd5Sk55OV90MlphdGgyWHh0d241aklWRU5oeFE?oc=5",
    "source": "亚洲电视新闻",
@@ -2186,6 +2326,20 @@
    "language": "en"
   },
   {
+   "title": "Firmus Misfire Casts Shadow on Data Center IPOs in the Pipeline - Yahoo Finance",
+   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPTUNlRExZNlJ2NzFCbkg1VGZQd0NQZmdaWHBnNTB1d3lfUWstQmY2NGJaX2JjMGF3SjNuY3M4bl9YWVRjczhYMWZnNm5rNFZodUgycmd3emVXSXFKVG5rb0lzeGdGb2l5Z0FiODlVVjhkaEV5YWwxMllsa1ZjdERBZDFLWE41Q18yWlU3SzdUV0t3U3duMkVzblp0YWE?oc=5",
+   "source": "Yahoo Finance",
+   "published_at": "2026-10-08T20:53:45+00:00",
+   "collected_at": "2026-10-11T15:44:29+00:00",
+   "summary": "Firmus Misfire Casts Shadow on Data Center IPOs in the Pipeline Yahoo Finance",
+   "keywords": "data center,pipeline",
+   "score": 3.0,
+   "read": 0,
+   "notified": 0,
+   "topic": "ai",
+   "language": "en"
+  },
+  {
    "title": "Thermal Energy Storage for Data Center Heat Management: Lehigh University's Concrete Thermal Battery - Lehigh University News",
    "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQUldTOTZ3SnpvZDdMWVBvZ0JlTTZreF8wYXZYbGRMT0FpVVY1bldwTUxpZ182a2hFWEFaSFViSUhkVl8yM3ZLM3o5dUNKZGVYY0kxelBtRVlmQkY3YjBueWRuZ3YzWUxBbEZIVTNLYjdlMlNNNkRGQi1mLTRNZ1hTQTlKNW5SQ3MtdXdRNFJzeTVhTkF0SktRTFVxeFlCS0RVbWpydmdMbFhpd2VFeFBBSW9pZUxRTXZ5YlgwSFVkSQ?oc=5",
    "source": "Lehigh University News",
@@ -2628,6 +2782,20 @@
    "summary": "Software could be the easiest fix for hyperscalers' AI power squeeze, researchers say — data center demand is expected to rival Japan's electricity usage by 2030 Tom's Hardware",
    "keywords": "data center,electricity,power,2030",
    "score": 7.0,
+   "read": 0,
+   "notified": 0,
+   "topic": "ai",
+   "language": "en"
+  },
+  {
+   "title": "VEIR Raises $110 Million Series C to Scale Superconducting Power Technology for AI Data Centers - citybiz",
+   "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOOU1keExuVWpDbThPQzNZX1ZiUzcwYWtrbHhWakg1NnczeE1oWmE1WV8xUnlEU1FsdURWdno4TV9hY1I2ZTFUOHRNSDc5WjlwZVZpRlNueEZMdlhOZTBxRlNpeEZqcUR2LVZOVmRRY3QtTll3dUlLdnN0Q2ZRWjVLZVpIY2R3V3RlLVNha0gxUTc4OHJLN21vSFBIT2JyR3c5anlPMXR2ZHg3UXY5eTFyUEJhSFZuNVAyenRsZlRqMmNxTHh1bmFEb0lhSE1jZw?oc=5",
+   "source": "citybiz",
+   "published_at": "2026-10-08T13:57:09+00:00",
+   "collected_at": "2026-10-11T15:44:30+00:00",
+   "summary": "VEIR Raises $110 Million Series C to Scale Superconducting Power Technology for AI Data Centers citybiz",
+   "keywords": "power",
+   "score": 2.0,
    "read": 0,
    "notified": 0,
    "topic": "ai",
@@ -5070,6 +5238,20 @@
    "language": "en"
   },
   {
+   "title": "Bloom Energy boosts AI data center power with f... - Pluang",
+   "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQZ3hpR1dwNG5EejVaY1pQY3RUMllBcW9EZGNmVEVRd2pabnBTSzlWVE9GOHBpZUxLMEpLMUdTZVJIenRKNW52WlpzSWFGN2lacVdwa0FNZ3BzTm5jaDgyQnVrUjcydWZ3U2VxNmtXZEFNWGVXYkw3LVNOV0FONVlVWnRqdnFIRmNEcUVDTGx3aUNWaVRvLVhkVDRn?oc=5",
+   "source": "Pluang",
+   "published_at": "2026-09-30T07:00:00+00:00",
+   "collected_at": "2026-10-11T15:44:29+00:00",
+   "summary": "Bloom Energy boosts AI data center power with f... Pluang",
+   "keywords": "data center,power,energy",
+   "score": 6.0,
+   "read": 0,
+   "notified": 0,
+   "topic": "ai",
+   "language": "en"
+  },
+  {
    "title": "HELIOS SOLAR AG ADVANCES 1 GW MALAYSIAN SOLAR PROJECT WITH CAPITAL MARKETS AND OFFTAKE FRAMEWORK - TradingView",
    "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPV0VwZ21kcS1QWFlSeWZTSS1CWFROZlRvWExmUE81d3JXVUVQYklfRzFxUlpYa2N0ZXB2SDN0RFJCcW9ObG9IcG5DVHA0VVM2emdLSjZJbUJydWo1MUpEWUhrT3ZKdTVYLWlNdWZTUW1Ca2lvS2ZtdTE5cVRESjVsVUhKSFhMTzRrc2lHNXhUWWY1NVpnRGI4cHV4UFRpLXB5b0lVS2ZRZkpjZVZCYTRmcDdqaHFsYjRjQlk3LXNiajllNEw3YVBmRS1vTVhHWXN0ZjcyYndtZ3dGOXJhY1h1cXcwMWw?oc=5",
    "source": "TradingView",
@@ -5292,6 +5474,20 @@
    "notified": 0,
    "topic": "ai",
    "language": "zh"
+  },
+  {
+   "title": "The Global Data Center Boom Has Arrived in Southeast Asia - The Diplomat – Asia-Pacific Current Affairs Magazine",
+   "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQX2RtczFSMW0tTjFZcHBvWHdLS0hmU2lBWlk5QjE3RGJLRGgtRHBYMUs4ektCUjBndFBIWXo4RS1zRjFKOE84TExURDhuUGo4RmRIWjJfZjByV0IyTVhpUzV5dnN1Y1FJTUxYRFBfaWlJNDVlUjBhOG1PMzRBeVExMm4xb0ZGY0QwcXJua0Vzczh3ZVJC?oc=5",
+   "source": "The Diplomat – Asia-Pacific Current Affairs Magazine",
+   "published_at": "2026-09-29T07:00:00+00:00",
+   "collected_at": "2026-10-11T15:44:30+00:00",
+   "summary": "The Global Data Center Boom Has Arrived in Southeast Asia The Diplomat – Asia-Pacific Current Affairs Magazine",
+   "keywords": "data center",
+   "score": 2.0,
+   "read": 0,
+   "notified": 0,
+   "topic": "ai",
+   "language": "en"
   },
   {
    "title": "Quill, China Mobile plan joint AI, data centre projects in Malaysia - Telecompaper",
@@ -5630,6 +5826,20 @@
    "language": "en"
   },
   {
+   "title": "Zeo Energy, Ewyze Team Up to Power AI Data-Center Expansion - Yahoo Finance UK",
+   "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQallQNzhOX3lCRlJZcXFGV1NUdUtFZ0FzOVZ4NjNLS0ZtVkx3VEtWcm1JbVc3SWwyajUzbXJaaU4wZmN2bHJ3emgyZ3JLWTI4T3lvRHNVUTFQdVhGN0c5dGJPd0p4R093dTBXN2s3QVRWRktCYmxsNnZkVVQwUkE3YWVR?oc=5",
+   "source": "Yahoo Finance UK",
+   "published_at": "2026-09-25T13:37:00+00:00",
+   "collected_at": "2026-10-11T15:44:30+00:00",
+   "summary": "Zeo Energy, Ewyze Team Up to Power AI Data-Center Expansion Yahoo Finance UK",
+   "keywords": "power,energy,expansion",
+   "score": 5.0,
+   "read": 0,
+   "notified": 0,
+   "topic": "ai",
+   "language": "en"
+  },
+  {
    "title": "NANO Nuclear, IP3 and Cybernetic Intelligence Sign Letter - GlobeNewswire",
    "url": "https://news.google.com/rss/articles/CBMimwJBVV95cUxQZXF4N0lGQ1VJRjRGWjBXUTVWLXNTREwtSmV1Zk40N2Z6ejBEOF9SYjhXQXpxMjlObWt2NmNkQjhtV0hiYm5CY1VOeFNuOTJwSlV0WUg5eVVhal9CMklMTUVzaE00c012RXk1MHFfMVFLQzREN2w2X19rbXdYdUJ1dnRiaXpZaF9QY2pJSExoMzB2cGlaamFpS2pMNDh0bEp4UllrakF5ck54Ql9INXBONlZFN1c2V0ZrWGlIdU1tUzR1d1hJVjRCTjk1dm5lVXBXaGJwWFpwWWpUc2ZYSzlrNlA2amg3MlF4WFczcWVwUjI2RkJwYjdRc2dYNjFDcVNqalQ4cjNoMVB5N2E3aDdSNGhZMDZPNEpkMjNz?oc=5",
    "source": "GlobeNewswire",
@@ -5868,6 +6078,48 @@
    "language": "en"
   },
   {
+   "title": "HE Group bags RM124m electrical works subcontract for Johor data centre - The Edge Malaysia",
+   "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1yWkl2Tk1BbjIzMHJDcnpsZ3JPQVFBN1R4dUdNcnF4UDlJZXNhVU1QOG5TUWJUUmpQR3JhSVBzSWc2TzhvcHhDYlFCU0VKdDBI?oc=5",
+   "source": "The Edge Malaysia",
+   "published_at": "2026-09-24T07:00:00+00:00",
+   "collected_at": "2026-10-11T15:44:29+00:00",
+   "summary": "HE Group bags RM124m electrical works subcontract for Johor data centre The Edge Malaysia",
+   "keywords": "malaysia,johor,data centre",
+   "score": 8.0,
+   "read": 0,
+   "notified": 0,
+   "topic": "ai",
+   "language": "en"
+  },
+  {
+   "title": "State Data Center Policy 101: 2026 Legislative Guide - MultiState",
+   "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBKbG5VQzhnMDlHbS1BYmo5djJKaEExVG5Sa1dna3hhbHJWZ1VpWTZ0Y1EybUJGdWRNYktqSEN1TzlQa0FBR2IwZ2EzdHpZcUdxSGJiZjdWbV9NT0Zia0d3NHppTzRNeVBNMDJqdGZDel9hQQ?oc=5",
+   "source": "MultiState",
+   "published_at": "2026-09-24T07:00:00+00:00",
+   "collected_at": "2026-10-11T15:44:30+00:00",
+   "summary": "State Data Center Policy 101: 2026 Legislative Guide MultiState",
+   "keywords": "data center,policy",
+   "score": 3.0,
+   "read": 0,
+   "notified": 0,
+   "topic": "ai",
+   "language": "en"
+  },
+  {
+   "title": "Why 800V DC Is Reshaping AI Data Center Power - Environment+Energy Leader",
+   "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOWmFUSDVJY3dkYnlHbUNYb0I2QzdFN0lYem9BeklEcWs4OGsxMGtVd2c3N0c1ZS0xRDlzNEp0X1dCZUd0T0JOakxiZTFRc3RJU2tWaV9odUtNaVdzNWZUOUpDbGxtLXdZRUVUSERURVdNSzI0VkJuZTBhOWNxbjcxOURqS1g2cFdFc21Ha1JqSzdlRXVMOEN6TEdYYVJSelZwLVE?oc=5",
+   "source": "Environment+Energy Leader",
+   "published_at": "2026-09-23T20:00:00+00:00",
+   "collected_at": "2026-10-11T15:44:30+00:00",
+   "summary": "Why 800V DC Is Reshaping AI Data Center Power Environment+Energy Leader",
+   "keywords": "data center,power,energy",
+   "score": 6.0,
+   "read": 0,
+   "notified": 0,
+   "topic": "ai",
+   "language": "en"
+  },
+  {
    "title": "Solar panels offered to all State govt buildings - Daily Express Malaysia",
    "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxObXBoaW5yVHV2SkdReTl5dUpmT01IOHMwWVZDWGpYWHVyZFVLR21tUVV3Y0R3UzNTZm0yQXFqUXZFVENuazNmcVVNcmVTSW4wTzdMN3NWYnEzOTlHZkphc3hxSXI2Tk9rRm5rMUhKNXdLd3NJU2FVV25lc0R4Z196UGdZdFB1cFlaQXZLQXRVeFdUa3hGQWtRMQ?oc=5",
    "source": "Daily Express Malaysia",
@@ -6029,6 +6281,20 @@
    "collected_at": "2026-10-11T08:56:15+00:00",
    "summary": "Singapore to prioritise high-value AI infrastructure as Asean markets play to their strengths: Tan Kiat How The Business Times",
    "keywords": "ai infrastructure",
+   "score": 2.0,
+   "read": 0,
+   "notified": 0,
+   "topic": "ai",
+   "language": "en"
+  },
+  {
+   "title": "Govt exploring special power, water provisions for data centres - NST Online",
+   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNU1BSWGQzcGFQZDZ4bVBfYWpoQmZFemZBbDB5UVBFSGt4eFhPVlE3bVYya1o1OHAwNkZmVGNsWHJoQm1SaVBuQ2NJV0d3RktyNHA4TnhETXB1djlpOU1yMFhKZlItRkRfZHVtR05yN0ZoTDNFbTN2dTRnOXlqVVFsQjh2VW5RZ1hDSS0xMWFHTVdLemNKVVVRd2FuX0ROb1JQdlR3WXpBZnRwc3I3NWfSAbMBQVVfeXFMTnlyeE95SlRNOFhOUVkyTFJLMFc5Y0lXcVJzMV93ajd5RWRxZ0doQjY3VjhqcjZzLXpzYXVnRW1qNEE1NXR2SlpsYTU3SmlOSHFIMFZWZGpfVWRwZjFKRXlHM0VsVVR5Vzk2Tm9XQWp3eXVyb0MwdWZlYjc1UkNYUnRhbS1FVVo1dzJWbWIwOEpTcFZTd2tZeWRUVWdaWTZEU2R6X2VEbGRxdXFBM2d6cklVWGc?oc=5",
+   "source": "NST Online",
+   "published_at": "2026-09-23T07:00:00+00:00",
+   "collected_at": "2026-10-11T15:44:30+00:00",
+   "summary": "Govt exploring special power, water provisions for data centres NST Online",
+   "keywords": "power",
    "score": 2.0,
    "read": 0,
    "notified": 0,
@@ -6330,6 +6596,20 @@
    "language": "en"
   },
   {
+   "title": "Texas Gov. Abbott orders data center permit halt weeks after issuing moratorium - CNBC",
+   "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOSVJvaHJuMzNxRXo2WE9SVHk3RXFMZ0t5QnRzV20zQi1CeEhoYXUxQVRqcGtrdjlHX3dhcDhpRUdSOGpia1QzbUlDSzdXdmszaGVreklianEyX0JVU0xONnI3OHRXakNPd3FGVFJhQ3RHeVc5QWZTRUpxcWNEa0daekxHcTlzbHVF0gGOAUFVX3lxTE5vVTQ4Wml3TmtzMUJ2M1FoVXFFVGw1Y05UbVB5LTl4bE40RElnSHlzRlRyS21ON0FrM0NCVVZfZklhSXBVRXR6MnBiaXdkRVVOaEl3c1lua0c1RkNPMHo1ZExXYklmaUh2TjZUMGdncF9faG5uTU00U2t0M21VTXAyVzBHRHZYbUVYRjVpQVE?oc=5",
+   "source": "CNBC",
+   "published_at": "2026-09-21T07:00:00+00:00",
+   "collected_at": "2026-10-11T15:44:30+00:00",
+   "summary": "Texas Gov. Abbott orders data center permit halt weeks after issuing moratorium CNBC",
+   "keywords": "data center",
+   "score": 2.0,
+   "read": 0,
+   "notified": 0,
+   "topic": "ai",
+   "language": "en"
+  },
+  {
    "title": "Can insurers keep pace with the AI data centre boom? - Insurance Asia",
    "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPTkxIN2hoQWxJdUxLbWEtc3Bxa2stRE0wczFWZHNHZ0dJbGo1OVpIRjAxNmZMTFFSYktGR1dkWlhMR2xjd1hINk9pVmR0UkNVN28yOWphdHlYUGhvQUJ1djNndTRsRkpjcEtzUEVjdGJGYWZxZEpXQXljQnVsZHlJMWcwQXA3SFZSZVVVcnphWmYyVmJRV09waA?oc=5",
    "source": "Insurance Asia",
@@ -6482,6 +6762,20 @@
    "notified": 0,
    "topic": "ai",
    "language": "zh"
+  },
+  {
+   "title": "Anthropic and OpenAI hunt for smaller data center deals, sources tell CNBC, in race to deploy AI capacity - CNBC",
+   "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQLWVDWHVZSXRaSnJENExMeU1PSjI3dXFEMUY3NWdsT1VOTU53NzJ6MXRZRl9Od3FQRFNpSllldGxYenM4RmdhVlp5MjJ1YmVvV01KTTI1Xy1BSTJrNmRuS24tME9DckN1ejRxQno5elpteEV6RlRGNFRaNkUzb1EtN0Q3SnExQlnSAYwBQVVfeXFMTlVtampvZjJYUEo4WERsUnYxd3AxdG9MWTdFY0pUcXNQYWp6Q2tsS1lfZTNESEdBaHV1T0VfcVpIVVNjSDRkV09wMDROWWZtaXlTQ1Jrd3NGVXBCdXMtWE1GWVlzSk9aekpRek00U3NwMXdWa2ttZFZlU3UtZmsxS2F6bHh6a25STXI0dHI?oc=5",
+   "source": "CNBC",
+   "published_at": "2026-09-18T07:00:00+00:00",
+   "collected_at": "2026-10-11T15:44:30+00:00",
+   "summary": "Anthropic and OpenAI hunt for smaller data center deals, sources tell CNBC, in race to deploy AI capacity CNBC",
+   "keywords": "data center,capacity",
+   "score": 3.0,
+   "read": 0,
+   "notified": 0,
+   "topic": "ai",
+   "language": "en"
   },
   {
    "title": "reNIKOLA secures off-take deal for USD-245m Malaysian PV project - Renewables Now",
@@ -6771,6 +7065,20 @@
    "collected_at": "2026-10-09T15:19:53+00:00",
    "summary": "US data centers seek to avoid grid connection delays with on-site ‘behind-the-meter’ power Moody's",
    "keywords": "power,grid",
+   "score": 4.0,
+   "read": 0,
+   "notified": 0,
+   "topic": "ai",
+   "language": "en"
+  },
+  {
+   "title": "Grid connection request filed for 100MW Chile data center project - BNamericas",
+   "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNdVJLQkpqVlVDaWZ3c2dkaW9yU1YzT0xCT0NQUGE5dG51bFV5S1VQNDFEcWJ3Z2hLaWsyeDBSWk10dDJ1TnEtMEFzaUhJRmgzWGE0cWNVbXJfbXdXTFJKNzZwQmxUaEptRnl5eGhaLTc1UEZnTG05NzJrRDlKRklhYlQ1RlRpT25VRlM2T1ViQW0taWV5aVZvSWJGZUZPWjBJSmc?oc=5",
+   "source": "BNamericas",
+   "published_at": "2026-09-16T07:00:00+00:00",
+   "collected_at": "2026-10-11T15:44:30+00:00",
+   "summary": "Grid connection request filed for 100MW Chile data center project BNamericas",
+   "keywords": "data center,grid",
    "score": 4.0,
    "read": 0,
    "notified": 0,
@@ -7240,6 +7548,20 @@
    "language": "zh"
   },
   {
+   "title": "What is So Hard About Behind-The-Meter Power For Datacenters? Part 1 - SemiAnalysis",
+   "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1DdV9CZ0hCRXBNMHh5cnExaGtEelE0NUdaQnluSmI4cDd4U0dCenZnbHAwTlVGcG5XT3pPY0wyQVZxNTFaWmZnZUlJbjUxZlkwcjR4NG9Ea19vRU9KemdZRm9NVFhIaG85dkdUS3hrLXcweVB6UU9wT1V3?oc=5",
+   "source": "SemiAnalysis",
+   "published_at": "2026-09-10T07:00:00+00:00",
+   "collected_at": "2026-10-11T15:44:30+00:00",
+   "summary": "What is So Hard About Behind-The-Meter Power For Datacenters? Part 1 SemiAnalysis",
+   "keywords": "datacenters,power",
+   "score": 4.0,
+   "read": 0,
+   "notified": 0,
+   "topic": "ai",
+   "language": "en"
+  },
+  {
    "title": "大马中国太阳能进口翻倍 东盟狂扫814亿清洁科技 - KLSE Screener",
    "url": "https://news.google.com/rss/articles/CBMi1AJBVV95cUxORENmTk4xYTdWeDNWSGgzRE9aazU4LTM3ODZFamV1cUM2QnhNVGRaWjVHY2I0dEZhRW12VGRqbzd6ZEhOYncyREVHdElqMDVVMkpEb0s3RDNFVWo4UmxXLWZKWG9NOEo4S0VTX01QREJqakJxajZTVXRuS3lEeXJrUnFvX21LVGNjUm5XV0xfQTZKTFNnOEhoblVQcHd1REktN1QtV1c3THp5WVVrV2xoa1JzOGdweVZfMXNyNHF6T3lyQ0NiTWxDdmdIUFFhOGs5blhzT0NGOExKQWJUVzA4Z2IzTG45U242REJIR0xzNGdfSXY3THUtbmticFY5ZHlWQkp0TGVTOGkzakRiRTFyQzNlRlNwSk5mUkJEb3BudE52MURUWnpXTmZqcDRoekZZM1ZNMmxlRUQxa3N0OGFXYU5PSDBlc3BvU013RGh2c3dHMy1H?oc=5",
    "source": "KLSE Screener",
@@ -7364,6 +7686,20 @@
    "notified": 0,
    "topic": "ai",
    "language": "zh"
+  },
+  {
+   "title": "Our blueprint for responsible clean energy growth in Finland - blog.google",
+   "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOcDdLRlVidVZpQ0NfMS1nRS1LYkRnelplQkFmY1N5VWpLemgyQW54TU1FeGl5aGN3aG9kb0pCSHBpWVFFM19KRlpYUFVXVktpOWdqOFlmWVVaTHBPY3AtdFVTRnJsenlfY2hoS1ViRnAyMTdPb3pIbC1yOWRyOUNxU0llbDVBUmpuZkFDYXpwYlZKT0ZFNUJxQVE1Ui0wcVVB?oc=5",
+   "source": "blog.google",
+   "published_at": "2026-09-09T07:00:00+00:00",
+   "collected_at": "2026-10-11T15:44:30+00:00",
+   "summary": "Our blueprint for responsible clean energy growth in Finland blog.google",
+   "keywords": "energy",
+   "score": 2.0,
+   "read": 0,
+   "notified": 0,
+   "topic": "ai",
+   "language": "en"
   },
   {
    "title": "大马中国太阳能进口翻倍 东盟狂扫814亿清洁科技 - e南洋",
@@ -9396,6 +9732,20 @@
    "language": "en"
   },
   {
+   "title": "Data Center World Australia 2026 - Hitachi Energy",
+   "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOQmtaN013ZmNaSXFBb1hFbWFFOG0wLTZPSmxmb3NlS3ZEVGxRY0lCd180akg0ZXpzU3RRa0Rua01wYW82VnQyaXBDZDhUUjV2S1d1TnpMZWtSYTcxbENGZXRXaGZPZHhHMjlCdWRIU18yLTk2MXByWUdMT0N3TGZHMEQ4OXppajl2UGluQ3NyVk41M0FhZXdpX0hTbmJQLTZkVWJLdWIxR0NaZw?oc=5",
+   "source": "Hitachi Energy",
+   "published_at": "2026-08-17T11:07:46+00:00",
+   "collected_at": "2026-10-11T15:44:30+00:00",
+   "summary": "Data Center World Australia 2026 Hitachi Energy",
+   "keywords": "data center,energy",
+   "score": 4.0,
+   "read": 0,
+   "notified": 0,
+   "topic": "ai",
+   "language": "en"
+  },
+  {
    "title": "JS Solar secures RM18m solar project at AEON Mall Seremban 2 from TNB unit - The Edge Malaysia",
    "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFByaXN3c3JuaFd3Q0Y5ZXNQaU5BMGVQVnRwTnd2RFFhaXN3d2JmRHpKRXNJZ2lTZHJBbUNvSFpxb0hQcHJUNlZfVDJGWjFXcTVm?oc=5",
    "source": "The Edge Malaysia",
@@ -10278,6 +10628,20 @@
    "language": "en"
   },
   {
+   "title": "Empyrion tops out upcoming Malaysian data center in Johor - Data Center Dynamics",
+   "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPd1BGU3JKdm16QW43dkprYThQUldyN1RTd3JUZnNtcEk2LXBmSi1SZ2NVRHR5SklBTm1XbFJ4WW5wSU1LeE9Rclg0cWtUTU1zc3Q0MGo1TC1QeEsxelFMWUh5TmxRUHpDZWF6cGkxc3NsY0Uyd2tsX1BKQjd5UFZmTTV6YWxQV3p3TUpKbFZaQnRQMDRrREEteVpTWjRsWVpjNEF3?oc=5",
+   "source": "Data Center Dynamics",
+   "published_at": "2026-08-07T07:00:00+00:00",
+   "collected_at": "2026-10-11T15:44:29+00:00",
+   "summary": "Empyrion tops out upcoming Malaysian data center in Johor Data Center Dynamics",
+   "keywords": "malaysian,johor,data center",
+   "score": 8.0,
+   "read": 0,
+   "notified": 0,
+   "topic": "ai",
+   "language": "en"
+  },
+  {
    "title": "Malaysia Clean Energy Week 2026 Announces Powerful New Speaker Line-Up of Clean Energy and Sustainability Leaders - SolarQuarter",
    "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPU1ZSbXZkVmJ2R0ZtRnVUVkMyZEdxODJQMnFYcXJBZmwyY251TkVZeFhuOHFQcmo4SzZkX0Z6TkJfMmhOSnFaZGE0bkV0b05TTjVsTXpnNTJOYzNFOHpDcGExYjdnajNBaC1DTFVuV1MzdXFlSHc0UXhXSmlVN29sQ3EwR3FELWFwUnRxUmhMV3Z1QmtEVXN4ZG1TNlZfb2pUS1lkanhtU1ZyNk53NEd1MFdLczhNY3hWVzJxajRBWTJ3RTdYRTMzSnpPYlp5WmlIMXlSSVpBWmFQWHpaajBoZ3dtb00?oc=5",
    "source": "SolarQuarter",
@@ -10719,6 +11083,20 @@
    "collected_at": "2026-10-09T15:19:53+00:00",
    "summary": "Assam Commissions First Government-Owned GPU Cluster to Advance AI-Powered Public Services Konsulteer",
    "keywords": "gpu",
+   "score": 2.0,
+   "read": 0,
+   "notified": 0,
+   "topic": "ai",
+   "language": "en"
+  },
+  {
+   "title": "AI's Electricity Demand Is Not the Real Problem. Its Inflexibility Is - Crude Oil Prices Today | OilPrice.com",
+   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQU3lQT2JVN1htYVgzb01PZGdhd2FIcTkyQWM2V2NMSTBMSGZILURtTElnU0Y2c19lM1NqdktHekFRY2VabFN0REhkWDk0cmdnX2tGeVRUY0hBQkNUd3ZBTjFVaXVoSkpQRUlnZHlONFZwdXRKM2FKYkJ2MVI2Y0FPYTJzcERMam1qVmh5c1NLa0lKcGYwNzdRdkEzMFJZM0tOSDV0Ynh0YnUtdUtyUkowTFhLY0RRd9IBuwFBVV95cUxQbG9hdWlmSjBLYk8yejJXTGEzQ19NMUc2SzN3aXNzNHB4NDVlSVRSS0ZqZTJrTHdyRVozd2N4bjVjVWp5ZzNfYWdQNWFTNk9hcW9jM2I2SFJZWFlscmlJTmM1OFNJbWZoNTlzVGJ4YW05X243TUdjVG9kSmNuVEhZczFqR2RhYkQwa2pKS0ZWaW9OS294WWp0X0JLd1ZFM0lwMWczX1IxTzYzUXFOczVlaF9HOTNXcVFyRTJn?oc=5",
+   "source": "Crude Oil Prices Today | OilPrice.com",
+   "published_at": "2026-08-01T07:00:00+00:00",
+   "collected_at": "2026-10-11T15:44:30+00:00",
+   "summary": "AI's Electricity Demand Is Not the Real Problem. Its Inflexibility Is Crude Oil Prices Today | OilPrice.com",
+   "keywords": "electricity",
    "score": 2.0,
    "read": 0,
    "notified": 0,
@@ -11664,6 +12042,20 @@
    "language": "en"
   },
   {
+   "title": "Malaysia at 32% renewable energy capacity, on track for 2030 goal of 35%, says Fadillah - The Edge Malaysia",
+   "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9URlprQmZ6WUVZRl9QaDB2cmFHdmxyNWxHUVd2OUpwWHFVWE9JeWd4NExDV0h0TU9RSlhrNE5oNGlOYnJ1aTczZjhRLVZPWFE0?oc=5",
+   "source": "The Edge Malaysia",
+   "published_at": "2026-07-23T07:00:00+00:00",
+   "collected_at": "2026-10-11T15:44:17+00:00",
+   "summary": "Malaysia at 32% renewable energy capacity, on track for 2030 goal of 35%, says Fadillah The Edge Malaysia",
+   "keywords": "malaysia,renewable",
+   "score": 5.0,
+   "read": 0,
+   "notified": 0,
+   "topic": "solar",
+   "language": "en"
+  },
+  {
    "title": "Malaysia's Data Center Dream Meets a Chip Checkpoint - ProductNation Malaysia",
    "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE41cWRTRWlURDR4cTVCNHRoVTVCSC1QUzJGNGdCLWFRbXNVOU0zUlZEd0V6VjFrcktOUUptV05admdua2FPc01SU0NDQi1UdFM1b0Z5bmJYSXF1T2RCWkxmcHIyUWIxazNWeVpGS0tGY0ZGMzV1cE84azVUa1M?oc=5",
    "source": "ProductNation Malaysia",
@@ -11704,6 +12096,20 @@
    "notified": 0,
    "topic": "ai",
    "language": "zh"
+  },
+  {
+   "title": "“Power Supply Cannot Keep Up”: US AI Data Center Expansion Hits Limits as Construction Delays and Local Restrictions Intensify - economy.ac",
+   "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFA3UFJVSDZaMzhUNTQwT0hsVDNDSU1XMTMtcDFFNDBlT1g2VWJzMXZuTGV5UXpfTkJTX2hpZnRmTy1hU2dtQVpMdy05emJ4U0xjT1FrczNpRQ?oc=5",
+   "source": "economy.ac",
+   "published_at": "2026-07-22T05:58:09+00:00",
+   "collected_at": "2026-10-11T15:44:30+00:00",
+   "summary": "“Power Supply Cannot Keep Up”: US AI Data Center Expansion Hits Limits as Construction Delays and Local Restrictions Intensify economy.ac",
+   "keywords": "data center,power,expansion,construction",
+   "score": 6.0,
+   "read": 0,
+   "notified": 0,
+   "topic": "ai",
+   "language": "en"
   },
   {
    "title": "Malaysia opens sixth Large‑Scale Solar tender for a 2.5‑GW buildout - Asian Power",
@@ -13372,6 +13778,20 @@
    "language": "zh"
   },
   {
+   "title": "杨忠礼电力拟分拆业务 数据中心最快明年上市 - e南洋",
+   "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBpTFVDcm1hX0JzLVljNWNxbHBqWVhhWlRGVWpaaUhJVUg4blVxOURyUGV2dlNiMG9qMkUyNEFBVFVKcUo3ajBUbEI0b2Y1YjZGbmFZdHI0amlpcVo1RXZJbmJSVQ?oc=5",
+   "source": "e南洋",
+   "published_at": "2026-07-01T07:00:00+00:00",
+   "collected_at": "2026-10-11T15:44:33+00:00",
+   "summary": "杨忠礼电力拟分拆业务 数据中心最快明年上市 e南洋",
+   "keywords": "数据中心,电力",
+   "score": 4.0,
+   "read": 0,
+   "notified": 0,
+   "topic": "ai",
+   "language": "zh"
+  },
+  {
    "title": "Why Malaysia must pause its data centre boom - Aliran",
    "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxORDV2d3I0UzdhcWd5MXpNeEp0MW5DN2djTFcxanNHaHJkOXBrTG0xUFVONGQwaVptOG1hanpESmNMYlVRWEhSSWQwdWE0SFU1QjNEVEkwaV9CZ0k3NnlKN0ZicXNocGVOOGVDLXFONnQ0dU1jZ2JtRy1yeWc2RjRRaWxIQTRvM0Nhc3NqMw?oc=5",
    "source": "Aliran",
@@ -14318,6 +14738,20 @@
    "summary": "Top US energy regulator pushes grids to overhaul data center power rules Reuters",
    "keywords": "data center,power,energy",
    "score": 6.0,
+   "read": 0,
+   "notified": 0,
+   "topic": "ai",
+   "language": "en"
+  },
+  {
+   "title": "SunCon, Top Glove, MyNews, GIIB, Binastra, Lianson Fleet, Swift Energy, PUC, EI Power & WCT - The Edge Malaysia",
+   "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBVMDJUTDM2SXQtNXlxUlB3WGRZdjRSYzBWVVg5dDBQMXUtcjY0ZDZoSlg2allzNE1DVkQ3aWtxVDVDVEh4RnJ3Y3M4WGZ6RnV5?oc=5",
+   "source": "The Edge Malaysia",
+   "published_at": "2026-06-18T07:00:00+00:00",
+   "collected_at": "2026-10-11T15:44:29+00:00",
+   "summary": "SunCon, Top Glove, MyNews, GIIB, Binastra, Lianson Fleet, Swift Energy, PUC, EI Power & WCT The Edge Malaysia",
+   "keywords": "malaysia,power,energy",
+   "score": 7.0,
    "read": 0,
    "notified": 0,
    "topic": "ai",
@@ -15430,6 +15864,20 @@
    "language": "zh"
   },
   {
+   "title": "应对数据中心需求激增 国能430亿强化全国电网 - e南洋",
+   "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9ldmx6cEdLaWFhc2Y0Zkc0aTB1Y3NHMzVlTzdDNk9xYzEzejJFb0JlMXducXBRQlc5S1ZaZ0t1dWJpTVJScWFMLTRLRHdheWU5UjdadXFNeW95U1c0T1Q2ZW1ESQ?oc=5",
+   "source": "e南洋",
+   "published_at": "2026-05-28T07:00:00+00:00",
+   "collected_at": "2026-10-11T15:44:33+00:00",
+   "summary": "应对数据中心需求激增 国能430亿强化全国电网 e南洋",
+   "keywords": "数据中心,电网",
+   "score": 4.0,
+   "read": 0,
+   "notified": 0,
+   "topic": "ai",
+   "language": "zh"
+  },
+  {
    "title": "Malaysia offers cash rebate for home solar - pv magazine Global",
    "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNT0xCOXFzckdrMHUyR3dadjJpbzBuTWQ1NlpLVmY4YnJ5RkdBQUlNaEdpRzN0a2JnejAzaHpEM215YkpxYTlNNm9NOVFYNW5ZMXpDdXY4UWhBMUNSeGlDbEJwc0VKS2hBY29DdU9hZ3BkUE5JbmIzU0xWR1ZveEhpamFuUllQa0hGZEE?oc=5",
    "source": "pv magazine Global",
@@ -15693,6 +16141,34 @@
    "read": 0,
    "notified": 0,
    "topic": "ai",
+   "language": "zh"
+  },
+  {
+   "title": "能源部拨1.5亿推SuRIA Home·家庭用户3000令吉太阳能回扣 - Malaysia-China Insight",
+   "url": "https://news.google.com/rss/articles/CBMivgJBVV95cUxPQlU3MjhWNFlibjRQTG5sLW1LbVRaQVo0ak56SnRYb3hrdXNVTmszd3JjeGVtMTA1VXBSWUhQcGR0N0U1REFqcmdBLXRzcThQSXZ0bl8ydGFaRVNDdWFRczQxNFY3clJZTlg2dlpVQkR6ZkNJMkRLVGxCR3l3M2w4TE5fUVZneW1MQUhvaHN3N0NObm82T1YzaUd0d0s5ajZFUzc4dFNhZVRIbTlmM3F1cS1iWUhjZ0VoTU15YjNUY1pnM1pPTlVYMzFhS184c2RsU1JRYnNXWXhVR1ROb0ozaE9DNkVfWllUN3hSR3o1QW1IQ1E0dmRXQ0h2NlNqNjJiNUxhWHNhZHJWVnlxQ01VbUxzakZlNVBJU3pzNW1GckxvM2gtdTBHMXFxeHNBZkUzT2dtX2YtajJTSW8yaEE?oc=5",
+   "source": "Malaysia-China Insight",
+   "published_at": "2026-05-22T07:00:00+00:00",
+   "collected_at": "2026-10-11T15:44:21+00:00",
+   "summary": "能源部拨1.5亿推SuRIA Home·家庭用户3000令吉太阳能回扣 Malaysia-China Insight",
+   "keywords": "令吉,malaysia,太阳能",
+   "score": 8.0,
+   "read": 0,
+   "notified": 0,
+   "topic": "solar",
+   "language": "zh"
+  },
+  {
+   "title": "水务能源研究协会：装太阳能系统 应先仔细了解维护成本 - 国内 - 全国综合 - Sin Chew Daily",
+   "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5iOGpCMnVSZkhtWHVWVXd5LV9kcDM0ZS02VjA1dk1tNWEyb3RyRWZ2aW9waUVad01abWVhOVR6clNxQUtvOHFXZ1ZLLTZ3TXIxWElQUmV5bTJCOHAtRTdxb3Y2SS1MZw?oc=5",
+   "source": "Sin Chew Daily",
+   "published_at": "2026-05-22T07:00:00+00:00",
+   "collected_at": "2026-10-11T15:44:21+00:00",
+   "summary": "水务能源研究协会：装太阳能系统 应先仔细了解维护成本 - 国内 - 全国综合 Sin Chew Daily",
+   "keywords": "太阳能",
+   "score": 2.0,
+   "read": 0,
+   "notified": 0,
+   "topic": "solar",
    "language": "zh"
   },
   {
@@ -17600,6 +18076,20 @@
    "language": "zh"
   },
   {
+   "title": "Solarvest Bags RM89.5 Million EPCC Contract For Perlis’ Solar Project - BusinessToday Malaysia",
+   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOZ2pZMWZUSEhraTU3TVFoc1U5UEV1OHdHdGg0b1A5cEIwRUdWWThPb0xYUUJFa3doVzNlMExJOW5MOUx1N2ZzbHlsMVZFNnRtcXBma1FnVlhsRFRER1RkWTNwTGtqWTFpS01jcnh1bmdfb0J3VHpPTnJlUWZneGV6Q2FpUkgtZHAwUzkyV1dMdGVyTWptT2hCdHZsYVhyaTJCdDhUSUxhbUpLTmxtdV9LZkZxYw?oc=5",
+   "source": "BusinessToday Malaysia",
+   "published_at": "2026-03-19T07:00:00+00:00",
+   "collected_at": "2026-10-11T15:44:17+00:00",
+   "summary": "Solarvest Bags RM89.5 Million EPCC Contract For Perlis’ Solar Project BusinessToday Malaysia",
+   "keywords": "malaysia,solar",
+   "score": 5.0,
+   "read": 0,
+   "notified": 0,
+   "topic": "solar",
+   "language": "en"
+  },
+  {
    "title": "What Solar ATAP Really Means For Malaysian Businesses In 2026 - BusinessToday Malaysia",
    "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQakFTNWt4S2JxTEtGY3doSFQ0d0FQX202OTlDZ18zeGNJWDE0YTZwV3BIekppNWd1ZmtRNjB1U3l0YlAzTUR6NmdnY0N2d3NKTGJTa3pqWjlQNG9kYWI3dFV6UGVFZDNYODlabFl1bEVVSTIzTDB1TUp5dWF2X01TSHE3QTY3MjZBWUFxUE5aSzE5MVNWWTFPZjZRNmpqbDBhWG1zYnJMSjFuQQ?oc=5",
    "source": "BusinessToday Malaysia",
@@ -17992,6 +18482,20 @@
    "language": "en"
   },
   {
+   "title": "Maybank foresees robust pipeline for Malaysia's renewable energy contracts - TNGlobal",
+   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPcE9uT1c4SElXM0VJMkpGT2Zka1I5d0VkOFA3UnFRVExRVDN3akg5Zm1jZ3c0TmRWbHl6dXd4VG93eWJmSkhtTHVkRnNubHFYbzQtSmJhdHdobWFaeXFrdUd0TmhYdU1EaXRxV1haeHQxWEJCM2RFa1d4MWZQYmxYbjNubDNfMDB6STVvQThZZ1dDVmk2ZjBTclpxTzhQcVM3aTlKTDNINWJ4ZF9hN3c?oc=5",
+   "source": "TNGlobal",
+   "published_at": "2026-02-24T08:00:00+00:00",
+   "collected_at": "2026-10-11T15:44:17+00:00",
+   "summary": "Maybank foresees robust pipeline for Malaysia's renewable energy contracts TNGlobal",
+   "keywords": "malaysia,renewable",
+   "score": 5.0,
+   "read": 0,
+   "notified": 0,
+   "topic": "solar",
+   "language": "en"
+  },
+  {
    "title": "马来西亚最大独立水面光伏破土动工 - 见道网",
    "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5XSkhYY0VsT1pweHZ2VTdtQklZVXQ5TU83M2l5cm9vMnpFSERTNnpUbFNyWEszaV91eEx4Tk92M3hpQzRud0h3YXoydUNZZ1k3WjRmaA?oc=5",
    "source": "见道网",
@@ -18194,6 +18698,20 @@
    "published_at": "2026-02-10T08:00:00+00:00",
    "collected_at": "2026-10-09T15:19:45+00:00",
    "summary": "开工！马来西亚在建最大单体光伏项目 新浪财经",
+   "keywords": "马来西亚,光伏",
+   "score": 5.0,
+   "read": 0,
+   "notified": 0,
+   "topic": "solar",
+   "language": "zh"
+  },
+  {
+   "title": "马来西亚单体最大漂浮式光伏项目开工 - 中国科技网",
+   "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFByV0cxZ1lINl9ONmRIeFZtbjBWc1hHQUpHYTJFbWRickJZX1JxVm1zb1FRd2MzekhJelpTTU5mNlhOc2hGelJkajFnQzhMbjFoZ0F0WXZ1OTl3Z1Nyc2VCeFRwSUZMTnhROVpidk5mcTM?oc=5",
+   "source": "中国科技网",
+   "published_at": "2026-02-10T08:00:00+00:00",
+   "collected_at": "2026-10-11T15:44:21+00:00",
+   "summary": "马来西亚单体最大漂浮式光伏项目开工 中国科技网",
    "keywords": "马来西亚,光伏",
    "score": 5.0,
    "read": 0,
@@ -20932,6 +21450,20 @@
    "language": "zh"
   },
   {
+   "title": "阿里云将于马来西亚和菲律宾新增数据中心 - 央广网",
+   "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9STkpmc1JRTjlBQl9fY2NRZGQ2Z1JmTXpJQlYtS3ZrVndkcG84OWpsU3AwNVJqNmxEeEtibFpyVVFFTk9xSFlONFZmbEdMOWRpQ1NGbG9CWGpPWWttX3UzbzJaSElYUEtaZ3hlazhB?oc=5",
+   "source": "央广网",
+   "published_at": "2025-07-02T07:00:00+00:00",
+   "collected_at": "2026-10-11T15:44:33+00:00",
+   "summary": "阿里云将于马来西亚和菲律宾新增数据中心 央广网",
+   "keywords": "马来西亚,数据中心",
+   "score": 5.0,
+   "read": 0,
+   "notified": 0,
+   "topic": "ai",
+   "language": "zh"
+  },
+  {
    "title": "Rooftop solar users can offset non-energy charges, says ministry - The Edge Malaysia",
    "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBSZWhKcklKdjYtLS13c1RpQjlZYThTZk82REFoMERlWmwyajQxTHhFN25fcjI3MnJWa1ZRNHEwb3ZUTVV3ZkdneDN2NEI5aC1T?oc=5",
    "source": "The Edge Malaysia",
@@ -21246,6 +21778,20 @@
    "published_at": "2025-05-27T07:00:00+00:00",
    "collected_at": "2026-10-09T15:19:53+00:00",
    "summary": "Nvidia: Behind Sweden's Largest Enterprise AI Supercomputer AI Magazine",
+   "keywords": "supercomputer",
+   "score": 2.0,
+   "read": 0,
+   "notified": 0,
+   "topic": "ai",
+   "language": "en"
+  },
+  {
+   "title": "NVIDIA to help build Sweden’s largest enterprise AI supercomputer - Interesting Engineering",
+   "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPZ3RmN25BOXNIeGVMR0FLYzV6djlxaVRYUUtJLUJzaWRyMU1haGN4TGdBRG53RHRFeld4dVo5ZXJHcnA3cGJqaEUxSGw1LS1MVzV2c1V6N3B5dXVwZnRNWmpBOUVLM2ZyUHgyUG5NaldIVmRuZ3V4MDJpOHlObDBrYU16NHYtdjg?oc=5",
+   "source": "Interesting Engineering",
+   "published_at": "2025-05-27T07:00:00+00:00",
+   "collected_at": "2026-10-11T15:44:30+00:00",
+   "summary": "NVIDIA to help build Sweden’s largest enterprise AI supercomputer Interesting Engineering",
    "keywords": "supercomputer",
    "score": 2.0,
    "read": 0,
@@ -22108,6 +22654,20 @@
    "language": "en"
   },
   {
+   "title": "东南亚光伏市场需求激增，政策驱动下潜力无限- 新能源 - 低碳网",
+   "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5MYV9NOVJVME9CTnpVeFZfTWpuUXA0SFR4UDNwLTlPUld5Y1JYbzJ6VUZVaTFHcmpGUUVlZTJBMzVuaXN2SXJGUkk4UUprX0lSVEJ1VUZjQXpkNlE?oc=5",
+   "source": "低碳网",
+   "published_at": "2025-02-08T08:00:00+00:00",
+   "collected_at": "2026-10-11T15:44:21+00:00",
+   "summary": "东南亚光伏市场需求激增，政策驱动下潜力无限- 新能源 低碳网",
+   "keywords": "光伏,政策",
+   "score": 3.0,
+   "read": 0,
+   "notified": 0,
+   "topic": "solar",
+   "language": "zh"
+  },
+  {
    "title": "The bright future of solar energy - The Edge Malaysia",
    "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE8xNVNNeTA1MFh3em5vMW5RM0hqQ21KVzRIR19jMWdDYmVRR3B5ZmgzNzhiNU00eFpPdGV5NU5UTC1tX2ZCSi0xU282RWduWDJE?oc=5",
    "source": "The Edge Malaysia",
@@ -22231,6 +22791,20 @@
    "read": 0,
    "notified": 0,
    "topic": "solar",
+   "language": "en"
+  },
+  {
+   "title": "SK Telecom launches GPUaaS - Data Center Dynamics",
+   "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFA2QjhLMWxwRFJqSWw5YzVUTHgtWl9peVh5dXA5ZjdOMFh5Z1RXWEtfdGYyNnYzZ3hCcF9NUmFwV0xhQVJBWndSd1hYWXdnUUs0UFJ5UWs1V3dvTmVySVJvLVo1dS02TWVSRnQ5ajFNYUZYWW53NE1LalRB?oc=5",
+   "source": "Data Center Dynamics",
+   "published_at": "2025-01-13T08:00:00+00:00",
+   "collected_at": "2026-10-11T15:44:30+00:00",
+   "summary": "SK Telecom launches GPUaaS Data Center Dynamics",
+   "keywords": "data center",
+   "score": 2.0,
+   "read": 0,
+   "notified": 0,
+   "topic": "ai",
    "language": "en"
   },
   {
@@ -22778,6 +23352,20 @@
    "notified": 0,
    "topic": "ai",
    "language": "zh"
+  },
+  {
+   "title": "Malaysia’s energy transition slows as industry bemoans lack of transparency - South China Morning Post",
+   "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOVjd3S2pzSUQtZkZXaC04bXA3UkM2M3BOdmE1X281VGJFanRJa1VFSUJNbG1IcE10RGVGNmJwNk1GNGNiaXJnTTNYdndIUGZlS1FXOVoyaDlDY3pqOXRNdGUwdU9tU0p5bzVBRWZLTzRfYlZhZXBhTmtUUzB3UVVWUjdBanF1X3ljM3VNXzVlaXNkZlZsaTNmS0huRV94bzhsSlM2ZmNzWDU1LTJ6ZzZKVWRtYmYxMGFYbENIbmNVcFdjNFnSAcMBQVVfeXFMT1dfUXhDbXlRU3V2bGQ3Z1ptRV9jc1plX285MHI4a1JMRGhnXzdjMmQxX0dJVUhHa0Itb0hUQktTcVp3YnJLNjJjV0dJUGFOUlBuN3NBdGhyUWEyX0VXU085dWNKRjZxS1l2NG9MamtaTHROdlVJREZNUUJXUGY5NnNqSDhqanNrMy1oR1FValQ2TG40anlPLXktVHE3d3N3ank0WmQzV1pTNWw0MlJvaVhiMWFTZGlzMDYtX1poZVFGUWgw?oc=5",
+   "source": "South China Morning Post",
+   "published_at": "2024-10-08T07:00:00+00:00",
+   "collected_at": "2026-10-11T15:44:17+00:00",
+   "summary": "Malaysia’s energy transition slows as industry bemoans lack of transparency South China Morning Post",
+   "keywords": "malaysia,energy transition",
+   "score": 5.0,
+   "read": 0,
+   "notified": 0,
+   "topic": "solar",
+   "language": "en"
   },
   {
    "title": "The rising power of solar energy in Malaysia - Free Malaysia Today",
@@ -23768,6 +24356,20 @@
    "summary": "在可再生能源领域崭露头角 Mestron成为投资界瞩目新星 9点股票",
    "keywords": "可再生能源,投资",
    "score": 3.0,
+   "read": 0,
+   "notified": 0,
+   "topic": "solar",
+   "language": "zh"
+  },
+  {
+   "title": "Malakoff与MMC签订协议 生产500兆瓦太阳能 - The Edge Malaysia",
+   "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE42MFY4bUhIVXdSRGR5ZlBvZjhtVnlQQmdwVmI1YnNxUnFVcG05RC1lVDdqaHF2SjFjdHl5X2M0MUotaTVfQlpVYjFSYktWZFYx?oc=5",
+   "source": "The Edge Malaysia",
+   "published_at": "2023-10-04T07:45:10+00:00",
+   "collected_at": "2026-10-11T15:44:21+00:00",
+   "summary": "Malakoff与MMC签订协议 生产500兆瓦太阳能 The Edge Malaysia",
+   "keywords": "malaysia,太阳能",
+   "score": 5.0,
    "read": 0,
    "notified": 0,
    "topic": "solar",
