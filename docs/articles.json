@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-17T19:27:47+00:00",
+ "generated_at": "2026-10-17T22:22:28+00:00",
  "articles": [
   {
    "title": "3 AI Infrastructure Stocks Retail Investors Are Watching After Meta Spending Plans - Simply Wall Street",
@@ -10,6 +10,20 @@
    "summary": "3 AI Infrastructure Stocks Retail Investors Are Watching After Meta Spending Plans Simply Wall Street",
    "keywords": "ai infrastructure",
    "score": 2.0,
+   "read": 0,
+   "notified": 0,
+   "topic": "ai",
+   "language": "en"
+  },
+  {
+   "title": "Point Tupper Data Center: EverWind Plans 420 MW Campus - Microgrid Media",
+   "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9qZFIwMVhfdnJhYTgtekc0Mko2VnBFMU5XNFJvRlEtOXNOVWxrb1RRN1ZMU0NDUUw1Q3pvYk9YT3paUGVHQmE3MjdTVzVJaTBaN2ZHU1pxLThvNXpJNVJUSnVNUDk3RXpXS1R0cnBxTFFVb2NqTndZ?oc=5",
+   "source": "Microgrid Media",
+   "published_at": "2026-10-17T16:06:43+00:00",
+   "collected_at": "2026-10-17T22:22:17+00:00",
+   "summary": "Point Tupper Data Center: EverWind Plans 420 MW Campus Microgrid Media",
+   "keywords": "data center,campus",
+   "score": 3.0,
    "read": 0,
    "notified": 0,
    "topic": "ai",
@@ -108,6 +122,20 @@
    "summary": "China Develops Giant AI Center, Potential to Save 7 Billion Yuan of Electricity a Year VOI.ID",
    "keywords": "electricity",
    "score": 2.0,
+   "read": 0,
+   "notified": 0,
+   "topic": "ai",
+   "language": "en"
+  },
+  {
+   "title": "Google's EMEA energy team hiring for range of new positions - Data Center Dynamics",
+   "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQaC1sZWlRN3loOC1vaW4yNWprQXhLc3pCZ3VXbzJ0N0hxQk1SQ1FiczVIQmZiRVMxd21RX3ljV0JJVkRqM1lPOU9XNkhDb1pHX3lFQ1VOZDFXdm94VHozZWt4VnpxbUpVSjVwY2xWX1B4TDd3ZDR1dUlUT1pkNHl4a2JCbk1Mb24yQV9id3NBM0VaOHM4akJ4a25OU2UxSGxrU0hTNA?oc=5",
+   "source": "Data Center Dynamics",
+   "published_at": "2026-10-17T10:04:02+00:00",
+   "collected_at": "2026-10-17T22:22:17+00:00",
+   "summary": "Google's EMEA energy team hiring for range of new positions Data Center Dynamics",
+   "keywords": "data center,energy",
+   "score": 4.0,
    "read": 0,
    "notified": 0,
    "topic": "ai",
@@ -17894,6 +17922,20 @@
    "language": "en"
   },
   {
+   "title": "'Beri ruang bank ambil risiko lebih tinggi sokong peralihan tenaga' - Berita Harian",
+   "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOamltN3M4V2REN3R1Q3pxVFR5UHhuQXNlSHVOQ3g0V0w2Vl9GUUdHU2VfTS1IRWV2WXhWVS1iYmFGYlFjWUhQTU1lUmxlYmRuZkpjVGN3Zll2Uk0zaHZzTW5UejdxOVNQSkZHWkdwcEdhTzdSSUQ5RUFJeFpITUZDd0xnT1ZEWlpFM1pPbURWa3dOXzVscEMzajdQSkxBTWZjWHdidTFpM1NvVlpOcDZHVmdvS0RYQWtBMVFHQnlxRkk3NW_SAcgBQVVfeXFMTU9WV2FOd3UtQVhWLWdwTktZUFA2SldoSXBOTHJCaFh6WVo2S1JGdXlXbVNEU2t6aFdITm15RHNVdHl3TTk0Y1Qwdk01dHdmc0ZKdHR1aEVNS3NYTzNDRktfUmt2bFBWSXZHUndYVDhXRlJNUUx2NnBrQkVxVnNkZWY5S0NMSjBGRl9kZTY0Z3p2Vm40TFVpdWhWTUdyME1pNC1WOUxlLUVqWkQ4Q3FsY05lZEVheXl2RWRWVVFOWUZsWGZiZnJoTzk?oc=5",
+   "source": "Berita Harian",
+   "published_at": "2026-09-29T07:00:00+00:00",
+   "collected_at": "2026-10-17T22:22:07+00:00",
+   "summary": "'Beri ruang bank ambil risiko lebih tinggi sokong peralihan tenaga' Berita Harian",
+   "keywords": "peralihan tenaga",
+   "score": 2.0,
+   "read": 0,
+   "notified": 0,
+   "topic": "solar",
+   "language": "ms"
+  },
+  {
    "title": "Quill, China Mobile plan joint AI, data centre projects in Malaysia - Telecompaper",
    "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPRE9hVzhHeXkzampUcTlDRTJURGM3ckVrQUItZlc4eE5wNUFfVDRMNkpUZHAxakF3WGNVVkhPZjN6dENsbm9kaXMzVmdjSV9hUXB6MUdBZUdYYlNDMjM2anItRnpsSDVBSEtfb1RBcE5IaUY0S1NPanlremp5M0Q5dkRDb01VRzU4ZFd6RHBxWTV0VS1KS1AxczNxYUJGNmVaUjVPcmVFSVJNQUF1?oc=5",
    "source": "Telecompaper",
@@ -18592,6 +18634,20 @@
    "notified": 0,
    "topic": "ai",
    "language": "ms"
+  },
+  {
+   "title": "Meeting Data Center Power Demand: Solar, Nuclear, and Beyond - IDTechEx",
+   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPNmFpV2w0SUhjNkRSZ2lfZnF0R3Q2MTlRSERyMXp0ejBtZUZnZ2JFcGhXOHhBVUZDVmdHakJ0NDViTzVObEdsN2U5VXhFbG03Qld4aS1XTktOZk1uTnljemRoci0yTFU3R0ZKa1JHbGw0cm5hNk1JQ0hpX2w5SVo1SjNYdEw4cUJwMFdmSjc0TlczVzhMZmI5b2RFRnNfQ2dtWUFmQlhMNkZRbjNt?oc=5",
+   "source": "IDTechEx",
+   "published_at": "2026-09-24T11:27:56+00:00",
+   "collected_at": "2026-10-17T22:22:17+00:00",
+   "summary": "Meeting Data Center Power Demand: Solar, Nuclear, and Beyond IDTechEx",
+   "keywords": "data center,power,nuclear",
+   "score": 6.0,
+   "read": 0,
+   "notified": 0,
+   "topic": "ai",
+   "language": "en"
   },
   {
    "title": "Lower CRESS charge to spur Malaysia solar project awards, analysts say - TNGlobal",
@@ -20806,6 +20862,20 @@
    "language": "ms"
   },
   {
+   "title": "Data centers can be good citizens. It’s why we’re partnering with Google and Nvidia to create the AI Energy Management Alliance - Fortune",
+   "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOZFhEVlhXdFZRUlpCZU1zNUdtTGp1VVA5Xy1xME1PWTZUY0Y3bzNucElsdjl2bzhRQ1BzRmxHTjRVbEdSSFJJWm1UN3ljbkZQSkdFaEhteXdTY09xVGpmRXV4TTFtemFFOElKcWNLRkVabS1FV1h1RzdRRTh6UWFCUmFSanQ3SHpfM1c4Z1NFMGlHeDN1b2tILXVzUl9mNC1zbXByNnlmZzhIZw?oc=5",
+   "source": "Fortune",
+   "published_at": "2026-09-16T07:00:00+00:00",
+   "collected_at": "2026-10-17T22:22:17+00:00",
+   "summary": "Data centers can be good citizens. It’s why we’re partnering with Google and Nvidia to create the AI Energy Management Alliance Fortune",
+   "keywords": "energy",
+   "score": 2.0,
+   "read": 0,
+   "notified": 0,
+   "topic": "ai",
+   "language": "en"
+  },
+  {
    "title": "Malaysia’s power grid strains under data centre boom and renewables growth - Eco-Business",
    "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPV1NiSzUyalA2azNILUxnSDJCZWdERmRkZFJTbWF3UkNqZ0RDcmxwNWNLZWswa1JucFdmaENkU3ZXbjA4bDBweGYzck5wcVhnaFBuWFlFU0h5ODF0Q05pZGxXNVpWajNxNDNMbUV6Z0NXWk5oSF9QV0xMWkJXZnA2aGhLd3JrTEY2T1dJSE9pNnNpM0VhQ2NCVTRXWFVtaFhOTWJ5dVRETTh5U1ZT?oc=5",
    "source": "Eco-Business",
@@ -21686,6 +21756,20 @@
    "notified": 0,
    "topic": "ai",
    "language": "ms"
+  },
+  {
+   "title": "前首相夫人太阳能受贿案再续 检方申请暂缓罗斯玛太阳能弊案新证据裁决 - solarzoom.com",
+   "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFA4SkFlUzh0UGljWmlPLW1ZZGx6cWV0ZXJEdGwtSzZQRHFGeG0wZUpLSDgtZ3hLRUllbzlHaWh2Qnd2VDVaa29jRkZLZ2xRUDhFaGxQUkRnWQ?oc=5",
+   "source": "solarzoom.com",
+   "published_at": "2026-09-10T07:00:00+00:00",
+   "collected_at": "2026-10-17T22:21:58+00:00",
+   "summary": "前首相夫人太阳能受贿案再续 检方申请暂缓罗斯玛太阳能弊案新证据裁决 solarzoom.com",
+   "keywords": "太阳能",
+   "score": 2.0,
+   "read": 0,
+   "notified": 0,
+   "topic": "solar",
+   "language": "zh"
   },
   {
    "title": "前首相夫人太阳能受贿案再续 检方申请暂缓罗斯玛太阳能弊案新证据裁决 - SOLARZOOM",
@@ -22864,6 +22948,20 @@
    "language": "ms"
   },
   {
+   "title": "AI wants electricity now. The electric grid needs years to catch up - Fortune",
+   "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9xQmdLTWVjakx0N1AzV0VWZWhweFFHSXZfdmc1Vm14SEVNREl3SEJzc1R6ZnpCYjRZWEEzd2Z1ZTZrT04tVHplU1lYUTdMbEFQR1RzdUxXM0kzSGNoRkFrQ1Rfd014dUhWa3Rrd3M2V3IySXZqeC04?oc=5",
+   "source": "Fortune",
+   "published_at": "2026-09-03T07:00:00+00:00",
+   "collected_at": "2026-10-17T22:22:17+00:00",
+   "summary": "AI wants electricity now. The electric grid needs years to catch up Fortune",
+   "keywords": "electricity,grid",
+   "score": 4.0,
+   "read": 0,
+   "notified": 0,
+   "topic": "ai",
+   "language": "en"
+  },
+  {
    "title": "AI Efficiency Could Cost Us the Next Generation of Experts",
    "url": "https://spectrum.ieee.org/ai-engineer-skills",
    "source": "IEEE Spectrum AI",
@@ -23718,6 +23816,20 @@
    "language": "en"
   },
   {
+   "title": "Spain to require data centers to source 80% of electricity from renewables - pv magazine Global",
+   "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQNkNuLWFvNVRNQjVrTHNqZWhrRVVQNGpKV1JqbEpQblRJczhYMXAwNVJJSUlXWUZVTDNvQlM0bll4SHR5UUtRM2Exdnc1TnFNSnJCdnVab0RrLXp4cWxXMGhVeTg0OWdncXVPOWNTdVlPT0s4U2VvZFB2M1dKR2tUV0RoU0htVEQwcnlSeGxNVDU5Mm5yZGxtU0V2a18wQ3FXVndKclZ1RWtSRzdVV0ZIZDNSRUpEd0JPaExmSmlyMTlxaUhKRWl1LUg0X2VSYTN4cFA0Sw?oc=5",
+   "source": "pv magazine Global",
+   "published_at": "2026-08-26T07:00:00+00:00",
+   "collected_at": "2026-10-17T22:22:17+00:00",
+   "summary": "Spain to require data centers to source 80% of electricity from renewables pv magazine Global",
+   "keywords": "electricity",
+   "score": 2.0,
+   "read": 0,
+   "notified": 0,
+   "topic": "ai",
+   "language": "en"
+  },
+  {
    "title": "Malaysia issues guidelines for residential solar under net metering - pv magazine India",
    "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOZ29KNnpoWVRwR0RXSXBWaDJBa3FPLWF1YTY2R0Y0anp4MG0xa2ZPWDJmNXBVdnZUVExHS0hyT1BmZENIYlY0NmpibVlUTHhEQ2xOaE9VLUtzODRWSTdDNDFMUlMtQ2J2TG9NWE5jejY5aHhkbjhPQ2FhTUQ5OW90ekp6d0Y2WTNmaFp2Nk5GSmlNX1NpLUU2Z3RIMWZBS3k1aWYyeFVtQUZkZGVOWDNIUkc2RQ?oc=5",
    "source": "pv magazine India",
@@ -23906,6 +24018,20 @@
    "published_at": "2026-08-25T07:00:00+00:00",
    "collected_at": "2026-10-17T03:54:39+00:00",
    "summary": "Malaysia Fokus Bidang Khusus Utama Dalam Persaingan Infrastruktur Digital Asia - Ahli Ekonomi Bernama",
+   "keywords": "malaysia,infrastruktur digital",
+   "score": 5.0,
+   "read": 0,
+   "notified": 0,
+   "topic": "ai",
+   "language": "ms"
+  },
+  {
+   "title": "Malaysia Fokus Bidang Khusus Utama Dalam Persaingan Infrastruktur Digital Asia - Ahli Ekonomi - BernamaBiz",
+   "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9aOHp3bnMyTTNqLWhSM2tRUG0xNVpmbElFUTNxRy12Y3BXVFFQOC1mcE40Z051eUV0ZGlpT2FfdWVpYTF3Q0xOMFd1S3dMLUo3UHQwME1yOFJWbDlsWFE?oc=5",
+   "source": "BernamaBiz",
+   "published_at": "2026-08-25T05:43:00+00:00",
+   "collected_at": "2026-10-17T22:22:28+00:00",
+   "summary": "Malaysia Fokus Bidang Khusus Utama Dalam Persaingan Infrastruktur Digital Asia - Ahli Ekonomi BernamaBiz",
    "keywords": "malaysia,infrastruktur digital",
    "score": 5.0,
    "read": 0,
@@ -29808,6 +29934,20 @@
    "language": "ms"
   },
   {
+   "title": "SABAH SASAR JANA 1,200 MW TENAGA BOLEH BAHARU MENJELANG 2030 - Bernama",
+   "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9EbnRmSTJfSjBvUzduelBUSkszeXVJclJWek5vNzljeGJQTWRxTjFxaF9IMUlSYmhWV3pSNDZWUU82dFhpdER0VUU5RjdqLTM0THpMN3hSTE0?oc=5",
+   "source": "Bernama",
+   "published_at": "2026-07-20T07:00:00+00:00",
+   "collected_at": "2026-10-17T22:22:07+00:00",
+   "summary": "SABAH SASAR JANA 1,200 MW TENAGA BOLEH BAHARU MENJELANG 2030 Bernama",
+   "keywords": "sabah,tenaga boleh baharu,2030",
+   "score": 6.0,
+   "read": 0,
+   "notified": 0,
+   "topic": "solar",
+   "language": "ms"
+  },
+  {
    "title": "Gentari bangun sistem PV solar di KLIA2 - KLSE Screener",
    "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQd09VdkxNT0drdlB5d3JJLWhGVWd1TWpOZmVnQjRLUFA4VllQVGZ1MVRKMllDTnFBMW1neldyelkzWG5qSjFCQ0lVRkJiWjN6TlhWZEtVM19Ndl9SaGVpZ0NkYUs1cnNKNjA5WS1UYkI2dzR5NF8zZkxnV2J5eU1CUHJEeXpTYk9BUktVUXgwMTk5bTg?oc=5",
    "source": "KLSE Screener",
@@ -30044,6 +30184,20 @@
    "notified": 0,
    "topic": "ai",
    "language": "ms"
+  },
+  {
+   "title": "马来西亚推出第六轮大型太阳能计划_苏里南_新闻 - 华人头条",
+   "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9mRDR1VHpTNzdXQTV2Z0VzSENJZW15ZmlCNnpBLURrS1hVeVFaRlJZbHNIU1Z5akU2b1dWSHNqeUVCT01OU0dkRDRrT1I0Wm0wZVU4YkF4My15U3BlNElv?oc=5",
+   "source": "华人头条",
+   "published_at": "2026-07-17T07:00:00+00:00",
+   "collected_at": "2026-10-17T22:21:58+00:00",
+   "summary": "马来西亚推出第六轮大型太阳能计划_苏里南_新闻 华人头条",
+   "keywords": "马来西亚,太阳能",
+   "score": 5.0,
+   "read": 0,
+   "notified": 0,
+   "topic": "solar",
+   "language": "zh"
   },
   {
    "title": "马来西亚推出第六轮大型太阳能计划 - 中国新闻网",
@@ -33768,6 +33922,20 @@
    "notified": 0,
    "topic": "solar",
    "language": "en"
+  },
+  {
+   "title": "双威建筑获6.64亿变更订单 柔佛数据中心合同总额升至8.65亿 - The Edge Malaysia",
+   "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBFSVJzcDVYR25tMENjV2FWRnVWeUJrVmJwNU12OXZoZXBIelRkZ2RiNVR1Nld0UHV5WjJlLWxjNVJqYXU2VFNJMkRoVlk0bkIt?oc=5",
+   "source": "The Edge Malaysia",
+   "published_at": "2026-06-18T07:00:00+00:00",
+   "collected_at": "2026-10-17T22:22:20+00:00",
+   "summary": "双威建筑获6.64亿变更订单 柔佛数据中心合同总额升至8.65亿 The Edge Malaysia",
+   "keywords": "柔佛,malaysia,数据中心,合同",
+   "score": 9.0,
+   "read": 0,
+   "notified": 0,
+   "topic": "ai",
+   "language": "zh"
   },
   {
    "title": "Know Your Stuff: What homeowners should look at before buying a solar PV system - The Edge Malaysia",
@@ -41282,6 +41450,20 @@
    "summary": "Pelaburan pusat data mampu cecah RM577 bilion | Sinar Harian Sinar Harian",
    "keywords": "pusat data,pelaburan",
    "score": 3.0,
+   "read": 0,
+   "notified": 0,
+   "topic": "ai",
+   "language": "ms"
+  },
+  {
+   "title": "Gangguan air Simpang Renggam, Benut tiada kaitan pusat data - Onn Hafiz - Astro Awani",
+   "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPSnJkcjNNYlhsY1Z5R2NkMHJsakxBczRwTmVDTi1yd241aDVFcVNVYWtxVlR0MnZFWUJYV2FRZS1mWXplUEtZQVNWYVFkTGtuUE9RY3RHZWpCNTEtLVlvVlg2WTlONXp3S2hhSURZZzlxQllmQ2EyYjhkOGlwaE9qQkQtRVl6c05KLXZFeW5SdDRrOXg3NGxWd1hjT2lJQkRVTER5ckF3OG5ib3FSUXFoTg?oc=5",
+   "source": "Astro Awani",
+   "published_at": "2026-02-21T08:00:00+00:00",
+   "collected_at": "2026-10-17T22:22:28+00:00",
+   "summary": "Gangguan air Simpang Renggam, Benut tiada kaitan pusat data - Onn Hafiz Astro Awani",
+   "keywords": "pusat data",
+   "score": 2.0,
    "read": 0,
    "notified": 0,
    "topic": "ai",
@@ -52936,6 +53118,20 @@
    "language": "zh"
   },
   {
+   "title": "Sunview bangun kemudahan solar di Kemboja - Berita Harian",
+   "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPSzJiYjZjSTJjZW40N0x1Y1ZfN291Y2Z2aFRnenZxU3Z5ejUzMENXVHRtZkF3eUlmU281cWI0UzEtY0N0Z1B4eTluU2dPWVlVRG5TbnlzZk1QdVVVVHBsSElnZjdSSmlSN3dHTXloTzVyVmc1MmZuTXlxN1Y0akRiRVlJOUVrUzdVLUdCLXBHeXA1OFNnMjJvaEhONXIxMWF6RHfSAacBQVVfeXFMTnJCeHF5ZExheS1fcTRlSktqOTJieGxFUVA4elpLa0pub0dGQnR4SGtqTzk4QXExRFhMcTZMMGJhUlNSeDFsTjd5bnFnSEltX3NOTXdQcUtxSm40Mzl6NEFZRzhaR0dqeEFmbG5PZS1XS2QxYkVxdzUzMF9xLU1ONXFveDdhVUlRWEdLZmJpYzVyTDdiNE5WQTJwbmNKOWpnclJ1MlB1Nms?oc=5",
+   "source": "Berita Harian",
+   "published_at": "2024-01-15T08:00:00+00:00",
+   "collected_at": "2026-10-17T22:22:07+00:00",
+   "summary": "Sunview bangun kemudahan solar di Kemboja Berita Harian",
+   "keywords": "solar",
+   "score": 2.0,
+   "read": 0,
+   "notified": 0,
+   "topic": "solar",
+   "language": "ms"
+  },
+  {
    "title": "芯光云：星耀引领金融巨头加速算力投资布局 - Moomoo",
    "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBTTGhlZHpWNlphV3VUdURUVExva29DNTRTa1NHOExFc01JV1BOYlJOdUY1ZU9EN1dxY1VYVWNGaWV2YnVmQ0dXbjNfT0JibkpITmtiMlRWYTgtUQ?oc=5",
    "source": "Moomoo",
@@ -54888,6 +55084,20 @@
    "published_at": "2022-11-13T08:00:00+00:00",
    "collected_at": "2026-10-17T03:54:32+00:00",
    "summary": "Rasuah Projek Solar: Pengurusan kes rayuan Rosmah pada 19 Disember Harian Metro",
+   "keywords": "solar",
+   "score": 2.0,
+   "read": 0,
+   "notified": 0,
+   "topic": "solar",
+   "language": "ms"
+  },
+  {
+   "title": "Projek Solar Terapung Danau Tok Uban bekal tenaga mulai tahun depan - Bernama",
+   "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5JQ3RYQXVoQmV1WFFMcy0tbk5rQVVfUEwxU3hoak9PMXBBRzRkcW9lLWF3RUdod1pRRldsRlY0TmNfWUJyTzZ6UW5JZ3kybzVZYmk5UG9WZjFlOWl6T2c?oc=5",
+   "source": "Bernama",
+   "published_at": "2022-11-10T08:00:00+00:00",
+   "collected_at": "2026-10-17T22:22:07+00:00",
+   "summary": "Projek Solar Terapung Danau Tok Uban bekal tenaga mulai tahun depan Bernama",
    "keywords": "solar",
    "score": 2.0,
    "read": 0,
