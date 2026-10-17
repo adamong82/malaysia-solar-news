@@ -85,7 +85,7 @@ def main() -> int:
     parser.add_argument("--topic", default="", choices=config.topic_keys(),
                         help="collect only this topic (default: all topics)")
     parser.add_argument("--lang", default="", choices=config.LANGUAGES,
-                        help="collect only this language (default: en + zh)")
+                        help="collect only this language (default: en + zh + ms)")
     parser.add_argument("--json", action="store_true", help="print result as JSON")
     args = parser.parse_args()
 

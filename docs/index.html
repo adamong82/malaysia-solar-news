@@ -97,6 +97,7 @@
       <div class="seg" id="segLang">
         <button data-lang="en" class="active">English News</button>
         <button data-lang="zh">Chinese News</button>
+        <button data-lang="ms">Malay News</button>
       </div>
       <button id="btnRun" class="primary">▶ Scan for more</button>
     </div>
@@ -128,7 +129,7 @@
     Auto-collects every <code>COLLECT_INTERVAL_MIN</code> minutes ·
     Telegram push needs <code>TELEGRAM_BOT_TOKEN</code> / <code>TELEGRAM_CHAT_ID</code> in <code>.env</code> ·
     Other tools can push news via <code>POST /webhook</code><br>
-    Switch boards with ☀️ Solar / 🤖 AI, and use English News / Chinese News to browse Chinese coverage of the same board.
+    Switch boards with ☀️ Solar / 🤖 AI, and use English News / Chinese News / Malay News to browse coverage in each language.
   </div>
 </div>
 <div class="toast" id="toast"></div>
@@ -148,7 +149,7 @@ const TOPICS = {
 let topic = 'solar';
 let lang = 'en';
 try{ const t = localStorage.getItem('topic'); if(t && TOPICS[t]) topic = t; }catch(e){}
-try{ const l = localStorage.getItem('lang'); if(l==='en'||l==='zh') lang = l; }catch(e){}
+try{ const l = localStorage.getItem('lang'); if(['en','zh','ms'].includes(l)) lang = l; }catch(e){}
 
 function applyTopicUI(){
   const c = TOPICS[topic];

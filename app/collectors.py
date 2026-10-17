@@ -88,6 +88,8 @@ def collect_google_news(query: str, language: str = "en") -> list[dict[str, Any]
     if language == "zh":
         # 中文必须用 zh-CN/Hans 参数 —— zh-MY 会退化成英文源（已验证）。
         locale = "hl=zh-CN&gl=CN&ceid=CN:zh-Hans"
+    elif language == "ms":
+        locale = "hl=ms&gl=MY&ceid=MY:ms"
     else:
         locale = "hl=en-MY&gl=MY&ceid=MY:en"
     url = "https://news.google.com/rss/search?q=" + quote(query) + "&" + locale
@@ -145,6 +147,14 @@ def score_article(art: dict[str, Any], lang_cfg: dict[str, Any]) -> Optional[dic
 
 _CJK_TITLE_RE = re.compile(r"[\u3400-\u4dbf\u4e00-\u9fff\uf900-\ufaff]")
 
+# Shared names such as solar/TNB/GPU cannot distinguish English from Malay.
+_MALAY_TITLE_RE = re.compile(
+    r"\b(dan|untuk|dengan|yang|dalam|akan|kepada|daripada|oleh|di|ke|"
+    r"kerajaan|negara|baharu|boleh|tenaga|pusat|pelaburan|bekalan|"
+    r"tingkat|meningkatkan|bina|membina|projek|suria|tarif|kuota|"
+    r"perkasa|perkasakan|sasar|pemeteran|fotovoltaik|penjanaan)\b", re.I
+)
+
 
 def collect_all(topic: str, language: str = "en") -> tuple[list[dict[str, Any]], int]:
     """Run every configured source of one topic in one language.
@@ -163,6 +173,9 @@ def collect_all(topic: str, language: str = "en") -> tuple[list[dict[str, Any]],
     if language == "zh":
         # 中文模式只保留标题真正是中文的条目（Google News 偶尔会混入英文源）
         seen = [x for x in seen if _CJK_TITLE_RE.search(x.get("title", ""))]
+    elif language == "ms":
+        seen = [x for x in seen if _MALAY_TITLE_RE.search(x.get("title", ""))
+                and not _CJK_TITLE_RE.search(x.get("title", ""))]
 
     relevant = [a for a in (score_article(dict(x), cfg) for x in seen) if a]
     for a in relevant:

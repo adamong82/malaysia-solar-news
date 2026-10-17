@@ -41,8 +41,8 @@ USER_AGENT = (
 
 # ---------------------------------------------------------------- topics
 # 支持的语言：en = 英文新闻，zh = 中文新闻（看板顶部切换）。
-LANGUAGES = ["en", "zh"]
-LANGUAGE_LABELS = {"en": "EN", "zh": "中文"}
+LANGUAGES = ["en", "zh", "ms"]
+LANGUAGE_LABELS = {"en": "EN", "zh": "中文", "ms": "BM"}
 
 # 每个主题的收集规则按语言分层：
 #   TOPICS[topic][lang] = {queries, rss, geo_terms, topic_terms,
@@ -235,6 +235,50 @@ TOPICS: dict[str, dict] = {
             ],
         },
     },
+}
+
+# Malay coverage uses local-language queries plus Malaysian newsroom searches.
+# Every result must still pass the topic and Malay-title checks in collectors.py.
+_MS_GEO = ["malaysia", "negara", "kerajaan", "tnb", "tenaga nasional",
+           "seda", "petra", "johor", "sarawak", "sabah", "putrajaya",
+           "selangor", "melaka", "kedah", "perak", "pahang"]
+_MS_SITES = ["bernama.com", "astroawani.com", "bharian.com.my",
+             "hmetro.com.my", "sinarharian.com.my", "utusan.com.my"]
+TOPICS["solar"]["ms"] = {
+    "require_geo": False,
+    "queries": [
+        'Malaysia "tenaga solar"', 'Malaysia "tenaga boleh baharu"',
+        'Malaysia "panel solar"', 'Malaysia "ladang solar"',
+        'Malaysia solar subsidi OR tarif OR kuota',
+        'Malaysia "peralihan tenaga"',
+    ] + [f'site:{site} solar OR "tenaga boleh baharu"' for site in _MS_SITES],
+    "rss": [],
+    "geo_terms": _MS_GEO,
+    "topic_terms": ["solar", "suria", "fotovolta", "fotovoltaik",
+                    "tenaga boleh baharu", "tenaga boleh diperbaharui",
+                    "peralihan tenaga", "tenaga hijau", "tenaga bersih",
+                    "penyimpanan tenaga", "penstoran tenaga", "pemeteran tenaga bersih"],
+    "bonus_terms": ["dasar", "subsidi", "insentif", "kuota", "tarif", "tender",
+                    "pelaburan", "bumbung", "lss", "nem", "cress", "ppa", "2030", "2050"],
+    "ignore_terms": ["gerhana", "horoskop", "astrologi", "solar eclipse"],
+}
+TOPICS["ai"]["ms"] = {
+    "require_geo": False,
+    "queries": [
+        'Malaysia "pusat data"', 'Johor "pusat data"',
+        'Malaysia "kecerdasan buatan" "pusat data"',
+        'Malaysia "pengkomputeran awan"', 'Malaysia GPU pelaburan',
+        '"pusat data" bekalan elektrik',
+    ] + [f'site:{site} "pusat data" OR "pengkomputeran awan"' for site in _MS_SITES],
+    "rss": [],
+    "geo_terms": _MS_GEO + ["mydigital", "mcmc", "mosti", "cyberjaya"],
+    "topic_terms": ["pusat data", "pengkomputeran awan", "komputasi awan",
+                    "infrastruktur ai", "infrastruktur digital", "gpu",
+                    "superkomputer", "pelayan", "hiperskala", "hyperscale"],
+    "bonus_terms": ["pelaburan", "kapasiti", "pembinaan", "kontrak", "dasar",
+                    "insentif", "elektrik", "bekalan kuasa", "grid", "penyejukan",
+                    "tnb", "2030", "2050"],
+    "ignore_terms": ["penipuan", "ditahan", "ditangkap", "penyeludupan", "horoskop"],
 }
 
 # 看板默认展示的主题与语言（迁移前的旧数据/旧快照都视为 solar + en）。
