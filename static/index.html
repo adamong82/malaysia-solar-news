@@ -292,7 +292,7 @@ function renderList(){
 }
 
 function loadStatic(){
-  return j('./articles.json').then(snap=>{
+  return j('./articles.json?v='+Date.now()).then(snap=>{
     articles = (snap.articles || []).filter(a=>(a.topic||'solar')===topic && (a.language||'en')===lang);
     articles.forEach(a=>a.read=a.read?1:0);
     renderStats({});
