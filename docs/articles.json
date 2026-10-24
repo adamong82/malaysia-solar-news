@@ -1,6 +1,104 @@
 {
- "generated_at": "2026-10-24T12:43:17+00:00",
+ "generated_at": "2026-10-24T16:37:40+00:00",
  "articles": [
+  {
+   "title": "Setbacks Mounting On The AI Data Center Front - Seeking Alpha",
+   "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQNWJtYzg0ankyNlhEdjd6ZTNtUnIwX1hKRU5DbEFKd2RKbWRwaFVwb0ttUGE4RmtER3RRZFQxTjNLTmYzQVgzQ2k0X1YyYlVvcTI1M3k2TlpOQ29nS3NwLURsek9kaXNNTklzUVdERzF6ZFZvSkFZaVFwZ3RSaWJCX1dHSXVTRnUtbFhOWTNvaw?oc=5",
+   "source": "Seeking Alpha",
+   "published_at": "2026-10-24T14:51:32+00:00",
+   "collected_at": "2026-10-24T16:37:28+00:00",
+   "summary": "Setbacks Mounting On The AI Data Center Front Seeking Alpha",
+   "keywords": "data center",
+   "score": 2.0,
+   "read": 0,
+   "notified": 0,
+   "topic": "ai",
+   "language": "en"
+  },
+  {
+   "title": "Research | Can power consumption reveal whether a data center is secretly training AI? - Notebookcheck",
+   "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPWW1sYWhhV1ZaczFUcFpMVHFLTE5TTXlld2wwLUhuREFaVElERVlrUmhfUnE3TnJIMElrQ295YURQb2Vma0wwcHRVcUxadDFoN2UyMXhleWVNYklRNzVvWlNIYXZWNzVBTjlST3l4c253WnNIYXJrVmRpeEpaTDYxRVp4dFBFeU1FYmNEUFM1bmpqaXVOTjVncDRZYkZ2OGFZaGJRMV9JeG4xNWk2M3FjZnlqVWhHbDJmSm9r?oc=5",
+   "source": "Notebookcheck",
+   "published_at": "2026-10-24T14:29:00+00:00",
+   "collected_at": "2026-10-24T16:37:28+00:00",
+   "summary": "Research | Can power consumption reveal whether a data center is secretly training AI? Notebookcheck",
+   "keywords": "data center,power",
+   "score": 4.0,
+   "read": 0,
+   "notified": 0,
+   "topic": "ai",
+   "language": "en"
+  },
+  {
+   "title": "The AI data center boom has a ghost problem - Business Insider",
+   "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOcnRMNFJlM3M5czJrbmZfdXZJeFdxb2N2aFFINktzZjk0ZzBKdFFnNUcxRDZXTnptU1RVc3BDSV9LYkpzdWdiUXRtTWFSb015aXhjdW1fWXZSNW1iaU9oZmZHQi1NQ2RuQm1pQ01HOXdkNDd5VWduME5WYzQ2b1ROUnpsOA?oc=5",
+   "source": "Business Insider",
+   "published_at": "2026-10-24T14:00:00+00:00",
+   "collected_at": "2026-10-24T16:37:28+00:00",
+   "summary": "The AI data center boom has a ghost problem Business Insider",
+   "keywords": "data center",
+   "score": 2.0,
+   "read": 0,
+   "notified": 0,
+   "topic": "ai",
+   "language": "en"
+  },
+  {
+   "title": "This $6 Billion Investment Could Open a Relief Valve for America’s AI and Power-Grid Boom - 24/7 Wall St.",
+   "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOclYtTWpXZ241MVNia01tTmRQdTlWSnA5TlZOR3N2a3lxRGRQS1UwTE5Pcl9FMG5qS2JNdEprYWN4RDJKX0l6NlVVbDE3dlJVblFpODNCdHJSNlM0NnBsNGxYVmtpN09IYnUtYmFBVGpvSzhDM0dibUlKbHJCT1AxYUxMMEVKNExDeW1jRXFrOHNVRkxKeHp2cE02WlFRWlc4THM4NXY5UkNVLXFaay1YdndORFVGMWVFc0Jsal9Ga1hnZ21FR3ZyWjdoTQ?oc=5",
+   "source": "24/7 Wall St.",
+   "published_at": "2026-10-24T13:35:00+00:00",
+   "collected_at": "2026-10-24T16:37:28+00:00",
+   "summary": "This $6 Billion Investment Could Open a Relief Valve for America’s AI and Power-Grid Boom 24/7 Wall St.",
+   "keywords": "power,grid,investment",
+   "score": 5.0,
+   "read": 0,
+   "notified": 0,
+   "topic": "ai",
+   "language": "en"
+  },
+  {
+   "title": "Georgia's Silk Cloud deploys Nvidia Blackwell Ultra GPUs",
+   "url": "https://www.datacenterdynamics.com/en/news/georgias-silk-cloud-deploys-nvidia-blackwell-ultra-gpus/",
+   "source": "DataCenterDynamics",
+   "published_at": "2026-10-24T13:00:21+00:00",
+   "collected_at": "2026-10-24T16:37:28+00:00",
+   "summary": "UK-based Fuse Energy also brings GPU compute online for customers",
+   "keywords": "cloud,compute,gpu,energy",
+   "score": 8.0,
+   "read": 0,
+   "notified": 0,
+   "topic": "ai",
+   "language": "en"
+  },
+  {
+   "title": "Era4 AI Data Center Project in Canterbury Approved, to be Powered by Shelford Landfill Gas - Construction Review",
+   "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNS1FLRDBPb1RfVjBJSzRJSE9aM1hRcWxSNUNpdktNaktISUNzektCZWwwZkJOMWg4NFJreEtxbjRaRllmRS1rQTZ5UmNmb3ZHaVF0RzBuZm1rYmJDUU5xMHhsY3hsZnZtNkJ3M0lxWkYtZHlxeDg0My1OYzJpa25BSV9fODdNQktUTkFXWUI0UHFQTkVkZjFndUhLbXVFemZQMWd2Ykl4QUN6U1FpYnZObjhCTEdRYW96Y3Rkb1RMN2xlRm1PckE?oc=5",
+   "source": "Construction Review",
+   "published_at": "2026-10-24T12:51:10+00:00",
+   "collected_at": "2026-10-24T16:37:28+00:00",
+   "summary": "Era4 AI Data Center Project in Canterbury Approved, to be Powered by Shelford Landfill Gas Construction Review",
+   "keywords": "data center,construction",
+   "score": 3.0,
+   "read": 0,
+   "notified": 0,
+   "topic": "ai",
+   "language": "en"
+  },
+  {
+   "title": "Singapore’s PDG Lines Up $701M Sydney Data Centre for Australia Debut - Mingtiandi",
+   "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQLV9lbl9MVEpldzZCRjMtRmJKRjBLeXQ4WUhMNlAyNldqU192LU9qb3N1Wm85cW5jSEpidWdUUGZfS0tVRFBKWmZjMUk1SEFRcjQ3NjluSEJTTGROUko3WUppdnBFUGQwM0dKSG1Fa2c3aGFYNHpTSWp0VzBrYXVkLVdReXUtX3Y0Vm5YUEp4bHZoOHpLUmxqLWZiTEV2UDNOTURQUnI1T1RwTy1adlRDYUI1OVNwa2dLTkJ1Zg?oc=5",
+   "source": "Mingtiandi",
+   "published_at": "2026-10-24T12:46:20+00:00",
+   "collected_at": "2026-10-24T16:37:28+00:00",
+   "summary": "Singapore’s PDG Lines Up $701M Sydney Data Centre for Australia Debut Mingtiandi",
+   "keywords": "data centre",
+   "score": 2.0,
+   "read": 0,
+   "notified": 0,
+   "topic": "ai",
+   "language": "en"
+  },
   {
    "title": "Will NVIDIA’s DSX Pods Shift the AI Landscape? - Data Center Richness | Substack",
    "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPZzdSelI5ZUNYeEdwekk5eU0wR19Rd3NYemU5V0thb0JJOEYwNlByd3duYkU3bzRyM0VPNGJJMTZKTnRnRVc1cHZZY3V1ejBGZ1gwOEJFOVdBSVpWQXUwVVc1Y0YxSUZWdmlMRHFBek9pbUQzNTZ2alc5R3VWQ0Joc3ln?oc=5",
@@ -37,6 +135,34 @@
    "collected_at": "2026-10-24T12:43:05+00:00",
    "summary": "Google needs more electricity for AI. Its new solution starts inside homes and businesses Cleveland.com",
    "keywords": "electricity",
+   "score": 2.0,
+   "read": 0,
+   "notified": 0,
+   "topic": "ai",
+   "language": "en"
+  },
+  {
+   "title": "Steenbergen: Responsible data center development can have multiple benefits - WyomingNews.com",
+   "url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxOTHJtLVNvd09BNUF4QnJHU2djMlhFUGd4aGZXX0hlaF9uSXA0ZGU4R3dtYWhUZ0J5NEt2dHpkcWt2amFieFg4NThLZko2Z0t1ZXJhNTh2dnpuNjZ2bDl3elBqSjAwc2VxXzdkSHpBME5xSmJiTUpJeWcyc1kzcVd6QV84dnpCc0NrcTM0ZG1HOWtDbTlra3dQeVkyZjdIc3BBMGRTYmJDdGxxZVg2ZGk3enlsUHNhV0tGcjVCOWUtSFhGZDB3eHNNQXZlVGxRVFFnVDNvNGtTNTJTMWZHcmR5ZUxyWi1KdnBScWZ5Vmd0bk1OLTJ2Ri1qbkZBMHIwTGZPdnFF?oc=5",
+   "source": "WyomingNews.com",
+   "published_at": "2026-10-24T11:00:00+00:00",
+   "collected_at": "2026-10-24T16:37:28+00:00",
+   "summary": "Steenbergen: Responsible data center development can have multiple benefits WyomingNews.com",
+   "keywords": "data center",
+   "score": 2.0,
+   "read": 0,
+   "notified": 0,
+   "topic": "ai",
+   "language": "en"
+  },
+  {
+   "title": "Venture Global to build new power plants at its LNG terminals, aiming to bring more AI data centers to LA - NOLA.com",
+   "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQOHdiR2YyYlE5VGRyNDN3ZUk5V3duUkl6WVNYRlI1X2tZNnBzN0o3S1c3SXNvYW5oNVptM0Q1RWJVTWVtTVk4VmtjQTVFV1BjU3hSZVFKR0VWVUJKQmN4RlprNHNfbS1mSnF2dVpfWlY3RzJDM0o5dTRpN2VxU2xGRFY2cUJ2Y3ZZbHY2OFdVVENCVEdHaTNJYTBhd0dBNHpoVWZWb2ZiWmRhY2RNNVJKbTdMZTg5SGgxa0VGc0dzMXk0NkloS0x3ME5xVnc5ZzZrTUxjMjNpbm5iZ01ISFhQZNIB5gFBVV95cUxQYUx4ZlpGbVAwNjN6VlVjbkpzTkQ3Q2pTcExzaS1MTlh2UHFqbkR1Q3pmV283SkQ2U0Jfa1pKaklEaF9RUUVvSEJ0Rnh0SGYtMG1LbjI1TmxHU2dtMkJyTVBxVmpnQVNJNEhxLTBwM1k1bzJTOUF2OXJvMGFLbjRtMldjMkNKNDh4Rml0YURDQldTdUNtQmtnZmFwdkItRU05NDhuX1pmSHNQaFpBRm9fVlk3bEUyY29ZUGtXVUVjUHpTYjJ5WHBCM3A4clVLdk1CNGVWMWwwQ3BzV0k4N08xV3REbWNuQQ?oc=5",
+   "source": "NOLA.com",
+   "published_at": "2026-10-24T09:00:00+00:00",
+   "collected_at": "2026-10-24T16:37:28+00:00",
+   "summary": "Venture Global to build new power plants at its LNG terminals, aiming to bring more AI data centers to LA NOLA.com",
+   "keywords": "power",
    "score": 2.0,
    "read": 0,
    "notified": 0,
@@ -206,6 +332,20 @@
    "summary": "Johor faces rising demand from data centre expansion Borneo Bulletin",
    "keywords": "johor,data centre,expansion",
    "score": 6.0,
+   "read": 0,
+   "notified": 0,
+   "topic": "ai",
+   "language": "en"
+  },
+  {
+   "title": "SF Compute's Evan Conrad says GPU credit, not chips, is AI's real bottleneck - BigGo Finance",
+   "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5CS3Y5NXpUUDNNQVY5Z2tRUFk2cEY5djZmRExhZ3pEUWFOMUltbnhsNHMtNmxQRlJaYjR0OHg5UmxHdk9BdnVsOWZhSFZUSWFZNExjLTRzNnFZVm8?oc=5",
+   "source": "BigGo Finance",
+   "published_at": "2026-10-23T20:08:00+00:00",
+   "collected_at": "2026-10-24T16:37:28+00:00",
+   "summary": "SF Compute's Evan Conrad says GPU credit, not chips, is AI's real bottleneck BigGo Finance",
+   "keywords": "compute,gpu",
+   "score": 4.0,
    "read": 0,
    "notified": 0,
    "topic": "ai",
@@ -1018,6 +1158,20 @@
    "summary": "Battery power: On Data Center Dynamics",
    "keywords": "data center,power",
    "score": 4.0,
+   "read": 0,
+   "notified": 0,
+   "topic": "ai",
+   "language": "en"
+  },
+  {
+   "title": "DCD Talks: Unpacking the AI powertrain with Manav Patel, Schneider Electric - Data Center Dynamics",
+   "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQOTlOZmVZd1NwMGl3Mkg4UFNQTGh5SF9tTTllbTBReWlET2xoaTA4eE15SWhjY2c5RFJFYXdaQklEYWprSnJVUmlfZWlDTHhfM0xGMEwzemdaeFB2LU9CdU1CYVNfaEpna0JwdW9QeFF3VGVfLVdUNWdXbXlTZWRuMjQyT25KcjVOMDNJNEM5dU12cDBPaGYtb01KcjgwT3J5UThzdUNnT2Z1eHBha0tSNmd2aXRIbjdqNWow?oc=5",
+   "source": "Data Center Dynamics",
+   "published_at": "2026-10-23T09:47:31+00:00",
+   "collected_at": "2026-10-24T16:37:28+00:00",
+   "summary": "DCD Talks: Unpacking the AI powertrain with Manav Patel, Schneider Electric Data Center Dynamics",
+   "keywords": "data center",
+   "score": 2.0,
    "read": 0,
    "notified": 0,
    "topic": "ai",
@@ -1844,6 +1998,20 @@
    "summary": "Biggest VPP deal signed by a hyperscaler to date",
    "keywords": "hyperscaler,power,deal",
    "score": 5.0,
+   "read": 0,
+   "notified": 0,
+   "topic": "ai",
+   "language": "en"
+  },
+  {
+   "title": "Americans Say Rising Utility Costs Are Straining Their Budgets. They’re Blaming Data Centers - CNET",
+   "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNQ1YyX0JUMUYzUDAwSEM2YTc5UVJFZlFFXzdtQ1hkSDVEdXoxYUE1aXpDSVRLeXJvV0VJaVdwdkVJU0RweEtxaWduVWpUWEhiWFZOZWRfY25pZ1Nqc1VOYVJ4N2k4WW5haXZiYjBBaklTN0UyX3FiQU1JMDR6UXhVdXZMakZ2RWZwT3dRZXNUc2VyWExqUm9zakhUWkNqUjQ3bmRfSlljSzU5VEl1dHgzcUVpVjVBQ3R3WTJuNG9QWnUzcmw0dkc0X1h3dGdaVjlTODlTZw?oc=5",
+   "source": "CNET",
+   "published_at": "2026-10-22T15:38:03+00:00",
+   "collected_at": "2026-10-24T16:37:28+00:00",
+   "summary": "Americans Say Rising Utility Costs Are Straining Their Budgets. They’re Blaming Data Centers CNET",
+   "keywords": "utility",
+   "score": 2.0,
    "read": 0,
    "notified": 0,
    "topic": "ai",
@@ -20652,6 +20820,20 @@
    "language": "en"
   },
   {
+   "title": "AlphaESS, DB Energy Jalin Kerjasama Untuk Projek Tenaga Pusat Data AI - BernamaBiz",
+   "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFB5YUlNV29wbTFJa19tMDd3YlFtYzF6Rmo3X0c1OHhVSmNwd3VlaHNQTEpKQ3ItVHV3SFpRUndoLXowekZDOFlIR2lOTEFubmZBWHB4Qkk5Sk8?oc=5",
+   "source": "BernamaBiz",
+   "published_at": "2026-10-12T14:20:00+00:00",
+   "collected_at": "2026-10-24T16:37:39+00:00",
+   "summary": "AlphaESS, DB Energy Jalin Kerjasama Untuk Projek Tenaga Pusat Data AI BernamaBiz",
+   "keywords": "pusat data",
+   "score": 2.0,
+   "read": 0,
+   "notified": 0,
+   "topic": "ai",
+   "language": "ms"
+  },
+  {
    "title": "Nebius signs LOI with Volt for data center capacity in Rotterdam, the Netherlands",
    "url": "https://www.datacenterdynamics.com/en/news/nebius-signs-loi-with-volt-for-data-center-capacity-in-rotterdam-the-netherlands/",
    "source": "DataCenterDynamics",
@@ -24234,6 +24416,20 @@
    "notified": 0,
    "topic": "ai",
    "language": "zh"
+  },
+  {
+   "title": "Solarvest: RM15 Billion TNB Grid Investment To Support Malaysia’s Energy Transition - BusinessToday Malaysia",
+   "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNMmIxTllGOUh4SUE3Y0dobi1mRFJRa1lsSkUyY21LcjZ0TDRrbXVJOWwwSlVrT2NOUk1oN1AyY1dvSGJmZWs5aVZDZXl5UnkxRUNhRHdaVFl0TVFLYWo0NUxmdjdOelZreDZGdW9qNHpiOEZiRmhkdzN0R0ZPTzh5NGVIdl8xZEprNnFJd2lfM2oxY01xRjNHT3M3SGxnWS1ZUTM0ZlJheGNQMi1TSXl5Y2Nybjk0dkpRT0dLZ05xWW5kNlJi?oc=5",
+   "source": "BusinessToday Malaysia",
+   "published_at": "2026-10-09T07:00:00+00:00",
+   "collected_at": "2026-10-24T16:37:06+00:00",
+   "summary": "Solarvest: RM15 Billion TNB Grid Investment To Support Malaysia’s Energy Transition BusinessToday Malaysia",
+   "keywords": "malaysia,tnb,energy transition",
+   "score": 8.0,
+   "read": 0,
+   "notified": 0,
+   "topic": "solar",
+   "language": "en"
   },
   {
    "title": "BTDR Stock Rises Overnight: Bitdeer Secures Malaysia Data Center Agreement As AI Infrastructure Pipeline Tops $10B - Stocktwits",
@@ -34904,6 +35100,20 @@
    "language": "en"
   },
   {
+   "title": "Firmus与OpenAI签约 扩大在马来西亚AI工厂的算力 - 大紀元",
+   "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5TbzRSaHo4WXlQT0NQRkVRdjMtTlR3dmdJN1lsYUY0anlOekhjdUZUaGVTWUtJSnJ5U3N6Zm1JbFRLZzdLVU1BLUFJVFVNcTZZVDRNc1NwMl83OEJTSDk0?oc=5",
+   "source": "大紀元",
+   "published_at": "2026-09-08T07:00:00+00:00",
+   "collected_at": "2026-10-24T16:37:32+00:00",
+   "summary": "Firmus与OpenAI签约 扩大在马来西亚AI工厂的算力 大紀元",
+   "keywords": "马来西亚,算力",
+   "score": 5.0,
+   "read": 0,
+   "notified": 0,
+   "topic": "ai",
+   "language": "zh"
+  },
+  {
    "title": "Malaysia's Economy Seen Growing 4.7 Pct In 2026 On Data Centre, Tech Cycle -- IMF - BernamaBiz",
    "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE8tUDFtdU5FdWRVWHE2M2t0ekx6ZFM4VTB2Rm5JbzVGU2V1NVI3dW9zVWVsM3NCR1NsUkNMaldtN2o0aVhkR25OSDJvcl9CLUxnb0xMdw?oc=5",
    "source": "BernamaBiz",
@@ -41596,6 +41806,20 @@
    "language": "zh"
   },
   {
+   "title": "ASEAN Perlukan Modal Besar, Perkongsian Lebih Kukuh Untuk Percepatkan Peralihan Tenaga - PM Anwar - Bernama",
+   "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5pN05ueEt5U25mTXJSUFFrSHVIQk1sZGw2dXI4b04xR0tMWUk3Tk1Yd0FzZlpDS3drcUswRUNHRmVDd2dqSWR1RlVvY2h3WGpKMHdxWA?oc=5",
+   "source": "Bernama",
+   "published_at": "2026-07-29T10:56:00+00:00",
+   "collected_at": "2026-10-24T16:37:18+00:00",
+   "summary": "ASEAN Perlukan Modal Besar, Perkongsian Lebih Kukuh Untuk Percepatkan Peralihan Tenaga - PM Anwar Bernama",
+   "keywords": "peralihan tenaga",
+   "score": 2.0,
+   "read": 0,
+   "notified": 0,
+   "topic": "solar",
+   "language": "ms"
+  },
+  {
    "title": "Malaysia’s Solar Expansion Opens New Skills Pathway For Asnaf Community - BusinessToday Malaysia",
    "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQWm8xYnFBWlpYRzZjTUZ1R3JMNjBjY1NtTy1KTXdhcG5ab3ZtNkw1cjgxalZaUVFpeDRyNWFnSnY1TElmbzhJTng2SGFIZFhnYzh5VkFrcWI2bWNVZWR3anJ2VTA4Q2dZb0ZkQzM0aWxPTG9fSWdPc3FLcVhyZVB5SktBeHB2T1lHRFBKbzJvR3RueTFIeTNBcTROTVFUNnJVVXdUQjMydmpQTjhKVUl4Y2VEZmFIUQ?oc=5",
    "source": "BusinessToday Malaysia",
@@ -47740,6 +47964,20 @@
    "notified": 0,
    "topic": "ai",
    "language": "en"
+  },
+  {
+   "title": "售地予数据中心业者套现3.98亿 百丽环球料入袋1.9亿 - e南洋",
+   "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9lX2Z3OVZrRk5HZkZCTWRXVlJHVmV1WUlYM2Jpb0pWSzZKRFc2VG5TTmZjam9qWVdPcHlkNkRqTmY5NnRMZ0E5V3cwTFl1QkVKUHE0MkZTRV80ME5nWGIxR1c4dw?oc=5",
+   "source": "e南洋",
+   "published_at": "2026-06-23T07:00:00+00:00",
+   "collected_at": "2026-10-24T16:37:32+00:00",
+   "summary": "售地予数据中心业者套现3.98亿 百丽环球料入袋1.9亿 e南洋",
+   "keywords": "数据中心",
+   "score": 2.0,
+   "read": 0,
+   "notified": 0,
+   "topic": "ai",
+   "language": "zh"
   },
   {
    "title": "Gentari to repurpose solar farm in Gebeng as Malaysia accelerates renewable energy push - The Sun Malaysia",
@@ -58732,6 +58970,20 @@
    "language": "zh"
   },
   {
+   "title": "英辰（雄安）携手JMC Cahaya、EcoRise，打造马来西亚首个零碳社区 - 国际太阳能光伏网",
+   "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9VanB4bVJhbHdWQmF2SmZKMmVfUHFIQWl6TmxzYW52T0oteEtqWFo1NUFVUEFIM0pKNjhVX0NVMzdVVGU2X3ZHWEF1QzhWRjZvd2ZnSzlFUm1seFpmeXc?oc=5",
+   "source": "国际太阳能光伏网",
+   "published_at": "2026-01-27T08:00:00+00:00",
+   "collected_at": "2026-10-24T16:37:10+00:00",
+   "summary": "英辰（雄安）携手JMC Cahaya、EcoRise，打造马来西亚首个零碳社区 国际太阳能光伏网",
+   "keywords": "马来西亚,太阳能,光伏",
+   "score": 7.0,
+   "read": 0,
+   "notified": 0,
+   "topic": "solar",
+   "language": "zh"
+  },
+  {
    "title": "浙江企业拿下马来西亚1GWh光储项目！ - 碳索储能网",
    "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5URkUzeE9aUV9ISU1oeDluaDB5ZDZJQW93MzJfTHFfdnFtTS1qZTJTbzdOU05LR0tCQk9Kbm11bkREME5IMlo1UWNjOUFrNi1haU54VFN6SU5UU0lZcXVZ?oc=5",
    "source": "碳索储能网",
@@ -67650,6 +67902,20 @@
    "language": "ms"
   },
   {
+   "title": "US imposes new duties on solar imports from Malaysia, Southeast Asia - The Edge Malaysia",
+   "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFB4SUFlTGZCUkJXWElPVi1VaHFiVEV6bWFfZGk5VTlSSUJ5dE1FRmlRcElQOXIzSklaMmQtWG5KeXJPc09kUEFWQU8wY1llcll0?oc=5",
+   "source": "The Edge Malaysia",
+   "published_at": "2025-04-22T07:00:00+00:00",
+   "collected_at": "2026-10-24T16:37:05+00:00",
+   "summary": "US imposes new duties on solar imports from Malaysia, Southeast Asia The Edge Malaysia",
+   "keywords": "malaysia,solar",
+   "score": 5.0,
+   "read": 0,
+   "notified": 0,
+   "topic": "solar",
+   "language": "en"
+  },
+  {
    "title": "Malaysia-Japan JV powers ahead with RM142m solar project in Kedah - The Malaysian Reserve",
    "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQaWE3S3YtU0FHNjdHelVHcXNVYWQxa0pDUUVBVE1XcERTeHoxNVVPclZiSkVaemgwU3NYUmRuVVlMZllKY2xKdTVHaWNNcWJYSllwcFdFUWtma2FJWklHMXVpcWZSbU05SFZTMnR0WkZFZktkZndZT3FxRFh0TGphSFBDT3F3T3lDUzk4YXhKbVVLS3Iyb1FreTlBRmhZN0FzVjBwdTNaMEozTEtrVUE?oc=5",
    "source": "The Malaysian Reserve",
@@ -72200,6 +72466,20 @@
    "language": "en"
   },
   {
+   "title": "马来西亚霹雳州引领绿色能源革命：浮动太阳能与农业太阳能的双重奏响 - 见道网",
+   "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBScUtZZjJ4eTBqbU9Fa0JJV1o4M1pURzgzbEloTzdaVXVUV0dERjc3YTVySi1FaktfeVlSOWtqN3BMU3JtUFhVMnJTUmtyVWhXamR2aA?oc=5",
+   "source": "见道网",
+   "published_at": "2024-07-11T07:00:00+00:00",
+   "collected_at": "2026-10-24T16:37:10+00:00",
+   "summary": "马来西亚霹雳州引领绿色能源革命：浮动太阳能与农业太阳能的双重奏响 见道网",
+   "keywords": "马来西亚,太阳能",
+   "score": 5.0,
+   "read": 0,
+   "notified": 0,
+   "topic": "solar",
+   "language": "zh"
+  },
+  {
    "title": "Cover Story: Data centre sector in Malaysia continues to grow - The Edge Malaysia",
    "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9JalY5UzhBYjRaREtWSjc1a3N0WkN5bVdmUURMNzJTYl85d3ZsS0g5ZkhZUEE3WjBZdC1jMWs3OXhMM2xTbVI4YVNTNGJ5NEQ1?oc=5",
    "source": "The Edge Malaysia",
@@ -75042,6 +75322,20 @@
    "language": "ms"
   },
   {
+   "title": "Malaysia releases details of energy transition roadmap - Pinsent Masons",
+   "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQZXlwYnFjZUp3cnFYOGFYdG9UYmEyc1R5NXdBdXJUMjY2U3lxa0xlbWcxekt6cjF5TVlCRkNLVDVhVTkxclBZQlJiRzU2Qm83M3VMMzk3UUhtSU9FZjhwc3dVSGQyQTUzZC1oYXNaSlJRT0YyMm1uNlg5Wm1QNUdfTF9VbG1jNUd4SUVzZzlDS296dWQwM0RIY256ek1xQQ?oc=5",
+   "source": "Pinsent Masons",
+   "published_at": "2023-09-06T07:00:00+00:00",
+   "collected_at": "2026-10-24T16:37:06+00:00",
+   "summary": "Malaysia releases details of energy transition roadmap Pinsent Masons",
+   "keywords": "malaysia,energy transition",
+   "score": 5.0,
+   "read": 0,
+   "notified": 0,
+   "topic": "solar",
+   "language": "en"
+  },
+  {
    "title": "Malaysia's National Energy Transition Roadmap: Part 2 (Roadmap in Full) - Lexology",
    "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNQl9fSDB5WjRjZDBHZnJsVVZDRW9RVWxJd3l1TnI5Z083Sk5qbGxYeFdGdkVIWXVQeVJIMktzTDU3OW8zR0M0X0d5al8tbExEV3VYVFRQQjBYa2dacWtjOENiSXVIWE1pd0Jpd0hYak5JRy1tQWwyaXlwbURXS2NlR3IyZEw5ek9mcFJZ?oc=5",
    "source": "Lexology",
@@ -75460,6 +75754,20 @@
    "notified": 0,
    "topic": "solar",
    "language": "en"
+  },
+  {
+   "title": "【转单】传纬创产能不足，英伟达将AI服务器订单转交鸿海；英飞凌将投资50亿欧元扩建马来西亚工厂；台积电向封装设备商启动新一轮订单 - 凤凰网",
+   "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE52dXJHM21ldFVBNnpmeEp1N2lvUHR4QU14OTM4QkZicWRPUHRfRnFOSVlydzI5QUJ2S3VLSmZPMHowYXczdVRCcw?oc=5",
+   "source": "凤凰网",
+   "published_at": "2023-08-04T07:00:00+00:00",
+   "collected_at": "2026-10-24T16:37:32+00:00",
+   "summary": "【转单】传纬创产能不足，英伟达将AI服务器订单转交鸿海；英飞凌将投资50亿欧元扩建马来西亚工厂；台积电向封装设备商启动新一轮订单 凤凰网",
+   "keywords": "马来西亚,服务器,英伟达,投资",
+   "score": 8.0,
+   "read": 0,
+   "notified": 0,
+   "topic": "ai",
+   "language": "zh"
   },
   {
    "title": "I Squared Capital将在马来西亚建设高达1GW的太阳能发电厂 - 能源界",
@@ -76243,6 +76551,20 @@
    "read": 0,
    "notified": 0,
    "topic": "solar",
+   "language": "zh"
+  },
+  {
+   "title": "AKPK证实服务器遭骇客攻击 - orientaldaily.com.my",
+   "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE56SDI5NmpNOUZvZUc4QUJoVVAtRGFmVVVLVFJ4OHVBaFpaQXVhMHlOX2d6cXNMb0VVcmRSaWhpUmhUdW5hVVl5T1hfcE16d29GNlpEQ1hOa0YwMW1BVE53Tkx5MjVaRHFiWklWZFg3UQ?oc=5",
+   "source": "orientaldaily.com.my",
+   "published_at": "2023-03-31T07:00:00+00:00",
+   "collected_at": "2026-10-24T16:37:32+00:00",
+   "summary": "AKPK证实服务器遭骇客攻击 orientaldaily.com.my",
+   "keywords": "服务器",
+   "score": 2.0,
+   "read": 0,
+   "notified": 0,
+   "topic": "ai",
    "language": "zh"
   },
   {
@@ -79534,6 +79856,20 @@
    "notified": 0,
    "topic": "ai",
    "language": "ms"
+  },
+  {
+   "title": "Scatec Solar closes financing for 197 MW in Malaysia - Scatec Group",
+   "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOeGpJSXQ2Q0RzU2VoSGFPREZCemdMS08zREp3ZTlvWEwwcVlsdHEzYVJvb05QSEU1Wk4yM3ZSeG95R1BRNTRPRWNZakdMaDZCb3I4SnlqTjFMdlZoOXZlSjZ5dlN6czdQUVFiY012cklWeEVjMlhqX2VXUkxRWF9wb0FqNGR1QQ?oc=5",
+   "source": "Scatec Group",
+   "published_at": "2017-10-06T07:00:00+00:00",
+   "collected_at": "2026-10-24T16:37:05+00:00",
+   "summary": "Scatec Solar closes financing for 197 MW in Malaysia Scatec Group",
+   "keywords": "malaysia,solar",
+   "score": 5.0,
+   "read": 0,
+   "notified": 0,
+   "topic": "solar",
+   "language": "en"
   },
   {
    "title": "Inovasi optimum penjanaan tenaga solar - Berita Harian",
