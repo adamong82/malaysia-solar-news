@@ -1,6 +1,76 @@
 {
- "generated_at": "2026-10-31T05:47:51+00:00",
+ "generated_at": "2026-10-31T12:37:40+00:00",
  "articles": [
+  {
+   "title": "Power Pause: Abbott’s Data Center Freeze Slows Texas Dealmaking - Dallas News",
+   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQU3VVTHRUVVloVkxpQnhoRmJFSEI3ZEdPdkFfalh3M1JMUF95aHVSMGpDU2g1cGx0RERqTnZ1dk44ZnVIdW95bW5MOGVKal8tSGxSeld3emgyZmJ3TnlLd21DMzU5Ym95czRPX0NGend5dmZsRFFhOFpad2hkRG9KVTBDeHZURjJMUGRvRTBpM0xxcEF3cURzcFhuNHRWWDVjVmR3WldCb01zRjhnY0dXTExfcw?oc=5",
+   "source": "Dallas News",
+   "published_at": "2026-10-31T11:09:52+00:00",
+   "collected_at": "2026-10-31T12:37:29+00:00",
+   "summary": "Power Pause: Abbott’s Data Center Freeze Slows Texas Dealmaking Dallas News",
+   "keywords": "data center,power",
+   "score": 4.0,
+   "read": 0,
+   "notified": 0,
+   "topic": "ai",
+   "language": "en"
+  },
+  {
+   "title": "Europe’s AI ambitions are hitting a power bottleneck - Data Center Dynamics",
+   "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPZENYMDlqbEE5UjJQRG5RY05LNnVjazZJSFUzU3ZuV1FRLXlaR2RVS2w4RWhwYThPRDI1bXV4TXlES2pCakxhSnpPOWtFYTZrM2FxbjFnUkRobFc3czVycXZ0TnNmaDlCejBfbXByS0RpVE9aeDRubXFjR0FGdkNGYjdZMUZBbFBjUkthMzk2SGxWQXZaenBBYUN6ZHk0bHA4?oc=5",
+   "source": "Data Center Dynamics",
+   "published_at": "2026-10-31T11:03:14+00:00",
+   "collected_at": "2026-10-31T12:37:29+00:00",
+   "summary": "Europe’s AI ambitions are hitting a power bottleneck Data Center Dynamics",
+   "keywords": "data center,power",
+   "score": 4.0,
+   "read": 0,
+   "notified": 0,
+   "topic": "ai",
+   "language": "en"
+  },
+  {
+   "title": "Startups Are Growing Human Brain Cells to Power AI Instead of GPUs - Startup Fortune",
+   "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPdU1KY213d1FpdHNMTGt1cTJPaDB0dkRKanloUktia3FzV0JsUnlLenEySHMzcVdQQnJXNUFjUmxFQUxWWDFlcjl5UkhJbF92TndKbnJ6T3pMUnJjUmNyTFZ5U1dvTU5zV1ZwVldfTm5tdnVEeEk3dkttaUFlSVplMllhVEs5emRqZ3hRbUp2c2U3TXJQNmVnd2lB?oc=5",
+   "source": "Startup Fortune",
+   "published_at": "2026-10-31T10:04:24+00:00",
+   "collected_at": "2026-10-31T12:37:29+00:00",
+   "summary": "Startups Are Growing Human Brain Cells to Power AI Instead of GPUs Startup Fortune",
+   "keywords": "power",
+   "score": 2.0,
+   "read": 0,
+   "notified": 0,
+   "topic": "ai",
+   "language": "en"
+  },
+  {
+   "title": "Pengendali pusat data perlu bayar elektrik ikut harga pasaran dunia - Harian Metro",
+   "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPb2VlWHoyaTNZaVVTcW5rLWVvY1BIWWRFSGt5VTlRZWRiT1M0TjdFNnBHeU5HTVd2S2x6LS1pR2ZBRDNfdFNtR0Y1NDdhcmdFS1NORk5Ka2xBc1NhYUxLRG5pXzFsamNPeE9za0xJS3A0NmVURFRFZ1ZydkQ1LUtoNzJwVFQ5RmIyT3l3NWtWbGhNUTZ0RUJOSWpZS2FmcktWSnlqRVJqaFBDd19uMHlmc3BESUMzalNGZ2fSAb8BQVVfeXFMTnJUb1lvZkszZVlXU1ljQkVFTXQtZEs0WHdoQXRiaDQ4UlhnN2xRUjBFeUlST2dDYVNRdTBIVWZLRGVGYVMtcEZRWTNVRmRGTWYwS21Kd1Y0STlqdEpyR0JQdnJ3NENadWZfZG85Uk80TUgwT3AtRk91QkNpeDBUcmRtUTJSUkJ4eXdaR0FkbXJ5dXRiV1BHUHFqQlNQcmMwbmkwaDlBRTBrdkI2ckQwNHAzQ0w2NFlkaTR3dl9UejQ?oc=5",
+   "source": "Harian Metro",
+   "published_at": "2026-10-31T09:23:40+00:00",
+   "collected_at": "2026-10-31T12:37:40+00:00",
+   "summary": "Pengendali pusat data perlu bayar elektrik ikut harga pasaran dunia Harian Metro",
+   "keywords": "pusat data,elektrik",
+   "score": 3.0,
+   "read": 0,
+   "notified": 0,
+   "topic": "ai",
+   "language": "ms"
+  },
+  {
+   "title": "AI data centers face community tension in India - ET Datacenters",
+   "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxNNERzOWhDSzdyUk9iMzF1c1NCZFNLUkRHRUJxRklXSlV3dWpPcDNUbkkyTmszQXBtZnZMQ0YyVHJJS1RVYlhMcDg3ZnhQbWY2RDZWRTVKc21aNVdneElxN1BkSjhUVmVTVC1qTW5kWXhEV3VFY3VOX1ZvdWszNzdSSzgxYUc0LU5qc0JZVFdodURVaHctSmpIejc5ancwZ2o1YjBTdHg0VVhEcWV6WFZ0QXhmdkhodjA4ak5YbnZmRWNvamJuZFlIcjVsR3o4c19seUl1amlmSGlHcFFtNVVMSzljYXAxeW5PZS1zbklpZE00cUFRbVZoS25JMF84QdIBzAFBVV95cUxNYllTNFVKSHpnOFdxbWNUdlVpaVg2NERHekxmWDc0WWtvVXRqc1BidHRSSV82MHpsTllQZFVDRWE5c0kzc25GWVlCN2VPenBTMDdzQWkwWE1udnZwcTFyQlVhb3FsYXNRYnBnSFlGWHA2NlZzcDFqOGJHQXFaVDlQakExY1VYQ3MtR0ZYNW5uM2NLQ2VDNkJkeUFnTml2RHk2TGg3Umtra2lpRmh2LW9RNkdiVTc0WGJOS1BVY2EtYng1OVE4bEpfTjZ2MF8?oc=5",
+   "source": "ET Datacenters",
+   "published_at": "2026-10-31T06:24:06+00:00",
+   "collected_at": "2026-10-31T12:37:29+00:00",
+   "summary": "AI data centers face community tension in India ET Datacenters",
+   "keywords": "datacenters",
+   "score": 2.0,
+   "read": 0,
+   "notified": 0,
+   "topic": "ai",
+   "language": "en"
+  },
   {
    "title": "从屋顶到电池：马来西亚的太阳能转型如何为绿色能源敞开大门 - Moomoo",
    "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQSnNIODFUWlEyVUdHUUM3VVptNmtubVdwMUhQMFBfU250UUJ5TjNEbm5xX08zMlZVVk9VaFFFeDJYbHRLSl9UTnBHc25FSzNXb1pSVVdjRWE4RWFud2tRMF93OWduVE5SS0twSGdvQTM4U0lDOWlrXzBNWTBqTHE0RzZwSU5lci11S0VWVDdWYnVMcE14eGtzVzY5RW9WYTM1aTdnbGxKcHhQcE1UajZtd3U5WHZmQQ?oc=5",
@@ -14,6 +84,20 @@
    "notified": 0,
    "topic": "solar",
    "language": "zh"
+  },
+  {
+   "title": "From Rooftops to Batteries: How Malaysia’s Solar Shift Is Opening the Door for Verdant Solar - Moomoo",
+   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQMEhPUzJGRUhFV0Z3U2JGclZEczBRWmRhUGx4NlZlbndJMHVfVWlDWHRSSTJQVUtpdTVTb1RoU2w4NXFabE9wZGxObjctaEFqOU1MYmZLSmQ2YjlFR0JtQjRpc1pIVXZPV2JGNmtOaTFoOXJ1NExMVWhGYmo5U05obFhFMWlaNm5kaUdCdmF5ZXVOTnlUX2Jiekk1SGFtRGJCTkctcFRNMnMtYUFVelp3?oc=5",
+   "source": "Moomoo",
+   "published_at": "2026-10-31T03:29:48+00:00",
+   "collected_at": "2026-10-31T12:37:08+00:00",
+   "summary": "From Rooftops to Batteries: How Malaysia’s Solar Shift Is Opening the Door for Verdant Solar Moomoo",
+   "keywords": "malaysia,solar",
+   "score": 5.0,
+   "read": 0,
+   "notified": 0,
+   "topic": "solar",
+   "language": "en"
   },
   {
    "title": "Power shortages leave AI chips idle in data centres - ET Datacenters",
@@ -98,6 +182,20 @@
    "notified": 0,
    "topic": "ai",
    "language": "en"
+  },
+  {
+   "title": "印度AI基建企业拟筹集30亿美元债务资金，采购英伟达新一代芯片 - 新浪财经",
+   "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNclZfd0RHc3lXR2hqcENGNE9FTi1yVFAwSUpFTE94dWhEc2hkYVJKY2FsT1lRQkV2bGJWak1XejBJSWVlMmdESm1vQkJIQTBVc3RIN1hSMmU2TlRIS0s2c1VrODZMTUZ1Sko3RHVOdkRhU01CWnhoWWdxMmJURWExcXZxVGJ6aHR3LXc?oc=5",
+   "source": "新浪财经",
+   "published_at": "2026-10-31T00:11:19+00:00",
+   "collected_at": "2026-10-31T12:37:33+00:00",
+   "summary": "印度AI基建企业拟筹集30亿美元债务资金，采购英伟达新一代芯片 新浪财经",
+   "keywords": "英伟达",
+   "score": 2.0,
+   "read": 0,
+   "notified": 0,
+   "topic": "ai",
+   "language": "zh"
   },
   {
    "title": "Infineon's 300mm GaN push turns Europe's power-chip strength into an AI infrastructure bet - digitimes",
@@ -302,6 +400,20 @@
    "published_at": "2026-10-30T17:00:00+00:00",
    "collected_at": "2026-10-30T19:27:41+00:00",
    "summary": "The first TPU in space is running a Google DeepMind Gemma 4 model and writing cheesy poetry.",
+   "keywords": "data center",
+   "score": 2.0,
+   "read": 0,
+   "notified": 0,
+   "topic": "ai",
+   "language": "en"
+  },
+  {
+   "title": "Google’s first data center satellite is online and writing poetry - TechCrunch",
+   "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOLWFhS0ZkZnRnV2JEWFJWNXMyb1U4eWxqQ2JUOWM4RXBZOHNNemh0QWVxbWxrYzhXSVpkWEg0U0gzWENkbmJZU1RzZmNhWS1MRWNTVEpuQzlrSGZKR0ZOQW9ReXBjbXc0dzVzNjdCZ0tndU1LT1BrSEE1MWRmeVRVUU01ZDBlQkE1RHY2T0pWOHY2YTNiQy1iZVZnRDU0UWFU?oc=5",
+   "source": "TechCrunch",
+   "published_at": "2026-10-30T17:00:00+00:00",
+   "collected_at": "2026-10-31T12:37:29+00:00",
+   "summary": "Google’s first data center satellite is online and writing poetry TechCrunch",
    "keywords": "data center",
    "score": 2.0,
    "read": 0,
@@ -1164,6 +1276,20 @@
    "language": "en"
   },
   {
+   "title": "MyDCD IPO——值得押注马来西亚的数据中心热潮吗？ - Moomoo",
+   "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPOGppVTdZSWllZ2JDZmY5eXZkNzc0c0NKNi15U0xFQjBSUlNyMlVIUXJTQ25TN1V2N2YzZUY5UEg1WG5FRGVzWmpBWTBmbTFia01xd2xjRWVqaG5nSXppSUlKM0R3OHF3QlRCc2tLQVlFZ0hVRXpaR0pNaEJTbllTVGU2a1J1OWNLMTFldi1pUlpOdjVhT3RKaVpRTGp1Uy1Rd2YxVURFcmE?oc=5",
+   "source": "Moomoo",
+   "published_at": "2026-10-30T07:33:28+00:00",
+   "collected_at": "2026-10-31T12:37:33+00:00",
+   "summary": "MyDCD IPO——值得押注马来西亚的数据中心热潮吗？ Moomoo",
+   "keywords": "马来西亚,数据中心",
+   "score": 5.0,
+   "read": 0,
+   "notified": 0,
+   "topic": "ai",
+   "language": "zh"
+  },
+  {
    "title": "Hyosung Heavy Industries to Partner with Germany’s Siemens AG on Digital Power Grids and AI Data Center Technology - 파이낸셜뉴스",
    "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9uNFVpNFhEN0l1RU5HbHJZZ1V0WTI4bWNBMEQyWl9TY1lpOVBLX1ppMl9tTDl2WXRDTUJfd01zRWd2ejNJLVR2UDBRMm01cFYtbmtSOGNRcEQ?oc=5",
    "source": "파이낸셜뉴스",
@@ -1450,6 +1576,20 @@
    "published_at": "2026-10-30T02:01:05+00:00",
    "collected_at": "2026-10-30T07:10:53+00:00",
    "summary": "The Catch in Turning Bitcoin Mines Into AI Data Centers (Every Building Is Made for One Job) Global Data Center Hub",
+   "keywords": "data center",
+   "score": 2.0,
+   "read": 0,
+   "notified": 0,
+   "topic": "ai",
+   "language": "en"
+  },
+  {
+   "title": "Can Japan beat the data center backlash? - The Japan Times",
+   "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPQXMzUXM0UXR1V1BBRWN1NzFiY2ZTbjlsS1FUNGxJOWRaZmVMd1JLTDNjSUtiMl9RTzRDc1hTS3RZQ19mVnRWSUlCR3dRTjRCZnVPcEFJYWRta3p1MmlPYXcyR05PcVZrQnlLZktzQ01qMzFTMVlzOHBWZW9RR2VuTHU4Y2w3NE5zWTNoQg?oc=5",
+   "source": "The Japan Times",
+   "published_at": "2026-10-30T01:50:00+00:00",
+   "collected_at": "2026-10-31T12:37:29+00:00",
+   "summary": "Can Japan beat the data center backlash? The Japan Times",
    "keywords": "data center",
    "score": 2.0,
    "read": 0,
@@ -3962,6 +4102,20 @@
    "notified": 0,
    "topic": "ai",
    "language": "en"
+  },
+  {
+   "title": "MyDCD 涉足马来西亚数据中心基础设施领域，有望受益于人工智能和云计算需求的不断增长。其 IPO 前景取决于营收增长、盈利能力、订单转化情况、客户集中度以及 IPO 估值。投资者在决定是否认购前，还应权衡其 IPO 募资用途及潜在上市涨幅与执行风险及行业竞 - Moomoo",
+   "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPdFkyMUM3MmF5Um16WDJ4bzJfMnU5Uy1rem90ZVBXUXNRYjl5UEd4czNrLU42amNpcUxLQlNCbmFMTXA0OGRjME1KU0NfZUlBeUxRUHo3OU9ZZWNWX3ZVNHZfY3pWNm5qMTJseUduUFItNEQwdlljWjcwdFg2M1NlY1pOdDh0Z3hvZDQ3Vm1kQlBrMkdJbUpTdnBDZmhYaXUyVXVVSTZRWDhkeG5oY2xWbzhQMURsQ1FqTVhQaEVsSE9nYkpv?oc=5",
+   "source": "Moomoo",
+   "published_at": "2026-10-28T14:15:26+00:00",
+   "collected_at": "2026-10-31T12:37:33+00:00",
+   "summary": "MyDCD 涉足马来西亚数据中心基础设施领域，有望受益于人工智能和云计算需求的不断增长。其 IPO 前景取决于营收增长、盈利能力、订单转化情况、客户集中度以及 IPO 估值。投资者在决定是否认购前，还应权衡其 IPO 募资用途及潜在上市涨幅与执行风险及行业竞 Moomoo",
+   "keywords": "马来西亚,数据中心,云计算,投资,基础设施",
+   "score": 9.0,
+   "read": 0,
+   "notified": 0,
+   "topic": "ai",
+   "language": "zh"
   },
   {
    "title": "US data center buildout risks erasing years of climate progress - The Detroit News",
@@ -8696,6 +8850,20 @@
    "language": "en"
   },
   {
+   "title": "Malaysia percepat peralihan tenaga dengan fokus pada pembiayaan swasta dan kesiapsiagaan grid - Traders Union",
+   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQMm5xcWlJd1c1S3VaREF0bVpRT0E1TC01dmswZHZRQVdWNV85bDdVcDZXb2dHMzE0elE2eUdpRmRjYTJwSVNCSE9LNDBvUDU2bzdQa3NuWURrSG1VclpNSVZ2bWJzb29ta1A1X3dwbFdWdl9pc3FBdXpZSUhKbXBBWnRRSzNFZTltRnZWMFVkY2o1LUl2Mml3S3pRNmg?oc=5",
+   "source": "Traders Union",
+   "published_at": "2026-10-26T12:31:25+00:00",
+   "collected_at": "2026-10-31T12:37:20+00:00",
+   "summary": "Malaysia percepat peralihan tenaga dengan fokus pada pembiayaan swasta dan kesiapsiagaan grid Traders Union",
+   "keywords": "malaysia,peralihan tenaga",
+   "score": 5.0,
+   "read": 0,
+   "notified": 0,
+   "topic": "solar",
+   "language": "ms"
+  },
+  {
    "title": "G42 signs MoU for AI infrastructure in Greece",
    "url": "https://www.datacenterdynamics.com/en/news/g42-signs-mou-for-ai-infrastructure-in-greece/",
    "source": "DataCenterDynamics",
@@ -10060,6 +10228,20 @@
    "published_at": "2026-10-26T01:37:25+00:00",
    "collected_at": "2026-10-26T06:20:19+00:00",
    "summary": "Malaysia faces RM176bil power investment bill to fuel data centre boom NST Online",
+   "keywords": "malaysia,data centre,power,investment",
+   "score": 8.0,
+   "read": 0,
+   "notified": 0,
+   "topic": "ai",
+   "language": "en"
+  },
+  {
+   "title": "Malaysia faces RM176bil power investment bill to fuel data centre boom - KLSE Screener",
+   "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQQkhHX3QwcGhJTU4zSXl4a0hRQkYwZU5hYTRsMy1Udk5xbHZPQVJPcWtlbXpmU0hBTFd2MlBacVYtUlZhMEpXV0FITGtkSGtWdFFfdk9xZXM4clRtUXo3SEdqNURkOGQ1WDRTR0dwM0JDTTlKb1lFaXhzd3ZfcDd6S2xrcWVZSlBYRi1OazRQWUpoWFpZTnpoRV96aUxmN2w2V3Z0SFBBTXZOX3VvYV9iQVozQlJkRk8zbnlrNg?oc=5",
+   "source": "KLSE Screener",
+   "published_at": "2026-10-26T01:37:25+00:00",
+   "collected_at": "2026-10-31T12:37:29+00:00",
+   "summary": "Malaysia faces RM176bil power investment bill to fuel data centre boom KLSE Screener",
    "keywords": "malaysia,data centre,power,investment",
    "score": 8.0,
    "read": 0,
@@ -33868,6 +34050,20 @@
    "language": "en"
   },
   {
+   "title": "AlphaESS, DB Energy Partner For AI Data Centre Power Project In Perak - BernamaBiz",
+   "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5CRmgzUUJIMmtlWkpFQVlUWEpzZ2ZPVmlmYnVmdjh5NGdxTDNpVXJ2TDJGWDhpYWVJV3hpMjZLYzZvdlB5M1ZfNHdBaTZZV0ZyR3ZzMQ?oc=5",
+   "source": "BernamaBiz",
+   "published_at": "2026-10-12T07:00:00+00:00",
+   "collected_at": "2026-10-31T12:37:29+00:00",
+   "summary": "AlphaESS, DB Energy Partner For AI Data Centre Power Project In Perak BernamaBiz",
+   "keywords": "data centre,power,energy",
+   "score": 6.0,
+   "read": 0,
+   "notified": 0,
+   "topic": "ai",
+   "language": "en"
+  },
+  {
    "title": "Kinergy Secures RM47.5 Million Gamuda Contract For Hyperscale Data Centre - BusinessToday Malaysia",
    "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOX1dRcDFjeHF0N2h3eVpfZUdLX0ZiZzE2cjhXNGtqOFVrT01STE9fSDE2Nm14Qlg3aHR3Z0NfWVQ1QjRNQktEVWhoUEcyUXdPanRobGg3cGY2c0tEdXZNQ1ZJalh0NUtwZkZ2eERULUFIVzlKQzVXWmVPMzFCQV9qVW9SS19fc0NDakNOREROWFB0dHFNdFhxY011aE1HT3BFQmJJbGpQbGtpd01jVEdwcHJuRUIwU05hTGc?oc=5",
    "source": "BusinessToday Malaysia",
@@ -41146,6 +41342,20 @@
    "notified": 0,
    "topic": "ai",
    "language": "en"
+  },
+  {
+   "title": "马建屋融资6635万 助GO Energy拓太阳能项目 - e南洋",
+   "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9wWVBLcXVUNm4yN0hlQjZuTEFya0w5MjZBdG0yR0ZMLWhoV3RsWG9ocU03YnBuQ2oySU1kSUVPUHVyQ1laYWd4UHQxZUJuUjJxWXhnQnA3NERieHBjTXp0WUtqOA?oc=5",
+   "source": "e南洋",
+   "published_at": "2026-10-01T07:00:00+00:00",
+   "collected_at": "2026-10-31T12:37:13+00:00",
+   "summary": "马建屋融资6635万 助GO Energy拓太阳能项目 e南洋",
+   "keywords": "太阳能",
+   "score": 2.0,
+   "read": 0,
+   "notified": 0,
+   "topic": "solar",
+   "language": "zh"
   },
   {
    "title": "UMS Jangka Jimat Lebih RM57 Juta Kos Elektrik Menerusi Projek Solar - bernama",
@@ -61504,6 +61714,20 @@
    "language": "en"
   },
   {
+   "title": "Malaysia Pada Kedudukan Kukuh Teraju Pembiayaan Peralihan Tenaga - TNB - BernamaBiz",
+   "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1tY1dva2tMTXhzMnlkYWZsQWpsNng2eG91dnd0eDB6MUZlMmMyT3RyT1pEdmJqODFFb3dUaVB1eXFlV2h5MzctNHU0bGliOU1KVTZWclM2Ukg?oc=5",
+   "source": "BernamaBiz",
+   "published_at": "2026-06-22T07:00:00+00:00",
+   "collected_at": "2026-10-31T12:37:20+00:00",
+   "summary": "Malaysia Pada Kedudukan Kukuh Teraju Pembiayaan Peralihan Tenaga - TNB BernamaBiz",
+   "keywords": "malaysia,tnb,peralihan tenaga",
+   "score": 8.0,
+   "read": 0,
+   "notified": 0,
+   "topic": "solar",
+   "language": "ms"
+  },
+  {
    "title": "Malaysia well-positioned to lead in energy transition financing: TNB chief new energy officer - NST Online",
    "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPYm1udUJpRkZ1TG5OVnFaQ3lhZkRIN0RYZFYzeWtHRXhtWURLSEotWnpVMENreXI0Zmp4ZjVTS1ZpcTRqX0N3OWhvZVV2bWwtWG51T3dMdVlBMUNLMVh3emQ4TXNIRDEyS2NNaW1aMG45MlV6M1plcm1PQzFwdXVXc3E0MFNBLXNpbU5mT2NVaFlUYjFIZ251T3JEYklTaTB3UkoyZ3NoRjJ4WFYyNlN3RXRPNENyMWlHcU1F0gHAAUFVX3lxTFB4R0VRNnhIaDUyalB3ckdzRkcxUkZfWld3LTZQYUNOcUhqVXVYNm5ETWpzdVZLRlNoZzJBNnhKaW1rRWlBSW9YVmlESW5mYV9qdlFTQlpucmM3NU1kZ0hJaGxZcnB0S0kyeWJNeG5Kel9nbjlIN0NsLVJmN3lTbDlFdWxrakQ3WnhEYmxYd0U2bjBhMUsxT2VadUpUMzd2NGhMcmNrRzQzWGxvRjFMUHRVbmdwRnVVLWx6MTUtUllsag?oc=5",
    "source": "NST Online",
@@ -61978,6 +62202,20 @@
    "notified": 0,
    "topic": "ai",
    "language": "en"
+  },
+  {
+   "title": "快讯：算力芯片概念震荡走强 寒武纪大涨逾15%创历史新高，股价站上1500元 - finance.sina.com.cn",
+   "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNOTllU09waWVkY0lnMUgxVDRwU1E5dHlrYTZLeDh6X09KdXptNS1kM1llRzhwM1J3WGNEbkFwU2tsS1VHQ3BlQzAydGlqeGJIVnpZbndEOWxzelo4dHlHdXJlQnQtWWs1S00yOHYxNm9jVTZNNXpnaElZWWlkZXVTRDZmVURiVGs?oc=5",
+   "source": "finance.sina.com.cn",
+   "published_at": "2026-06-18T07:00:00+00:00",
+   "collected_at": "2026-10-31T12:37:33+00:00",
+   "summary": "快讯：算力芯片概念震荡走强 寒武纪大涨逾15%创历史新高，股价站上1500元 finance.sina.com.cn",
+   "keywords": "算力",
+   "score": 2.0,
+   "read": 0,
+   "notified": 0,
+   "topic": "ai",
+   "language": "zh"
   },
   {
    "title": "Know Your Stuff: What homeowners should look at before buying a solar PV system - The Edge Malaysia",
@@ -68011,6 +68249,20 @@
    "read": 0,
    "notified": 0,
    "topic": "ai",
+   "language": "en"
+  },
+  {
+   "title": "Malaysia targets 32% renewable energy capacity - Vietnam+ (VietnamPlus)",
+   "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPckRET1VWT21zRHpmSFh1RzQtbUljNVoxakRJTl9sN2FRTEJ6UktxVDNnc1ZjSmVLdnJ6ZlVxc1BmOEpDR2JkUEFGUzEzX3NJVV9RaGprQWJIcXcyb0N5NExRTEgxNEtUUGxCZEhxN3YxWmQyVVpBZ29NMm9BUkZYSGRFM0xKakhtMjRxY3lTZw?oc=5",
+   "source": "Vietnam+ (VietnamPlus)",
+   "published_at": "2026-04-22T07:00:00+00:00",
+   "collected_at": "2026-10-31T12:37:09+00:00",
+   "summary": "Malaysia targets 32% renewable energy capacity Vietnam+ (VietnamPlus)",
+   "keywords": "malaysia,renewable",
+   "score": 5.0,
+   "read": 0,
+   "notified": 0,
+   "topic": "solar",
    "language": "en"
   },
   {
@@ -82448,6 +82700,20 @@
    "language": "ms"
   },
   {
+   "title": "Dua pusat data teknologi hijau dan AI akan dibina di Negeri Sembilan - Aminuddin - Berita Harian",
+   "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNUldsd1dGM0l0SWhaX1pxaG5ObUowZDVaVFhlSU5wZ1g2UUR5amJSZjdhWEFuR1V2ZkkySUkzc1RtNnpzY1hydHZKckQtUFRyRk9YRW85U0lrdlJnaXozd3hlMG1Pb21CY3NZOWJSVy1PTnJ3RE5zWFNzMERfMThnVWsyMi1lQzNmNFU4S1VKTVRtSWY1RVJVekxPTmJEOS15UG9HbVphOHprRnE5WVE2WWZlRlpOWHotYU9iSVVLcVNkTWc0alHSAcsBQVVfeXFMTXFtRjhiVGhES0IzM1N1WEdkZFdRbWY1Ri15bzMyV0p5ZWJ2VXVrbTVJa2xrenVWcWduaXlUREE2VTBOQVpPME4xRGFINVRuWlJoeXZPZThXMERoS2wyTzJBa1ZZZjZUODIxUzd3X0tEbnE0em5WZ1owSlZGZGl0MWw1ZEI2U1hXaHdYNnQ3YzNhbU45Wi16LTZhS1VzQjJ0aUFNS2RRblZPV2VmVS1xNl9NaVRQdnlXSDBTUFBsRTVsTklzcUFxWmFEd2M?oc=5",
+   "source": "Berita Harian",
+   "published_at": "2025-04-28T07:00:00+00:00",
+   "collected_at": "2026-10-31T12:37:40+00:00",
+   "summary": "Dua pusat data teknologi hijau dan AI akan dibina di Negeri Sembilan - Aminuddin Berita Harian",
+   "keywords": "pusat data",
+   "score": 2.0,
+   "read": 0,
+   "notified": 0,
+   "topic": "ai",
+   "language": "ms"
+  },
+  {
    "title": "New US solar tariffs unlikely to hurt Malaysia, says trade group - Free Malaysia Today",
    "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOcEdpb084T2NvZzdCVzFVcUI3OE82NnF1M1lwbWtDc19fd3J0UzUtRDJjaW5YQ1pOZGdBaVF1NVh3RzJoM01adG96c1lHZVd3dXktV0xsX3ptR3FzR2xtTURLRUV3ZHp3NE9xbGk2YkZMM1NBdlR5eTN4djNCUnNqeWlPeXBKNWprQ192OE5CZEM1VlBMMzFIeVl6ZmNqaGJrbFVSVjRycTlHSEtURFhwQWw5OXRleUItREdlNEg2QkdVUQ?oc=5",
    "source": "Free Malaysia Today",
@@ -82498,6 +82764,20 @@
    "summary": "Projek RM800 Juta Ladang Solar-Ayam Pacu Pembangunan Luar Bandar Sabah sabahnews.com.my",
    "keywords": "sabah,solar",
    "score": 5.0,
+   "read": 0,
+   "notified": 0,
+   "topic": "solar",
+   "language": "ms"
+  },
+  {
+   "title": "Malakoff pasang panel solar di 5 fasiliti utama Mardec dengan kapasiti 3.54 MWp - DagangNews",
+   "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPWkd4S2EyektmTjZIYzRMRnJJNEJoV09qR09KS1phckdBSW8zWjZpUkxfMm1TTGtxRENFNFYySVZMNHktQTNRb29yb3pEazVUZmxNN0UxTzZhSjQ2S1M1cUFtSC1adjAzRUdLX1hRNUNMbnlnck1lMHpQdlFSOTdrMTBnTmg2QTJJN3JnNHBlRm9BbDAyTGo1SUsxMURSVU5RQWRDYnk3QjNSQWYwMDAxU2RyMWE4RTlZMTMwdVcyN28xZmo1R1E?oc=5",
+   "source": "DagangNews",
+   "published_at": "2025-04-25T07:00:00+00:00",
+   "collected_at": "2026-10-31T12:37:20+00:00",
+   "summary": "Malakoff pasang panel solar di 5 fasiliti utama Mardec dengan kapasiti 3.54 MWp DagangNews",
+   "keywords": "solar",
+   "score": 2.0,
    "read": 0,
    "notified": 0,
    "topic": "solar",
@@ -94992,6 +95272,20 @@
    "language": "ms"
   },
   {
+   "title": "马来西亚将建造东南亚最大太阳能发电厂 - Pinsent Masons",
+   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQd3VVUnZaX2lIRUwwNlhGWWI3VWpJQ2VaM1dEeU1xb2UwaTlxTC1DSnJ3emtub2RXem5ZX3ZqdzYyVTk3SDZreG5aSnVjMFQyNm9Ob3pyVDNxX2dtQnloNUNrdDB1cmxHa3ZiV1plNUNkZHd3eWk1ZWVCV1pJYmJQLVVJbzRsSVl5NEtBb0lYZVR3R1RGTV84OGFlTmJ3LTNWeV9ScTU4aUI1MWtCaTZlWHBiaEphZw?oc=5",
+   "source": "Pinsent Masons",
+   "published_at": "2021-03-05T08:00:00+00:00",
+   "collected_at": "2026-10-31T12:37:13+00:00",
+   "summary": "马来西亚将建造东南亚最大太阳能发电厂 Pinsent Masons",
+   "keywords": "马来西亚,太阳能",
+   "score": 5.0,
+   "read": 0,
+   "notified": 0,
+   "topic": "solar",
+   "language": "zh"
+  },
+  {
    "title": "国能与Sunseap合作进入越南太阳能市场 - The Edge Malaysia",
    "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxQWm41ZkF5eFRUeHpBc2Riel9QYnFHaGhFMndrQUdyallpUUpfaTV1WU93T3dqZGM3aHJPeEtMS0c2RjJYTERubzkyNm9YcjFzdjBUY1ctLW96SE5PbXRjV0g5VzQ0Yng5UkVVWVJRaUhEcGtwQ0hGSkM2V0txRlRkZkdhQ3JCSHFncV85VkkzbWQ0Q1VHVHdvTEVsS0lSclVvQmRXRk9pbmw2U3BpYlY5b1ZtTkVrR25DaVl3amZkV2dTOWY1OUFaVW5KRkdqNkpDaUI2dmVmQi1YSnI4cTNRMWV4RktZRVFPaFNtRmlKd01SQXoxbnNuSWtZbXg0UQ?oc=5",
    "source": "The Edge Malaysia",
@@ -95508,6 +95802,20 @@
    "notified": 0,
    "topic": "solar",
    "language": "ms"
+  },
+  {
+   "title": "【科技】提高本地再生能源发电量 太阳能未来可期 | 科技 | 生活 - orientaldaily.com.my",
+   "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1HVW1KZUdqeHBuQ0EtNkQ1dV9EVnhFV28wanBBemhpc1lJOUxSaUVNTklfdmxxWGVkTnA2QUdHNE5kS1VrcUlMMlhvVG8xbXk1TVU1dlpDaFNZemtsd2VTRjRsYUhraklUVXh1Mw?oc=5",
+   "source": "orientaldaily.com.my",
+   "published_at": "2020-03-05T08:00:00+00:00",
+   "collected_at": "2026-10-31T12:37:13+00:00",
+   "summary": "【科技】提高本地再生能源发电量 太阳能未来可期 | 科技 | 生活 orientaldaily.com.my",
+   "keywords": "太阳能",
+   "score": 2.0,
+   "read": 0,
+   "notified": 0,
+   "topic": "solar",
+   "language": "zh"
   },
   {
    "title": "Fahami kepentingan tenaga solar | Sinar Harian - Sinar Harian",
